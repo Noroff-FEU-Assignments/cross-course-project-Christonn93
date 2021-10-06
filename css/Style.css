@@ -23,7 +23,7 @@ Body {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
-    flex-basis: calc(33% - 50px);
+    flex-basis: calc(33%);
 }
 
 .box{
