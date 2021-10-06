@@ -7,3 +7,20 @@ Body {
     margin-right: 10px;
 }
 
+.head{
+    max-height: 100px ;
+}
+
+.head-grid{
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.head-grid > div {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: calc(50% - 50px);
+}
