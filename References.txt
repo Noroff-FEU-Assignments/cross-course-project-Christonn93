@@ -23,4 +23,7 @@
     $mdc-typography-styles-caption: (font-family: unquote("Oswald"), font-size: 11);
 
 
-4. 
+4.  Used this for gaining information on how to creat icon for the tittle bar. 
+    https://stackoverflow.com/questions/15786937/add-image-in-title-bar
+
+5. 
