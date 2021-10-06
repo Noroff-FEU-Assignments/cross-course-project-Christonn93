@@ -26,6 +26,10 @@ Body {
     flex-basis: calc(50% - 50px);
 }
 
+.box{
+    margin: 20px;
+}
+
 .box-l{
     border: 1px black solid;
     justify-content: left;
