@@ -1,4 +1,26 @@
 1.  Used codepen to find the right way to make the flexbox used in the header. 
     Link: https://codepen.io/mogpt/pen/ebXdzg 
 
-2.  
+2.  Correct size on fonts is from Material.io
+    Link: https://material.io/design/typography/the-type-system.html#type-scale
+
+3.  Fonts - See Audiowide and Oswald on Google Fonts for further installation instructions. 
+    Audiowide: https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide#standard-styles  
+    $mdc-typography-styles-headline1: (font-family: unquote("Audiowide"), font-size: 96);
+    $mdc-typography-styles-headline2: (font-family: unquote("Audiowide"), font-size: 60);
+    $mdc-typography-styles-headline3: (font-family: unquote("Audiowide"), font-size: 48);
+    $mdc-typography-styles-headline4: (font-family: unquote("Audiowide"), font-size: 34);
+    $mdc-typography-styles-headline5: (font-family: unquote("Audiowide"), font-size: 24);
+    $mdc-typography-styles-headline6: (font-family: unquote("Audiowide"), font-size: 20);
+    $mdc-typography-styles-subtitle1: (font-family: unquote("Audiowide"), font-size: 16);
+    $mdc-typography-styles-subtitle2: (font-family: unquote("Audiowide"), font-size: 14);
+    
+    Oswald: https://fonts.google.com/specimen/Oswald?selection.family=Oswald
+    $mdc-typography-styles-body1: (font-family: unquote("Oswald"), font-size: 15);
+    $mdc-typography-styles-body2: (font-family: unquote("Oswald"), font-size: 13);
+    $mdc-typography-styles-button: (font-family: unquote("Oswald"), font-size: 13);
+    $mdc-typography-styles-overline: (font-family: unquote("Oswald"), font-size: 9);
+    $mdc-typography-styles-caption: (font-family: unquote("Oswald"), font-size: 11);
+
+
+4. 
