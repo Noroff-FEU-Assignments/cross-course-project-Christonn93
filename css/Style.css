@@ -1,10 +1,30 @@
+@media only screen and (max-width: 480px){
+    img{
+        width: 100%;
+    }
+
+    h1 {
+        font-family: audiowide;
+        color: #0df205;
+        font-size: 20px;
+    }
+    
+    p {
+        font-family: oswald;
+        font-size: 12px;
+        color: #0df205;
+    }
+}
+
 h1 {
     font-family: audiowide;
+    color: #0df205;
 }
 
 p {
     font-family: oswald;
     font-size: 15;
+    color: #0df205;
 }
 
 Body {
@@ -15,15 +35,11 @@ Body {
 .bodymain {}
 
 .head {
-    max-height: auto;
     background-color: #0d0d0d;
 }
 
 .logo {
     align-content: center;
-    height: 275px;
-    width: 375px;
-    padding-left: 50px;
 }
 
 .head-grid {
@@ -37,7 +53,7 @@ Body {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
-    flex-basis: calc(33%);
+    flex-basis: calc(30%);
 }
 
 .box {
@@ -63,7 +79,7 @@ Body {
 }
 
 .box-r {
-    border: 1px blue solid;
+    border: 1px red;
     justify-content: right;
     min-height: auto;
     display: flex;

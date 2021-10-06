@@ -5,7 +5,8 @@
     Link: https://material.io/design/typography/the-type-system.html#type-scale
 
 3.  Fonts - See Audiowide and Oswald on Google Fonts for further installation instructions. 
-    Audiowide: https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide#standard-styles  
+    Audiowide: 
+    Link: https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide#standard-styles  
     $mdc-typography-styles-headline1: (font-family: unquote("Audiowide"), font-size: 96);
     $mdc-typography-styles-headline2: (font-family: unquote("Audiowide"), font-size: 60);
     $mdc-typography-styles-headline3: (font-family: unquote("Audiowide"), font-size: 48);
@@ -15,7 +16,8 @@
     $mdc-typography-styles-subtitle1: (font-family: unquote("Audiowide"), font-size: 16);
     $mdc-typography-styles-subtitle2: (font-family: unquote("Audiowide"), font-size: 14);
     
-    Oswald: https://fonts.google.com/specimen/Oswald?selection.family=Oswald
+    Oswald: 
+    link: https://fonts.google.com/specimen/Oswald?selection.family=Oswald
     $mdc-typography-styles-body1: (font-family: unquote("Oswald"), font-size: 15);
     $mdc-typography-styles-body2: (font-family: unquote("Oswald"), font-size: 13);
     $mdc-typography-styles-button: (font-family: unquote("Oswald"), font-size: 13);
@@ -24,7 +26,11 @@
 
 
 4.  Used this for gaining information on how to creat icon for the tittle bar. 
-    https://stackoverflow.com/questions/15786937/add-image-in-title-bar
-    https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
+    Link: https://stackoverflow.com/questions/15786937/add-image-in-title-bar
+    Link: https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
 
-5. 
+5.  Make responsive img and other responsive aspeks
+    Link: https://www.freecodecamp.org/news/css-responsive-image-tutorial/
+    link: https://www.youtube.com/watch?v=rKtOarvKeZE
+    
+6.  
