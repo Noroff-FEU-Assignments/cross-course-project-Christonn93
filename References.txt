@@ -25,5 +25,6 @@
 
 4.  Used this for gaining information on how to creat icon for the tittle bar. 
     https://stackoverflow.com/questions/15786937/add-image-in-title-bar
+    https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
 
 5. 
