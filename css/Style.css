@@ -27,6 +27,7 @@ Body {
 }
 
 .box-l{
+    border: 1px black solid;
     justify-content: left;
     min-height: auto;
     display: flex;
@@ -35,6 +36,7 @@ Body {
 }
 
 .box-c{
+    border: 1px green solid;
     justify-content: center;
     min-height: auto;
     display: flex;
@@ -43,6 +45,7 @@ Body {
 }
 
 .box-r{
+    border: 1px blue solid;
     justify-content: right;
     min-height: auto;
     display: flex;
