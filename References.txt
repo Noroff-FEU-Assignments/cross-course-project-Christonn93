@@ -1,0 +1,4 @@
+1.  Used codepen to find the right way to make the flexbox used in the header. 
+    Link: https://codepen.io/mogpt/pen/ebXdzg 
+
+2.  
