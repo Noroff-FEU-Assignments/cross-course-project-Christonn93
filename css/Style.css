@@ -61,7 +61,7 @@ Body {
 }
 
 .box-l {
-    border: 1px orange solid;
+    border: 2px orange solid;
     justify-content: left;
     min-height: auto;
     display: flex;
@@ -70,7 +70,7 @@ Body {
 }
 
 .box-c {
-    border: 1px green solid;
+    border: 2px green solid;
     justify-content: center;
     min-height: auto;
     display: flex;
@@ -79,7 +79,7 @@ Body {
 }
 
 .box-r {
-    border: 1px red;
+    border: 2px red solid;
     justify-content: right;
     min-height: auto;
     display: flex;

@@ -32,5 +32,8 @@
 5.  Make responsive img and other responsive aspeks
     Link: https://www.freecodecamp.org/news/css-responsive-image-tutorial/
     link: https://www.youtube.com/watch?v=rKtOarvKeZE
-    
-6.  
+
+6.  Some guides on web responsiveness
+    Link: https://css-tricks.com/guides/
+
+7.      
