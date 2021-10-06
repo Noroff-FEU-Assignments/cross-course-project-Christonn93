@@ -25,3 +25,27 @@ Body {
     flex-direction: column;
     flex-basis: calc(50% - 50px);
 }
+
+.box-l{
+    justify-content: left;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box-c{
+    justify-content: center;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box-r{
+    justify-content: right;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
