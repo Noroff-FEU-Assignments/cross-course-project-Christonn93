@@ -2,3 +2,7 @@
 
 Worked a lot with the code, mostly grid and how to lay it out correctly. After som feedback from MJ and some tips it worked out great to get the grid layout working good for the header section. Need to work som more on the navigation. Its still just displayed as a normal list. But its there just for marking it down and to make it easier to navigate around the website. 
 Need to find a good way to make the dropdown look like it does in the Adobe XD design of the webpage. 
+
+8/10-21
+
+Working ong plan in milanote. To have a go plan on when to do what. 
