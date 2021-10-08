@@ -47,4 +47,7 @@
 
     Code: <body style="margin: 0px; background: #0e0e0e; height: 100%"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png" width="550" height="350"></body>
 
-9.  
+9.  Got tips for crating generic/reusable functions and pages in js from Oliver Dipple on discord. I created a #Template JavaScript thread, 
+    link: https://discord.com/channels/371937833252028426/876811560482394152/895928490178801715
+
+10. 
