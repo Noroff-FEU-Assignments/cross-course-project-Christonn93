@@ -34,59 +34,36 @@ Body {
 
 .bodymain {}
 
-.head {
-    background-color: #0d0d0d;
-}
+section {
+    display: flex;
+  }
+  
+  div {
+    flex: 1;
+  }
+  
+  .one {
+    background: lightblue;
+  }
+  
+  .two {
+    background: yellow;
+  }
+  
+  .three {
+    background: rgb(49, 16, 165);
+  }
+
+  .four {
+    background: rgb(163, 45, 24);
+  }
+
+  .five {
+    background: rgb(122, 23, 89);
+  }
 
 .logo {
     align-content: center;
-}
-
-.head-grid {
-    min-height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.head-grid>div {
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-basis: calc(30%);
-}
-
-.box {
-    margin: 20px;
-}
-
-.box-l {
-    border: 2px orange solid;
-    justify-content: left;
-    min-height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.box-c {
-    border: 2px green solid;
-    justify-content: center;
-    min-height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.box-r {
-    border: 2px red solid;
-    justify-content: right;
-    min-height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.content{
-    justify-content: center;
+    height: 150px;
+    width: 150px;
 }

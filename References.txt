@@ -24,7 +24,6 @@
     $mdc-typography-styles-overline: (font-family: unquote("Oswald"), font-size: 9);
     $mdc-typography-styles-caption: (font-family: unquote("Oswald"), font-size: 11);
 
-
 4.  Used this for gaining information on how to creat icon for the tittle bar. 
     Link: https://stackoverflow.com/questions/15786937/add-image-in-title-bar
     Link: https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
@@ -36,4 +35,16 @@
 6.  Some guides on web responsiveness
     Link: https://css-tricks.com/guides/
 
-7.      
+7.  Got some good feedback and help from MJPhilip regardin grid and felx layout.
+    He provided me with links: 
+    Link: https://jsfiddle.net/vL5yxj98/
+
+8.  Got some tips from BonitaDiener regaring the layout for the logo in the header, most about the resizing. 
+    She sendt me this two lines of code.
+
+    Code: <img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png%22** width="150" height="150">**
+    width="150" height="150">** this section
+
+    Code: <body style="margin: 0px; background: #0e0e0e; height: 100%"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png" width="550" height="350"></body>
+
+9.  
