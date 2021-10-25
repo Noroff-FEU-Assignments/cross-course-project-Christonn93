@@ -29,8 +29,12 @@ body{
     font-size: 10px;
 }
 
+.page-main-content{
+    height: 250px;
+}
+
 .lg-cta-bt{
-    
+
 }
 
 
