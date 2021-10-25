@@ -1,7 +1,9 @@
 #page {
     display: grid;
     width: 100%;
-    grid-template-areas: 
+    height: fit-content;
+    margin-bottom: -50px;
+    grid-template-areas:
         "head head"
         "main  main"
         "foot  foot";
@@ -9,20 +11,33 @@
     grid-template-columns: 150px 1fr;
 }
 
-#page > header {
+#page>header {
     grid-area: head;
-    background-color: #8ca0ff;
-  }
-
-#page > main {
-  grid-area: main;
-  background-color: #ffff64;
+    background-color: #0D0D0D;
+    display: flex;
 }
 
-#page > footer {
-  grid-area: foot;
+#page>main {
+    grid-area: main;
+    background-color: #ffff64;
+    display: flex;
 }
 
+#page>footer {
+    grid-area: foot;
+    background-color: #0d0d0d;
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+}
+
+#page-footer>.footer-btn-sys {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    border-radius: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 /* Navigation grid header */
 #header-nav {
@@ -31,64 +46,20 @@
     grid-template-rows: 50px 100px 50px;
     width: 100%;
     position: fixed;
+    margin: 0 auto;
 }
 
-#header-nav > .header-nav-1{
+#header-nav>.header-nav-1 {
     grid-area: nav1;
-    background-color: black;
+    min-height: 200px;
 }
 
-#header-nav > .header-nav-2{
+#header-nav>.header-nav-2 {
     grid-area: nav2;
-    background-color: red;
+    min-height: 200px;
 }
 
-#header-nav > .header-nav-3{
+#header-nav>.header-nav-3 {
     grid-area: nav3;
-    background-color: green;
-}
-
-/* Navigation grid footer */
-#footer-nav {
-    display: grid;
-    grid-template-areas: "nav1 bg-wrap nav5";
-    grid-template-rows: 50px 100px 50px;
-    width: 100%;
-    position: static;
-}
-
-#footer-nav > .footer-nav-1{
-    grid-area: nav1;
-    background-color: rgb(165, 145, 145);
-}
-
-#footer-nav > .background-wrap{
-    grid-area: bg-wrap;
-    display: grid;
-    grid-template-areas: "nav2 nav3 nav4";
-    grid-template-rows: 50px 100px 50px;
-    width: 100%;
-    position: static;
-    border: 2px solid black;
-    border-radius: 20%;
-}
-
-#footer-nav > .background-wrap > .footer-nav-2{
-    grid-area: nav2;
-
-}
-
-#footer-nav > .background-wrap > .footer-nav-3{
-    grid-area: nav3;
-
-}
-
-#footer-nav > .background-wrap > .footer-nav-4{
-    grid-area: nav4;
-
-}
-
-#footer-nav > .footer-nav-5{
-    grid-area: nav5;
-    background-color: rgb(161, 149, 228);
+    min-height: 200px;
 }

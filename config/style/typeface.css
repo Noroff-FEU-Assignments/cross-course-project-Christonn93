@@ -15,10 +15,11 @@ h2,
 h3,
 h4 {
     font-family: 'Audiowide', cursive;
+    margin: 0 auto;
 }
 
 p,
 a {
     font-family: 'Oswald', sans-serif;
-    color: white;
+    margin: 0 auto;
 }

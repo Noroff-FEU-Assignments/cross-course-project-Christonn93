@@ -1,40 +1,49 @@
 @import "./gridsytsem.css";
+@import "./img.css";
 @import "./typeface.css";
 @import "./mediaquery.css";
 @import "./pagestyle.css";
 
-
+/* Styleing */
 body{
     margin: 0;
-    height: 100vh;
+    height: 100%;
+}
+
+
+/* CTA Buttons */
+.f-cta-btn{
+    background-color: #0D0D0D;
+    border: 1px solid #0d0d0d;
+    margin-top: 2%;
+    border-radius: 9px;
+    height: 30px;
+    width: 80px;
+}
+
+.f-cta-btn > a {
+    display: block;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+    font-size: 10px;
+}
+
+.lg-cta-bt{
+    
 }
 
 
 
 
+.copyright-footer{
+    margin: 0 auto;
+    align-content: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CTA Buttons */
-.f-cta-btn{
-    width: 10px;
-    height: 10px;
+.copyright-footer > p {
+    color: #0D0D0D;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Audiowide', cursive;
 }
