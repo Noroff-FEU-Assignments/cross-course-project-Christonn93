@@ -1,0 +1,24 @@
+/* Media import & other imports */
+
+@font-face {
+    font-family: 'Audiowide', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+}
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Audiowide', cursive;
+}
+
+p,
+a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
