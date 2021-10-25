@@ -1,0 +1,49 @@
+#page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+        "head head"
+        "main  main"
+        "foot  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+    grid-area: head;
+    background-color: #8ca0ff;
+  }
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}
+
+
+/* Navigation grid header */
+#header-nav {
+    display: grid;
+    grid-template-areas: "nav1 nav2 nav3";
+    grid-template-rows: 50px 100px 50px;
+    width: 100%;
+}
+
+#header-nav > .header-nav-1{
+    grid-area: nav1;
+    background-color: black;
+}
+
+#header-nav > .header-nav-2{
+    grid-area: nav2;
+    background-color: red;
+}
+
+#header-nav > .header-nav-3{
+    grid-area: nav3;
+    background-color: green;
+}

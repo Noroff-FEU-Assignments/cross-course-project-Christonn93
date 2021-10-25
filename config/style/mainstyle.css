@@ -1,0 +1,12 @@
+@import "./gridsytsem.css";
+@import "./typeface.css";
+@import "./mediaquery.css";
+@import "./pagestyle.css";
+
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+
