@@ -33,18 +33,24 @@
 
 .dropdown {
     background-color: #0DF205;
+    position: relative;
+    display: inline-block;
 }
 
-.dropdown-list{
+.dropdown-list {
     display: none;
     position: absolute;
+    background-color: white;
+    min-width: 140px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-cart {
     background-color: #0DF205;
 }
 
-.show{
+.show {
     display: block;
 }
 
@@ -65,33 +71,33 @@
 }
 
 /* Gamecard */
-.gamedisplay{
+.gamedisplay {
     background-color: #0D0D0D;
 }
 
-.gamedisplay-head{
+.gamedisplay-head {
     background-color: #0D0D0D;
 }
 
-.gamedisplay-heading{
+.gamedisplay-heading {
     color: #00FF00;
 }
 
 /* Game info */
-.gamecard{
+.gamecard {
     background-color: #F2F2F2;
     height: 100%;
 }
 
-.gametitle{
+.gametitle {
     color: #0D0D0D;
 }
 
-.gamedecript{
+.gamedecript {
     color: #0D0D0D;
 }
 
-.gamebutton{
+.gamebutton {
     float: right;
     background-color: #0D0D0D;
     color: #00FF00;
