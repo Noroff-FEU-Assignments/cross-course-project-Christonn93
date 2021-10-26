@@ -1,5 +1,9 @@
 /* Company Logo */
 .header-nav-logo {
-    display: inline-flex;
-    width: 250px;
+    max-width: 250px;
+}
+
+.full-img{
+    width: 490px;
+    padding: 1rem;
 }

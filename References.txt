@@ -50,4 +50,9 @@
 9.  Got tips for crating generic/reusable functions and pages in js from Oliver Dipple on discord. I created a #Template JavaScript thread, 
     link: https://discord.com/channels/371937833252028426/876811560482394152/895928490178801715
 
-10. 
+10. Tips on adding line break
+    Link: https://www.javatpoint.com/how-to-add-a-line-in-html
+
+11. Tips on how to do media query
+    Link: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
+    Link: https://www.w3schools.com/css/css_rwd_mediaqueries.asp

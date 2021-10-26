@@ -1,4 +1,111 @@
+#page-content {
+    background-color: #0D0D0D;
+    padding: 1%;
+}
+
+.text-container {
+    background-color: #F2F2F2;
+    padding: 1rem;
+}
+
+.white-bg {
+    background-color: #F2F2F2;
+}
+
 .breadcrumb {
     font-size: small;
     padding-left: 2.5rem;
+}
+
+/* CTA Buttons */
+.f-cta-btn {
+    background-color: #0D0D0D;
+    border: 1px solid #0d0d0d;
+    margin-top: 2%;
+    border-radius: 9px;
+    height: 2em;
+    width: 6em;
+}
+
+.f-cta-btn>a {
+    display: block;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+    font-size: 12px;
+}
+
+.page-main-content {
+    height: 250px;
+}
+
+.dropdown {
+    background-color: #0DF205;
+}
+
+.dropdown-cart {
+    background-color: #0DF205;
+}
+
+.lg-cta-bt {
+    background-color: #0DF205;
+}
+
+.copyright-footer {
+    margin: 0 auto;
+    align-content: center;
+}
+
+.copyright-footer>p {
+    color: #0D0D0D;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Audiowide', cursive;
+}
+
+/* Gamecard */
+.gamedisplay{
+    background-color: #0D0D0D;
+}
+
+.gamedisplay-head{
+    background-color: #0D0D0D;
+}
+
+.gamedisplay-heading{
+    color: #00FF00;
+}
+
+/* Game info */
+.gamecard{
+    background-color: #F2F2F2;
+    width: 9em;
+    min-height: 12rem;
+}
+
+.gamecard-img-bg{
+    background-color: #7A778C;
+    padding: 0.5em;
+}
+
+.gamecard-img{
+    width: 9em;
+}
+
+.gametitle{
+    color: #0D0D0D;
+}
+
+.gamedecript{
+    color: #0D0D0D;
+}
+
+.gamebutton{
+    float: right;
+    background-color: #0D0D0D;
+    color: #00FF00;
+    height: 2em;
+    width: 6em;
+    border: 0.1em solid #0D0D0D;
+    border-radius: 0.5em;
 }

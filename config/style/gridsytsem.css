@@ -2,19 +2,18 @@
     display: grid;
     width: 100%;
     height: fit-content;
-    margin-bottom: -50px;
     grid-template-areas:
         "head head"
         "main  main"
         "foot  foot";
-    grid-template-rows: 150px 1fr 30px;
-    grid-template-columns: 150px 1fr;
+    background-color: #0D0D0D;
 }
 
 #page>header {
     grid-area: head;
     background-color: #0D0D0D;
     display: flex;
+    height: 150px;
 }
 
 #page>main {
@@ -43,23 +42,48 @@
 #header-nav {
     display: grid;
     grid-template-areas: "nav1 nav2 nav3";
-    grid-template-rows: 50px 100px 50px;
     width: 100%;
-    position: fixed;
     margin: 0 auto;
 }
 
 #header-nav>.header-nav-1 {
     grid-area: nav1;
-    min-height: 200px;
 }
 
 #header-nav>.header-nav-2 {
     grid-area: nav2;
-    min-height: 200px;
 }
 
 #header-nav>.header-nav-3 {
     grid-area: nav3;
-    min-height: 200px;
+}
+
+/* Content grid */
+#page-content{
+    display: grid;
+}
+
+/* Gamedisplay */
+.gamedisplay-grid{
+    display: grid;
+    grid-template-areas:
+        "col-1 col-2 col-3 col-4";
+    background-color: #0D0D0D;
+}
+
+[class*="col-"]{
+    width: 10em;
+}
+
+.col-1{
+    grid-area: col-1;
+}
+.col-2{
+    grid-area: col-2;
+}
+.col-3{
+    grid-area: col-3;
+}
+.col-4{
+    grid-area: col-4;
 }
