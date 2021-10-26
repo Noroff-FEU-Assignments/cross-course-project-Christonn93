@@ -8,6 +8,9 @@
 /* Styleing */
 body {
     margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 100%;
+    background-color: #F2F2F2;
 }
 

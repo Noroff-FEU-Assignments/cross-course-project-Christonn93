@@ -4,6 +4,16 @@
 }
 
 .full-img{
-    width: 490px;
-    margin: 0.5em;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.gamecard-img-bg{
+    background-color: #7A778C;
+    padding: 0.5em;
+}
+
+.gamecard-img{
+    width: 100%;
 }

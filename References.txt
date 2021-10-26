@@ -56,3 +56,12 @@
 11. Tips on how to do media query
     Link: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
     Link: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+12. Tips on making the dropsown menu for both menus, in js. 
+    Link: https://www.javatpoint.com/how-to-create-dropdown-list-using-javascript
+    Link: https://stackoverflow.com/questions/7789521/how-to-link-external-javascript-file-onclick-of-button/32245490
+
+13. Tips, help and feedback from MJ in a video. Made changes based on these inputs. 
+    link: https://www.screencast.com/t/Qar94DKd
+
+14. 

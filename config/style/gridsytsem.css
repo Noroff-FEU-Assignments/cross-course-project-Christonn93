@@ -1,31 +1,21 @@
-#page {
+.page-wrapper {
     display: grid;
+    grid-template-rows: 1fr auto 1fr;
     width: 100%;
     height: fit-content;
-    grid-template-areas:
-        "head head"
-        "main  main"
-        "foot  foot";
     background-color: #0D0D0D;
+    min-height: 100%;
 }
 
-#page>header {
-    grid-area: head;
-    background-color: #0D0D0D;
+.page-wrapper>main {
     display: flex;
-    height: 150px;
+    flex-direction: column;
 }
 
-#page>main {
-    grid-area: main;
-    background-color: #ffff64;
-    display: flex;
-}
-
-#page>footer {
-    grid-area: foot;
+.page-wrapper>footer {
     background-color: #0d0d0d;
     display: flex;
+    flex-direction: column;
     padding: 5px 0px 5px 0px;
     height: fit-content;
 }
@@ -33,7 +23,7 @@
 #page-footer>.footer-btn-sys {
     background-color: #F2F2F2;
     margin: 0 auto;
-    border-radius: 5rem;
+    border-radius: 80px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -41,21 +31,9 @@
 /* Navigation grid header */
 #header-nav {
     display: grid;
-    grid-template-areas: "nav1 nav2 nav3";
+    grid-template-columns: 1fr auto 1fr;
     width: 100%;
     margin: 0 auto;
-}
-
-#header-nav>.header-nav-1 {
-    grid-area: nav1;
-}
-
-#header-nav>.header-nav-2 {
-    grid-area: nav2;
-}
-
-#header-nav>.header-nav-3 {
-    grid-area: nav3;
 }
 
 /* Content grid */
@@ -66,24 +44,7 @@
 /* Gamedisplay */
 .gamedisplay-grid{
     display: grid;
-    grid-template-areas:
-        "col-1 col-2 col-3 col-4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     background-color: #0D0D0D;
-}
-
-[class*="col-"]{
-    width: 10em;
-}
-
-.col-1{
-    grid-area: col-1;
-}
-.col-2{
-    grid-area: col-2;
-}
-.col-3{
-    grid-area: col-3;
-}
-.col-4{
-    grid-area: col-4;
 }

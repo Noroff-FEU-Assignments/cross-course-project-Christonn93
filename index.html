@@ -11,99 +11,125 @@
 </head>
 
 <body>
-  <section id="page">
-    <header>
+  <div id="page" class="page-wrapper">
+    <header class="page-header">
       <section class="header-nav" id="header-nav">
-        <section class="header-nav-1">
-          <div class="##">
-            <button class="lg-cta-bt">
-              <p>Login</p>
-            </button>
-            <button class="dropdown">Dropdown menu</button>
-          </div>
-        </section>
-        <section class="header-nav-2">
-          <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
-        </section>
-        <section class="header-nav-3">
-          <button class="dropdown-cart">
-            <p>shopping cart</p>
+        <div class="nav-btn-left">
+          <button class="lg-cta-bt">
+            <p>Login</p>
           </button>
-        </section>
+          <div class="dropdownmenu">
+            <button onclick='pageNav()' class="dropdown"><img src="/config/img/Icons"></button>
+            <!-- Dropdown menu -->
+
+            <div class="dropdown-list" id="dropdown-nav">
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Home</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">All
+                Games</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Game
+                deals</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Popular
+                tags</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Shopping
+                Chart</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Profile
+                page</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons"
+                  alt="Dropdown Icons">Login/signup</a>
+              <a href="index.html"><img src="/config/img/Icons/#" class="dropdown-icons" alt="Dropdown Icons">Contact
+                us</a>
+            </div>
+          </div>
+        </div>
+        <div class="comp-logo">
+        <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
+      </div>
+        <div class="nav-btn-right">
+        <button class="cta-btn-chart" id="dropdown-cart"><img src="/config/img/Icons"></button>
+      </div>
       </section>
     </header>
-    <section class="white-bg">
+    <hr size="2" width="100%" color="#00ff00">
+
+    <div class="page-bacground-color">
       <main class="page-content" id="page-content">
-        <div class="text-container">
-          <h2 class="heading">Welcome to GameHub, The univers of games.</h2>
-          <p class="info-text">
-            Here you will find a range of pc games.
-            you want a old or new game? A super good deal or a pre-realese game?
-            Mabye you want to sell a old game you have dusting in the corner? You came to the right place!
-          </p>
-          <p class="info-text">
-            Thanks for choosing GameHub for your place to get your games or to clear space in your shelf
-          </p>
-        </div>
-        <div>
-          <img class="full-img" src="config/img/Game img/Demanding-PC-Games-Feature.jpg" alt="Game add photo">
-        </div>
+
+        <header class="page-description">
+          <div class="text-container">
+            <h2 class="heading">Welcome to GameHub, The univers of games.</h2>
+            <p class="info-text">
+              Here you will find a range of pc games.
+              you want a old or new game? A super good deal or a pre-realese game?
+              Mabye you want to sell a old game you have dusting in the corner? You came to the right place!
+            </p>
+            <p class="info-text">
+              Thanks for choosing GameHub for your place to get your games or to clear space in your shelf
+            </p>
+          </div>
+          <div>
+            <img class="full-img" src="config/img/Game img/Demanding-PC-Games-Feature.jpg" alt="Game add photo">
+          </div>
+        </header>
+
         <section class="gamedisplay">
           <section class="gamedisplay-head">
             <h3 class="gamedisplay-heading">New Games</h3>
             <a class="gamedisplay-link">View More</a>
             <hr size="2" width="100%" color="#00ff00">
           </section>
+
           <section class="gamedisplay-grid">
-            <div class="col-1">
-              <section class="gamecard">
-                <div class="gamecard-img-bg">
-                  <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
-                </div>
-                <h3 class="gametitle">Game title</h3>
-                <p class="gamedecript">Game descripton</p>
-                <a href="#"><button class="gamebutton">Details</button></a>
-              </section>
+
+            <div class="gamecard">
+              <div class="gamecard-img-bg">
+                <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
+              </div>
+              <h3 class="gametitle">Game title</h3>
+              <p class="gamedecript">Game descripton</p>
+              <a href="#"><button class="gamebutton">Details</button></a>
             </div>
-            <div class="col-2">
-              <section class="gamecard">
-                <div class="gamecard-img-bg">
-                  <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
-                </div>
-                <h3 class="gametitle">Game title</h3>
-                <p class="gamedecript">Game descripton</p>
-                <a href="#"><button class="gamebutton">Details</button></a>
-              </section>
+
+            <div class="gamecard">
+              <div class="gamecard-img-bg">
+                <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
+              </div>
+              <h3 class="gametitle">Game title</h3>
+              <p class="gamedecript">Game descripton</p>
+              <a href="#"><button class="gamebutton">Details</button></a>
             </div>
-            <div class="col-3">
-              <section class="gamecard">
-                <div class="gamecard-img-bg">
-                  <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
-                </div>
-                <h3 class="gametitle">Game title</h3>
-                <p class="gamedecript">Game descripton</p>
-                <a href="#"><button class="gamebutton">Details</button></a>
-              </section>
+
+            <div class="gamecard">
+              <div class="gamecard-img-bg">
+                <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
+              </div>
+              <h3 class="gametitle">Game title</h3>
+              <p class="gamedecript">Game descripton</p>
+              <a href="#"><button class="gamebutton">Details</button></a>
             </div>
-            <div class="col-4">
-              <section class="gamecard">
-                <div class="gamecard-img-bg">
-                  <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
-                </div>
-                <h3 class="gametitle">Game title</h3>
-                <p class="gamedecript">Game descripton</p>
-                <a href="#"><button class="gamebutton">Details</button></a>
-              </section>
+
+            <div class="gamecard">
+              <div class="gamecard-img-bg">
+                <img class="gamecard-img" src="/config/img/Game img/EuroTruckBanner.jpg">
+              </div>
+              <h3 class="gametitle">Game title</h3>
+              <p class="gamedecript">Game descripton</p>
+              <a href="#"><button class="gamebutton">Details</button></a>
             </div>
+
           </section>
-          <section class="gamedisplay-head">
+
+          <div class="gamedisplay-head">
             <h3 class="gamedisplay-heading">New Games</h3>
             <hr size="2" width="100%" color="#00ff00">
-          </section>
+          </div>
+
         </section>
+
       </main>
-    </section>
+
+    </div>
     <footer class="page-footer" id="page-footer">
+      <hr size="2" width="100%" color="#00ff00">
       <div class="footer-btn-sys">
         <button class="f-cta-btn"><a>Home</a></button>
         <button class="f-cta-btn"><a>Tags</a></button>
@@ -115,7 +141,37 @@
       </div>
 
     </footer>
-  </section>
+  </div>
+  <script>
+    /* methods to hide and show the dropdown content */
+    function pageNav() {
+      document.getElementById("dropdown-nav").classList.toggle("show");
+    }
+
+    function databaseList() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+
+    /* methods to redirect to tutorial page that user will select from dropdown list */
+    function java() {
+      window.location.replace("https://www.javatpoint.com/java-tutorial");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it  
+    window.onclick = function (event) {
+      if (!event.target.matches('dropdown')) {
+        var dropdowns = document.getElementsByClassName("dropdown-list");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
   <script type="module" src="./config/javascript/main.js"></script>
 </body>
 
