@@ -7,6 +7,11 @@
     min-height: 100%;
 }
 
+.page-wrapper>header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .page-wrapper>main {
     display: flex;
     flex-direction: column;

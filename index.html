@@ -11,9 +11,11 @@
 
   <script>
     window.addEventListener('DOMContentLoaded', setup)
+
     function setup() {
       document.querySelector('button#dropdown').addEventListener('click', toggleDropDown)
       let isDropDownOpen = false;
+
       function toggleDropDown() {
         isDropDownOpen = !isDropDownOpen;
         document.body.classList.toggle('dropdown-open', isDropDownOpen);
@@ -31,34 +33,55 @@
             <p>Login</p>
           </button>
           <div class="dropdownmenu">
-            <button class="dropdown" onclick="toggleDropDown()" id="dropdown"><img src="/config/img/Icons/Icons - More - Vertical.svg"></button>
+            <button class="dropdown-btn" onclick="toggleDropDown()" id="dropdown"><img
+                src="/config/style/icons/Icons - More - Vertical.svg"></button>
             <!-- Dropdown menu -->
-
             <div class="dropdown-list" id="dropdown-nav">
-              <a href="index.html"><img src="/config/img/Icons/Icons - Home.svg" class="dropdown-icons" alt="Dropdown Icons">Home</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Keypad.svg" class="dropdown-icons" alt="Dropdown Icons">All
-                Games</a>
-              <a href="index.html"><img src="/config/img/Icons/Component 301 – 1.svg" class="dropdown-icons" alt="Dropdown Icons">Game
-                deals</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Pricetag.svg" class="dropdown-icons" alt="Dropdown Icons">Popular
-                tags</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Shopping - Cart.svg" class="dropdown-icons" alt="Dropdown Icons">Shopping
-                Chart</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Person - Person.svg" class="dropdown-icons" alt="Dropdown Icons">Profile
-                page</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Person - Add.svg" class="dropdown-icons"
-                  alt="Dropdown Icons">Login/signup</a>
-              <a href="index.html"><img src="/config/img/Icons/Icons - Email.svg" class="dropdown-icons" alt="Dropdown Icons">Contact
-                us</a>
+              <div class="dd-manu-bt">
+                <img src="/config/style/icons/GameHub_Logo4.svg">
+                <img src="/config/style/icons/Icons - Undo.svg">
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Home.svg" class="dropdown-icons"  alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Home</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Keypad.svg" class="dropdown-icons"  alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">All Games</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Percent.svg" class="dropdown-icons" alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Game deals</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Pricetag.svg" class="dropdown-icons"  alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Popular tags</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Shopping - Cart.svg" class="dropdown-icons" alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Shopping Chart</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Person - Person.svg"  class="dropdown-icons" alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Profile page</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Person - Add.svg" class="dropdown-icons" alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Login/signup</a>
+                  </div>
+                <div class="dd-manu-bt">
+                  <img src="/config/style/icons/Icons - Email.svg" class="dropdown-icons" alt="Dropdown Icons">
+                    <a href="index.html" class="dd-menu-btn">Contact us</a>
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="comp-logo">
-          <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
-        </div>
-        <div class="nav-btn-right">
-          <button class="cta-btn-chart" id="dropdown-cart"><img src="/config/img/Icons/Icons - Shopping - Cart.svg"></button>
-        </div>
+          <div class="comp-logo">
+            <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
+          </div>
+          <div class="nav-btn-right">
+            <button class="dropdown-btn" id="dropdown-cart"><img
+                src="/config/style/icons/Icons - Shopping - Cart.svg"></button>
+          </div>
       </section>
     </header>
     <hr size="2" width="100%" color="#00ff00">
