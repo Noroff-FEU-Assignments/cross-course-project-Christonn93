@@ -8,6 +8,18 @@
   <link href="./config/style/mainstyle.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
   <title>GameHub</title>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', setup)
+    function setup() {
+      document.querySelector('button.dropdown').addEventListener('click', toggleDropDown)
+      let isDropDownOpen = false;
+      function toggleDropDown() {
+        isDropDownOpen = !isDropDownOpen;
+        document.body.classList.toggle('dropdown-open', isDropDownOpen);
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -19,7 +31,7 @@
             <p>Login</p>
           </button>
           <div class="dropdownmenu">
-            <button onclick='pageNav()' class="dropdown"><img src="/config/img/Icons"></button>
+            <button class="dropdown"><img src="/config/img/Icons"></button>
             <!-- Dropdown menu -->
 
             <div class="dropdown-list" id="dropdown-nav">
@@ -42,11 +54,11 @@
           </div>
         </div>
         <div class="comp-logo">
-        <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
-      </div>
+          <img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo">
+        </div>
         <div class="nav-btn-right">
-        <button class="cta-btn-chart" id="dropdown-cart"><img src="/config/img/Icons"></button>
-      </div>
+          <button class="cta-btn-chart" id="dropdown-cart"><img src="/config/img/Icons"></button>
+        </div>
       </section>
     </header>
     <hr size="2" width="100%" color="#00ff00">
@@ -142,36 +154,7 @@
 
     </footer>
   </div>
-  <script>
-    /* methods to hide and show the dropdown content */
-    function pageNav() {
-      document.getElementById("dropdown-nav").classList.toggle("show");
-    }
 
-    function databaseList() {
-      document.getElementById("myDropdown2").classList.toggle("show");
-    }
-
-
-    /* methods to redirect to tutorial page that user will select from dropdown list */
-    function java() {
-      window.location.replace("https://www.javatpoint.com/java-tutorial");
-    }
-
-    // Close the dropdown menu if the user clicks outside of it  
-    window.onclick = function (event) {
-      if (!event.target.matches('dropdown')) {
-        var dropdowns = document.getElementsByClassName("dropdown-list");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-  </script>
   <script type="module" src="./config/javascript/main.js"></script>
 </body>
 
