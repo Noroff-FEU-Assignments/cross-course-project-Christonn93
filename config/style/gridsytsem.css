@@ -34,11 +34,23 @@
 }
 
 /* Navigation grid header */
-#header-nav {
+.header-nav {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 2fr auto 2fr;
     width: 100%;
     margin: 0 auto;
+}
+
+.nav-btn-left{
+    display: inline-flex;
+}
+
+.comp-logo{
+    display: inline-flex;
+}
+
+.nav-btn-right{
+    display: inline-flex;
 }
 
 /* Content grid */
