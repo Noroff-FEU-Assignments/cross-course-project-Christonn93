@@ -145,7 +145,7 @@
 
 /* Dropdown menu nav */
 .dropdown-list {
-    display: ;
+    display: none;
     width: 13em;
     background-color: #F2F2F2;
     box-shadow: 0px 8px 16px 0px #F2F2F2;
