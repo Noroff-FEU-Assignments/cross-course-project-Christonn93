@@ -1,9 +1,9 @@
 @import "./gridsytsem.css";
 @import "./img.css";
 @import "./pagestyle.css";
+@import "./buttonstyle.css";
 @import "./typeface.css";
 @import "./mediaquery.css";
-
 
 /* Styleing */
 body {
@@ -14,3 +14,37 @@ body {
     background-color: #F2F2F2;
 }
 
+.page-banner {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-img {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-header {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-article {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-input-lable {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-input {
+    display: block;
+    background-color:#F2F2F2;
+}
+
+.page-banner-btn {
+    display: block;
+    background-color:#F2F2F2;
+}

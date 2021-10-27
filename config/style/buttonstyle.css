@@ -1,0 +1,116 @@
+/* CTA Buttons */
+.f-cta-btn {
+    font-size: 1rem;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    display: inline-block;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    /*box-shadow: 0px 2px 16px 0px #F2F2F2;*/
+    margin-top: 5px;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+}
+
+.dropdown-btn {
+    background-color: #00ff00;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    border: 0.01em solid #0D0D0D;
+    filter: drop-shadow(0 0 0.75rem #F2F2F2);
+}
+
+.dropdown-btn.left {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    right: 150px;
+}
+
+.dropdown-btn.right {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.lg-cta-bt {
+    font-size: 1rem;
+    align-content: center;
+
+    background-color: #00ff00;
+    display: inline-block;
+    position: absolute;
+    border: 0.125em solid #00ff00;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+
+    box-shadow: 0px 1px 16px 0px #F2F2F2;
+}
+
+.gamebutton {
+    font-size: 1rem;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    display: inline-block;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    margin-top: 5px;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+
+    position: relative;
+    bottom: 0.25em;
+    left: 8.50em;
+}
+
+/* Dropdown menu btn */
+.btn-box {
+    border: 1px solid #0d0d0d;
+    padding: 2px;
+    background-color: #0d0d0d;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0px 8px 16px 0px #0d0d0d;
+}
+
+.dd-menu-btn {
+    position: relative;
+    bottom: 0.25em;
+    left: .70em;
+}
+
+.dd-manu-bt>a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    border-radius: 0.25em;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+}
+
+.dropdown-icons {
+    display: inline-block;
+    position: relative;
+    top: 0.25em
+}
+
+.back-btn{
+    position: relative;
+    top: -30px;
+    left: 60px;
+
+    border-radius: 50%;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    box-shadow: 0px 8px 8px 0px #0d0d0d;
+}
