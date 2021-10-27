@@ -1,6 +1,6 @@
 .page-wrapper {
     display: grid;
-    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-rows: 1fr auto auto auto auto 1fr;
     width: 100%;
     height: fit-content;
     background-color: #F2F2F2;
@@ -25,6 +25,7 @@
     flex-direction: column;
     padding: 5px 0px 5px 0px;
     height: fit-content;
+    margin-top: auto;
 }
 
 #page-footer>.footer-btn-sys {
@@ -42,6 +43,8 @@
     width: 100%;
     margin: 0 auto;
     background-color: #0d0d0d;
+    position: sticky;
+    top: 0;
 }
 
 /* Content grid */
