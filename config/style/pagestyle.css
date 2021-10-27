@@ -13,22 +13,33 @@
     padding-left: 1px;
 }
 
-/* CTA Buttons */
-.f-cta-btn {
-    background-color: #0D0D0D;
-    border: 1px solid #0d0d0d;
-    margin-top: 5px;
-    border-radius: 9px;
-    height: 2em;
-    width: 6em;
+/* Footer style */
+.copyright-footer {
+    margin: 0 auto;
+    align-content: center;
 }
 
-.f-cta-btn>a {
-    display: block;
+.copyright-footer>p {
+    color: #0D0D0D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Audiowide', cursive;
+}
+
+/* CTA Buttons */
+.f-cta-btn {
+    font-size: 1rem;
     align-content: center;
     color: #00FF00;
     font-family: 'Audiowide', cursive;
-    font-size: 12px;
+
+    display: inline-block;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    margin-top: 5px;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
 }
 
 .dropdown-btn {
@@ -40,12 +51,92 @@
     filter: drop-shadow(0 0 0.75rem #F2F2F2);
 }
 
-.dropdown-list {
-    display: none;
+.dropdown-btn.left {
     position: absolute;
+    top: 50px;
+    left: 150px;
+    right: 150px;
+}
+
+.dropdown-btn.right {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.lg-cta-bt {
+    font-size: 1rem;
+    align-content: center;
+
+    background-color: #0DF205;
+    display: inline-block;
+    position: absolute;
+    border: 0.125em solid #0d0d0d;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+}
+
+.gamebutton {
+    font-size: 1rem;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    display: inline-block;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    margin-top: 5px;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+
+    position: relative;
+    bottom: 0.25em;
+    left: 8.50em;
+}
+
+.btn-box{
+    border: 1px solid red;
+    padding: 2px;
+    background-color: #0d0d0d;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.dd-menu-btn{
+    position: relative;
+    bottom: 0.25em;
+    left: .70em;
+    
+}
+
+.dd-manu-bt>a{
+    display: inline-block;
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+    
+
+    border-radius: 0.25em;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+}
+
+.dropdown-icons {
+    display: inline-block;
+    position: relative;
+    top: 0.25em
+}
+
+
+/* Dropdown menu nav */
+.dropdown-list {
+    display: ;
+    width: 10em;
+    position: relative;
     background-color: #F2F2F2;
-    min-width: 140px;
-    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,22 +147,6 @@
 
 .dropdown-cart {
     background-color: #0DF205;
-}
-
-.lg-cta-bt {
-    background-color: #0DF205;
-}
-
-.copyright-footer {
-    margin: 0 auto;
-    align-content: center;
-}
-
-.copyright-footer>p {
-    color: #0D0D0D;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Audiowide', cursive;
 }
 
 /* Gamecard */
@@ -101,12 +176,3 @@
     color: #0D0D0D;
 }
 
-.gamebutton {
-    float: right;
-    background-color: #0D0D0D;
-    color: #00FF00;
-    height: 2em;
-    width: 6em;
-    border: 0.1em solid #0D0D0D;
-    border-radius: 0.5em;
-}

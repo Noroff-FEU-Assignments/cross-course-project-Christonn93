@@ -63,5 +63,9 @@
 
 13. Tips, help and feedback from MJ in a video. Made changes based on these inputs. 
     link: https://www.screencast.com/t/Qar94DKd
+    link: https://www.screencast.com/t/ijgfFhyrBIeX
 
-14. 
+14. Tips and tricks for placing the nav elements correctly i got from the YouTube vid Martin made of the live lesson we had.
+    Link: https://www.youtube.com/watch?v=4jzWi_Z41Qk
+
+15. 
