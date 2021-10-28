@@ -51,13 +51,34 @@
     box-shadow: 0px 1px 16px 0px #F2F2F2;
 }
 
+.gamebutton-container{
+    position: relative;
+    bottom: 0.25em;
+    left: 8.50em;
+}
+
 .gamebutton {
     font-size: 1rem;
     align-content: center;
     color: #00FF00;
     font-family: 'Audiowide', cursive;
 
-    display: inline-block;
+    display: block;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    margin-top: 5px;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+}
+
+.gamebutton2 {
+    font-size: 1rem;
+    align-content: center;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    display: block;
     background-color: #0D0D0D;
     border: 0.125em solid #0d0d0d;
     margin-top: 5px;
