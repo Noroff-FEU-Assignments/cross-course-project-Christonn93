@@ -25,16 +25,15 @@
 }
 
 .dropdown-btn.left {
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 30px;
     left: 150px;
-    right: 150px;
 }
 
 .dropdown-btn.right {
-    position: absolute;
-    top: 50px;
-    right: 150px;
+    position: relative;
+    top: 30px;
+    right: -150px;
 }
 
 .lg-cta-bt {
@@ -43,7 +42,7 @@
 
     background-color: #00ff00;
     display: inline-block;
-    position: absolute;
+    position: relative;
     border: 0.125em solid #00ff00;
     border-radius: 0.25em;
     height: 2em;
