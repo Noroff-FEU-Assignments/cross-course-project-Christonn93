@@ -52,22 +52,9 @@
 }
 
 .gamebutton-container{
-    font-size: 1rem;
-    align-content: center;
-    color: #00FF00;
-    font-family: 'Audiowide', cursive;
-
-    display: block;
-    background-color: #0D0D0D;
-    border: 0.125em solid #0d0d0d;
-    margin-top: 5px;
-    border-radius: 0.25em;
-    height: 2em;
-    width: 6em;
-
-    position: relative;
-    bottom: 0.25em;
-    left: 8.50em;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
 }
 
 .gamebutton {
@@ -76,32 +63,10 @@
     color: #00FF00;
     font-family: 'Audiowide', cursive;
 
-    display: block;
     background-color: #0D0D0D;
     border: 0.125em solid #0d0d0d;
-    margin-top: 5px;
     border-radius: 0.25em;
-    height: 2em;
-    width: 6em;
-}
-
-.gamebutton2 {
-    font-size: 1rem;
-    align-content: center;
-    color: #00FF00;
-    font-family: 'Audiowide', cursive;
-
-    display: block;
-    background-color: #0D0D0D;
-    border: 0.125em solid #0d0d0d;
-    margin-top: 5px;
-    border-radius: 0.25em;
-    height: 2em;
-    width: 6em;
-
-    position: relative;
-    bottom: 0.25em;
-    left: 8.50em;
+    padding: 5px;
 }
 
 /* Dropdown menu btn */
