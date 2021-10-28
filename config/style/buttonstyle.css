@@ -52,14 +52,16 @@
 }
 
 .gamebutton-container{
-    display: flex;
-    justify-content: flex-end;
-    z-index: 99;
+    display: grid;
+    justify-content: end;
+    margin-bottom: 2.5px;
+    margin-right: 2.5px;
+
 }
 
 .gamebutton {
+
     font-size: 1rem;
-    align-content: center;
     color: #00FF00;
     font-family: 'Audiowide', cursive;
 
