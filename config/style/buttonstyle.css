@@ -1,11 +1,9 @@
 /* CTA Buttons */
 .f-cta-btn {
     font-size: 1rem;
-    align-content: center;
     color: #00FF00;
     font-family: 'Audiowide', cursive;
-
-    display: inline-block;
+    padding: 5px;
     background-color: #0D0D0D;
     border: 0.125em solid #0d0d0d;
     /*box-shadow: 0px 2px 16px 0px #F2F2F2;*/
@@ -60,7 +58,6 @@
 }
 
 .gamebutton {
-
     font-size: 1rem;
     color: #00FF00;
     font-family: 'Audiowide', cursive;
@@ -101,16 +98,17 @@
 .dropdown-icons {
     display: inline-block;
     position: relative;
+    gap: 1px;
     top: 0.25em
 }
 
 .back-btn{
     position: relative;
-    top: -30px;
-    left: 60px;
+    top: -65px;
+    left: 120px;
 
-    border-radius: 50%;
-    background-color: #0D0D0D;
+    border-radius: 15px;
+    background-color: #F2F2F2;
     border: 0.125em solid #0d0d0d;
     box-shadow: 0px 8px 8px 0px #0d0d0d;
 }
