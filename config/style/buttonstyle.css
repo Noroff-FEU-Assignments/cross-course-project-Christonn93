@@ -54,7 +54,6 @@
     justify-content: end;
     margin-bottom: 2.5px;
     margin-right: 2.5px;
-
 }
 
 .gamebutton {
@@ -111,4 +110,25 @@
     background-color: #F2F2F2;
     border: 0.125em solid #0d0d0d;
     box-shadow: 0px 8px 8px 0px #0d0d0d;
+}
+
+.page-banner-btn {
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    border-radius: 0.25em;
+    padding: 5px;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+
+}
+
+.cta-btn-more{
+    display: flex;
+    float: right;
+    margin-bottom: 15px;
 }
