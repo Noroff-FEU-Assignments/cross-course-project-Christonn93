@@ -113,16 +113,19 @@
      margin-top: 15px;
  }
 
-
-
 /* Footer style */
+
+
 .copyright-footer {
+    min-height: fit-content;
     margin: 0 auto;
     align-content: center;
 }
 
 .copyright-footer>p {
     color: #0D0D0D;
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: 'Audiowide', cursive;
