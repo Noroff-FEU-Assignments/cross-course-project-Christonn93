@@ -14,55 +14,59 @@ body {
     background-color: #F2F2F2;
 }
 
-.page-banner {
+.page-banner{
     display: flex;
-    background-color: #0D0D0D;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
-.page-banner-content {
-    display: grid;
-    margin: 0 auto;
-    background-color: #F2F2F2;
-    box-shadow: 0px 8px 16px 0px #F2F2F2;
-    border-radius: 15px;
+.page-banner-frame {
+   background-color: #F2F2F2;
+   border-radius: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px; 
+}
 
-    margin-top: 15px;
-    margin-bottom: 15px;
+.page-banner-head{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35px;
 }
 
 .page-banner-img {
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-.page-banner-img>img {
-    display: flex;
-    flex-direction: column;
     height: 150px;
-}
-
-.page-banner-header {
-    display: flex;
-    bottom: 10px;
+    margin-left: 15px;
 }
 
 .page-banner-article {
     display: flex;
+    margin: 0 auto;
+    float: right;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 16px 0px #F2F2F2;
+    border-radius: 15px;
+    width: 650px;
+    margin-top: 15px;
+
+}
+
+.page-banner-form-sub{
+    display: block;
+    overflow: hidden;
+    float: right;
 }
 
 .page-banner-input-lable {
-    float: right;
-    margin-right: 25px;
-
+    display: inline-block;
 }
 
 .page-banner-input {
     border: none;
     background: none;
     text-decoration: underline;
+    display: inline;
+    margin-right: 10px;
+    margin-top: 15px;
 }
 
 .page-banner-btn {
@@ -75,6 +79,7 @@ body {
     border-radius: 0.25em;
     padding: 5px;
     float: right;
-    margin-right: 15px;
+    margin-right: 25px;
     margin-bottom: 15px;
+
 }

@@ -13,7 +13,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+label {
     font-family: 'Audiowide', cursive;
     margin: 0 auto;
 }
