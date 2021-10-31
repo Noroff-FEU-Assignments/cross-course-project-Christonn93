@@ -1,0 +1,79 @@
+@import "./typeface.css";
+@import "./mediaquery.css";
+
+body{
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    background-color: #F2F2F2;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #0d0d0d0d;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.lg-cta-bt-div{
+    flex: 1;
+}
+
+.lg-cta-bt{
+    flex: 1;
+}
+
+.nav-btn-right{
+    flex: 1;
+}
+
+.header-nav-logo{
+    flex: 1;
+}
+
+.nav-btn-left{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
