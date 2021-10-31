@@ -25,30 +25,43 @@ header{
     background-color: #0d0d0d0d;
 }
 
+header * {
+    flex: 1;
+}
+
 .header-nav{
-    display: flex;
+    flex-direction: row;
 }
 
 .lg-cta-bt-div{
-    flex: 1;
+
 }
 
 .lg-cta-bt{
-    flex: 1;
+
 }
 
 .nav-btn-right{
-    flex: 1;
+
+}
+
+.comp-logo{
+    height: fit-content;
+    width: fit-content;
+
 }
 
 .header-nav-logo{
-    flex: 1;
+
 }
 
 .nav-btn-left{
-    flex: 1;
+
 }
 
+.dropdown-list{
+    display: none;
+}
 
 
 
