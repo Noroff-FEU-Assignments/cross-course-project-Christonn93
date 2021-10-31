@@ -23,21 +23,20 @@
     filter: drop-shadow(0 0 0.75rem #F2F2F2);
 }
 
-.dropdown-btn.left {
-    position: relative;
-    top: 30px;
-    left: 150px;
+.nav-btn-right {
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto;
 }
 
-.dropdown-btn.right {
-    position: relative;
-    top: 30px;
-    right: -150px;
+.nav-btn-left {
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto;
 }
 
 .lg-cta-bt {
     font-size: 1rem;
-    align-content: center;
 
     background-color: #00ff00;
     display: inline-block;
