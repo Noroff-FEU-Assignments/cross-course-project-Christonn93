@@ -1,5 +1,4 @@
-# Here is all files regarding the style for the webpage. 
-
+# Here is all files regarding the style for the webpage
 
 ## Colours from design CA
 
@@ -37,14 +36,14 @@
     Hex: #F2F2F2
 
 - Name: White
-    Hex: #FFFFFF    
+    Hex: #FFFFFF
 
 ## Typeface
 
 Fonts - See Audiowide and Oswald on Google Fonts for further installation instructions. 
-    
-- Audiowide: 
-    Link: https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide#standard-styles  
+
+- Audiowide:
+    Link: https://fonts.google.com/specimen/Audiowide?selectionfamily=Audiowide#standard-styles  
     $mdc-typography-styles-headline1: (font-family: unquote("Audiowide"), font-size: 96);
     $mdc-typography-styles-headline2: (font-family: unquot("Audiowide"), font-size: 60);
     $mdc-typography-styles-headline3: (font-family: unquot("Audiowide"), font-size: 48);
@@ -53,8 +52,8 @@ Fonts - See Audiowide and Oswald on Google Fonts for further installation instru
     $mdc-typography-styles-headline6: (font-family: unquot("Audiowide"), font-size: 20);
     $mdc-typography-styles-subtitle1: (font-family: unquot("Audiowide"), font-size: 16);
     $mdc-typography-styles-subtitle2: (font-family: unquot("Audiowide"), font-size: 14);
-    
-- Oswald: 
+
+- Oswald:
     link: https://fonts.google.com/specimen/Oswald?selection.family=Oswald
     $mdc-typography-styles-body1: (font-family: unquote("Oswald"), font-size: 15);
     $mdc-typography-styles-body2: (font-family: unquote("Oswald"), font-size: 13);
