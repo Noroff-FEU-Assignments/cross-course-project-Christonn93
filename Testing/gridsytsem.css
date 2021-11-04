@@ -1,0 +1,318 @@
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 100vh;
+}
+
+.page-wrapper>header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #0d0d0d0d;
+}
+
+/* Navigation grid header */
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0d0d0d;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+}
+
+.lg-cta-bt-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.lg-cta-bt {
+    font-size: 1rem;
+    background-color: #00ff00;
+    border: 0.125em solid #00ff00;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 6em;
+
+    box-shadow: 0px 1px 16px 0px #F2F2F2;
+}
+
+.nav-btn-right {
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto;
+}
+
+.comp-logo{
+    width: 100%;
+}
+
+.header-nav-logo {
+    min-width: 50px;
+    max-width: 150px;
+}
+
+.nav-btn-left {
+    display: flex;
+    flex-direction: row;
+    margin: 55px auto;
+}
+
+/* Dropdown menu nav */
+.dropdown-list {
+    display: none;
+    width: 20em;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 16px 0px #F2F2F2;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 115px;
+    left: 10px;
+}
+
+.dropdown-open .dropdown-list {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.dropdown-cart {
+    background-color: #00ff00;
+}
+
+.page-wrapper>main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Dropdown menu btn */
+.btn-box {
+    border: 1px solid #0d0d0d;
+    padding: 2px;
+    background-color: #0d0d0d;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0px 8px 16px 0px #0d0d0d;
+}
+
+.dd-menu-btn {
+
+    bottom: 0.25em;
+    left: .70em;
+}
+
+.dd-menu-bt>a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    border-radius: 0.25em;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+}
+
+.dropdown-icons {
+    display: inline-block;
+    position: relative;
+    gap: 1px;
+    top: 0.25em
+}
+
+.back-btn {
+    position: relative;
+    top: -65px;
+    left: 120px;
+
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    border: 0.125em solid #0d0d0d;
+    box-shadow: 0px 8px 8px 0px #0d0d0d;
+}
+
+.dropdown-logo {
+    position: relative;
+    top: 0px;
+    left: 90px;
+    width: 150px;
+}
+
+
+/* Content grid */
+.page-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    padding: 10px;
+
+}
+
+.text-container {
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.full-img {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* Gamedisplay */
+.gamedisplay-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #0D0D0D;
+}
+
+.gamedisplay {
+    background-color: #0D0D0D;
+}
+
+.gamedisplay-head {
+    background-color: #0D0D0D;
+}
+
+.gamedisplay-heading {
+    color: #00FF00;
+}
+
+/* Game info */
+.gamecard {
+    background-color: #F2F2F2;
+    height: 100%;
+}
+
+.gametitle {
+    color: #0D0D0D;
+}
+
+.gamedecript {
+    color: #0D0D0D;
+}
+
+.gamecard-img-bg {
+    background-color: #7A778C;
+    padding: 0.5em;
+}
+
+.gamecard-img {
+    width: 100%;
+}
+
+.gamebutton-container {
+    display: grid;
+    justify-content: end;
+    margin-bottom: 2.5px;
+    margin-right: 2.5px;
+}
+
+.gamebutton {
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    border-radius: 0.25em;
+    padding: 5px;
+}
+
+/* Page Banner */
+.page-banner-frame {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.page-banner-head {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.page-banner-article {
+    display: flex;
+    margin: 0 auto;
+    float: right;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 16px 0px #F2F2F2;
+    border-radius: 15px;
+    width: 650px;
+    margin-top: 15px;
+
+}
+
+.page-banner-img {
+    height: 150px;
+    margin-left: 15px;
+}
+
+.page-banner-form-sub {
+    display: block;
+    overflow: hidden;
+    float: right;
+}
+
+.page-banner-input-lable {
+    display: inline-block;
+}
+
+.page-banner-input {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    display: inline;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+/* Footer style */
+
+
+.copyright-footer {
+    min-height: fit-content;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.copyright-footer>p {
+    color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Audiowide', cursive;
+}
+
+.page-wrapper>footer {
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 0px;
+    margin-top: auto;
+}
+
+.page-footer>.footer-btn-sys {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    border-radius: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    display: block;
+    margin-top: 15px;
+}

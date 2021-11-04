@@ -1,0 +1,73 @@
+1.  Used codepen to find the right way to make the flexbox used in the header. 
+    Link: https://codepen.io/mogpt/pen/ebXdzg 
+
+2.  Correct size on fonts is from Material.io
+    Link: https://material.io/design/typography/the-type-system.html#type-scale
+
+3.  Fonts - See Audiowide and Oswald on Google Fonts for further installation instructions. 
+    Audiowide: 
+    Link: https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide#standard-styles  
+    $mdc-typography-styles-headline1: (font-family: unquote("Audiowide"), font-size: 96);
+    $mdc-typography-styles-headline2: (font-family: unquote("Audiowide"), font-size: 60);
+    $mdc-typography-styles-headline3: (font-family: unquote("Audiowide"), font-size: 48);
+    $mdc-typography-styles-headline4: (font-family: unquote("Audiowide"), font-size: 34);
+    $mdc-typography-styles-headline5: (font-family: unquote("Audiowide"), font-size: 24);
+    $mdc-typography-styles-headline6: (font-family: unquote("Audiowide"), font-size: 20);
+    $mdc-typography-styles-subtitle1: (font-family: unquote("Audiowide"), font-size: 16);
+    $mdc-typography-styles-subtitle2: (font-family: unquote("Audiowide"), font-size: 14);
+    
+    Oswald: 
+    link: https://fonts.google.com/specimen/Oswald?selection.family=Oswald
+    $mdc-typography-styles-body1: (font-family: unquote("Oswald"), font-size: 15);
+    $mdc-typography-styles-body2: (font-family: unquote("Oswald"), font-size: 13);
+    $mdc-typography-styles-button: (font-family: unquote("Oswald"), font-size: 13);
+    $mdc-typography-styles-overline: (font-family: unquote("Oswald"), font-size: 9);
+    $mdc-typography-styles-caption: (font-family: unquote("Oswald"), font-size: 11);
+
+4.  Used this for gaining information on how to creat icon for the tittle bar. 
+    Link: https://stackoverflow.com/questions/15786937/add-image-in-title-bar
+    Link: https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
+
+5.  Make responsive img and other responsive aspeks
+    Link: https://www.freecodecamp.org/news/css-responsive-image-tutorial/
+    link: https://www.youtube.com/watch?v=rKtOarvKeZE
+
+6.  Some guides on web responsiveness
+    Link: https://css-tricks.com/guides/
+
+7.  Got some good feedback and help from MJPhilip regardin grid and felx layout.
+    He provided me with links: 
+    Link: https://jsfiddle.net/vL5yxj98/
+
+8.  Got some tips from BonitaDiener regaring the layout for the logo in the header, most about the resizing. 
+    She sendt me this two lines of code.
+
+    Code: <img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png%22** width="150" height="150">**
+    width="150" height="150">** this section
+
+    Code: <body style="margin: 0px; background: #0e0e0e; height: 100%"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png" width="550" height="350"></body>
+
+9.  Got tips for crating generic/reusable functions and pages in js from Oliver Dipple on discord. I created a #Template JavaScript thread, 
+    link: https://discord.com/channels/371937833252028426/876811560482394152/895928490178801715
+
+10. Tips on adding line break
+    Link: https://www.javatpoint.com/how-to-add-a-line-in-html
+
+11. Tips on how to do media query
+    Link: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
+    Link: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+12. Tips on making the dropsown menu for both menus, in js. 
+    Link: https://www.javatpoint.com/how-to-create-dropdown-list-using-javascript
+    Link: https://stackoverflow.com/questions/7789521/how-to-link-external-javascript-file-onclick-of-button/32245490
+
+13. Tips, help and feedback from MJ in a video. Made changes based on these inputs. 
+    link: https://www.screencast.com/t/Qar94DKd
+    link: https://www.screencast.com/t/ijgfFhyrBIeX
+
+14. Tips and tricks for placing the nav elements correctly i got from the YouTube vid Martin made of the live lesson we had.
+    Link: https://www.youtube.com/watch?v=4jzWi_Z41Qk
+
+15. Looked at this to be able too understand how to alter the js script Oliver sendt to me when it comes to the dropdown function js.
+    (!! NBNB !! Add photo refrence to the code Oliver gave !! NBNB !!)
+    Link:https://stackoverflow.com/questions/19704477/adding-close-button-in-div-to-close-the-box

@@ -1,0 +1,45 @@
+/* CTA Buttons */
+.f-cta-btn {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+    padding: 5px;
+    margin-left: 12px;
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    /*box-shadow: 0px 2px 16px 0px #F2F2F2;*/
+    border-radius: 0.25em;
+    height: 3em;
+    width: 20em;
+}
+
+.dropdown-btn {
+    background-color: #00ff00;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    border: 0.01em solid #0D0D0D;
+    filter: drop-shadow(0 0 0.75rem #F2F2F2);
+}
+
+.page-banner-btn {
+    font-size: 1rem;
+    color: #00FF00;
+    font-family: 'Audiowide', cursive;
+
+    background-color: #0D0D0D;
+    border: 0.125em solid #0d0d0d;
+    border-radius: 0.25em;
+    padding: 5px;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+
+}
+
+.cta-btn-more{
+    display: flex;
+    float: right;
+    margin-bottom: 15px;
+}
