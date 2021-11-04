@@ -1,0 +1,10 @@
+<svg id="Icons_Plus_Circle" data-name="Icons / Plus / Circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2Zm0,12a1,1,0,0,1-1-1V11H7A1,1,0,0,1,7,9H9V7a1,1,0,0,1,2,0V9h2a1,1,0,1,1,0,2H11v2A1,1,0,0,1,10,14Z" transform="translate(2 2)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_200" data-name="Group 200">
+    <path id="Color-2" data-name="Color" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2Zm0,12a1,1,0,0,1-1-1V11H7A1,1,0,0,1,7,9H9V7a1,1,0,0,1,2,0V9h2a1,1,0,1,1,0,2H11v2A1,1,0,0,1,10,14Z" transform="translate(2 2)"/>
+  </g>
+</svg>

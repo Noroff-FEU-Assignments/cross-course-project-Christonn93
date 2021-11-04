@@ -1,0 +1,10 @@
+<svg id="Icons_Arrow_Chevron_Up" data-name="Icons / Arrow / Chevron / Up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M9,6a1,1,0,0,1-.707-.293L4.988,2.4,1.7,5.582A1,1,0,0,1,.305,4.143l4-3.862a1,1,0,0,1,1.4.012l4,4A1,1,0,0,1,9,6" transform="translate(7 8.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_90" data-name="Group 90">
+    <path id="Color-2" data-name="Color" d="M9,6a1,1,0,0,1-.707-.293L4.988,2.4,1.7,5.582A1,1,0,0,1,.305,4.143l4-3.862a1,1,0,0,1,1.4.012l4,4A1,1,0,0,1,9,6" transform="translate(7 8.5)"/>
+  </g>
+</svg>

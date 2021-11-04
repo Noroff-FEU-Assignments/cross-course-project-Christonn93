@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GameHub</title>
+  <meta name="description"
+    content="
+        Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
+        Maybe you want to sell a old game you have dusting in the corner? 
+        You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
+  <meta name="keywords" content="Gaming, sale, deals, buy" />
+  <meta name="subject" content="your website's subject">
+  <meta name="language" content="no">
+  <meta name="designer" content="Christopher Tønnesland">
+  <meta name="copyright" content="GameHub">
+  <meta name="reply-to" content="christopher.tonnesland@gmail.com">
+  <meta name="owner" content="Christopher Tønnesland">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta http-equiv="Cache-Control" content="cache">
+
+  <!-- Mobile Specific Meta
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="./static/styling/indexstyle.css" rel="stylesheet" type="text/css">
+
+
+  <!-- FrameWork Css 
+  <link rel="stylesheet" href="./config/css/normalize.css">
+  <link rel="stylesheet" href="./config/css/skeleton.css">
+  ----------------------------------------------------- -->
+
+  <!-- Favicon/icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', setup)
+
+    function setup() {
+      document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
+      document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
+      let isDropDownOpen = false;
+      let isDropDownClosed = false;
+
+      function toggleDropDown() {
+        isDropDownOpen = !isDropDownOpen;
+        document.body.classList.toggle('dropdown-open', isDropDownOpen);
+      }
+
+      function closeDropDown() {
+        isDropDownClosed = !isDropDownClosed;
+        document.body.classList.toggle('dropdown-open', isDropDownClosed);
+      }
+    }
+  </script>
+
+</head>
+
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<body>
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header role="Header">
+    <ul class="page-nav">
+      <a href="#" class="btn nav-btn">Home</a>
+      <a href="#" class="btn nav-btn">Your account</a>
+      <a href="#" class="btn nav-btn">Games | Game Deals</a>
+      <a href="#" class="btn nav-btn">News</a>
+      <a href="#" class="btn nav-btn">About us | Contact</a>
+    </ul>
+    <img src="./static/assets/img/#" alt="GameHub Logo" href="index.html">
+    <ul class="page-cart">
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+      <li class="added-item">item1</li>
+    </ul>
+  </header>
+
+  <!-- Main
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main role="main">
+
+    <!-- ------ page-Wrapper ------ -->
+    <div class="page-wrapper">
+        <div>Icons made by 
+            <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from 
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    
+    </div>
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer role="footer">
+    <ul>
+      <a href="#" class="footer-btn">Home</a>
+      <a href="#" class="footer-btn">About us | Contact</a>
+    </ul>
+    <p>Footer copyright placeholder</p>
+  </footer>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2021-11-01T11:07:54.099Z",
+  "entities": [
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "5d71b73f-e1b2-4a2d-91f0-cf1eb9a4d456",
+      "name": "Oswald — 14pt",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/3b9a4620-aae8-433d-6a23-97b45a516dce",
+        "id": "d125b2dc-98e9-447f-8360-1282f574d687",
+        "last_sync": "2021-11-01T11:07:54.091Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "5d71b73f-e1b2-4a2d-91f0-cf1eb9a4d456",
+          "type": "custom",
+          "value": "Oswald",
+          "key": "family"
+        },
+        {
+          "id": "5d71b73f-e1b2-4a2d-91f0-cf1eb9a4d456",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "5d71b73f-e1b2-4a2d-91f0-cf1eb9a4d456",
+          "type": "size",
+          "value": "14",
+          "key": "size"
+        }
+      ]
+    }
+  ]
+}

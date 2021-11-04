@@ -1,0 +1,10 @@
+<svg id="Icons_Trash_Trash_1" data-name="Icons / Trash / Trash 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M15,20H5a3,3,0,0,1-3-3V6H1A1,1,0,0,1,1,4H6V2.328A2.421,2.421,0,0,1,8.5,0h3A2.422,2.422,0,0,1,14,2.328V4h5a1,1,0,0,1,0,2H18V17A3,3,0,0,1,15,20ZM4,6V17a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6ZM8.5,2c-.286,0-.5.173-.5.328V4h4V2.328C12,2.173,11.786,2,11.5,2Z" transform="translate(2 2)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_93" data-name="Group 93">
+    <path id="Color-2" data-name="Color" d="M15,20H5a3,3,0,0,1-3-3V6H1A1,1,0,0,1,1,4H6V2.328A2.421,2.421,0,0,1,8.5,0h3A2.422,2.422,0,0,1,14,2.328V4h5a1,1,0,0,1,0,2H18V17A3,3,0,0,1,15,20ZM4,6V17a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6ZM8.5,2c-.286,0-.5.173-.5.328V4h4V2.328C12,2.173,11.786,2,11.5,2Z" transform="translate(2 2)"/>
+  </g>
+</svg>

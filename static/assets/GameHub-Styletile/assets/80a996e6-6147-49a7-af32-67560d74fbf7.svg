@@ -1,0 +1,10 @@
+<svg id="Icons_Download" data-name="Icons / Download" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M15,17H1a1,1,0,0,1-1-1V14a1,1,0,1,1,2,0v1H14V14a1,1,0,1,1,2,0v2a1,1,0,0,1-1,1ZM7.425,11.818,3.425,9A1,1,0,0,1,4.575,7.368L7,9.076Q7,9.038,7,9V1A1,1,0,1,1,9,1V9H9l2.4-1.8a1,1,0,0,1,1.2,1.6l-4,3a1,1,0,0,1-1.175.018Z" transform="translate(4 3)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_29" data-name="Group 29">
+    <path id="Color-2" data-name="Color" d="M15,17H1a1,1,0,0,1-1-1V14a1,1,0,1,1,2,0v1H14V14a1,1,0,1,1,2,0v2a1,1,0,0,1-1,1ZM7.425,11.818,3.425,9A1,1,0,0,1,4.575,7.368L7,9.076Q7,9.038,7,9V1A1,1,0,1,1,9,1V9H9l2.4-1.8a1,1,0,0,1,1.2,1.6l-4,3a1,1,0,0,1-1.175.018Z" transform="translate(4 3)"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Icons_Corner_Left_Up" data-name="Icons / Corner / Left Up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M13,13H8a1,1,0,0,1-1-1V3.081l3.375,2.7a1,1,0,1,0,1.25-1.562l-5-4a1,1,0,0,0-1.25,0l-5,4a1,1,0,0,0,1.25,1.562L5,3.081V12a3,3,0,0,0,3,3h5a1,1,0,0,0,0-2" transform="translate(5 4)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_197" data-name="Group 197">
+    <path id="Color-2" data-name="Color" d="M13,13H8a1,1,0,0,1-1-1V3.081l3.375,2.7a1,1,0,1,0,1.25-1.562l-5-4a1,1,0,0,0-1.25,0l-5,4a1,1,0,0,0,1.25,1.562L5,3.081V12a3,3,0,0,0,3,3h5a1,1,0,0,0,0-2" transform="translate(5 4)"/>
+  </g>
+</svg>
