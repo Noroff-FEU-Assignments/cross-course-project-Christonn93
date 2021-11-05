@@ -71,3 +71,22 @@
 15. Looked at this to be able too understand how to alter the js script Oliver sendt to me when it comes to the dropdown function js.
     (!! NBNB !! Add photo refrence to the code Oliver gave !! NBNB !!)
     Link:https://stackoverflow.com/questions/19704477/adding-close-button-in-div-to-close-the-box
+
+16. Media Queries for common devise breakpoints
+    link: https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
+
+17. Just information about different techniques 
+    link: https://www.w3.org/WAI/WCAG21/Techniques/css/C7
+
+18. Where I choose the icons from
+    Link: https://www.flaticon.com/authors/gregor-colors/lineal
+
+19. How to style icons
+    Link: https://jsfiddle.net/sheriffderek/9Lmjhya7/
+
+20. Had some issue with getting the grid to lay correctly. So got some help with a tool.
+    link: https://cssgrid-generator.netlify.app/
+
+21. Temp
+    link: https://mui.com/components/textarea-autosize/
+    link: https://mui.com/components/text-fields/

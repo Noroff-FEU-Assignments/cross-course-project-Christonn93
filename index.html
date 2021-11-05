@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>GameHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="
-        Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
-        Maybe you want to sell a old game you have dusting in the corner? 
-        You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
+    content="Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-realese game? Mabye you want to sell a old game you have dusting in the corner? You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
   <meta name="keywords" content="Gaming, sale, deals, buy" />
   <meta name="subject" content="your website's subject">
   <meta name="language" content="no">
@@ -23,33 +18,10 @@
   <meta name="distribution" content="Global">
   <meta name="rating" content="General">
   <meta http-equiv="Cache-Control" content="cache">
-
-  <!-- Mobile Specific Meta
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="./static/styling/indexstyle.css" rel="stylesheet" type="text/css">
-
-
-  <!-- FrameWork Css 
-  <link rel="stylesheet" href="./config/css/normalize.css">
-  <link rel="stylesheet" href="./config/css/skeleton.css">
-  ----------------------------------------------------- -->
-
-  <!-- Favicon/icons
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-
-  <!-- JavaScript
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="./config/style/style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
+  <title>GameHub</title>
+
   <script>
     window.addEventListener('DOMContentLoaded', setup)
 
@@ -70,334 +42,411 @@
       }
     }
   </script>
-
 </head>
 
-<!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 <body>
-  <!-- Header
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header role="Header">
-    <ul class="page-nav">
-      <a href="#" class="btn nav-btn">Home</a>
-      <a href="#" class="btn nav-btn">Your account</a>
-      <a href="#" class="btn nav-btn">Games | Game Deals</a>
-      <a href="#" class="btn nav-btn">News</a>
-      <a href="#" class="btn nav-btn">About us | Contact</a>
-    </ul>
-    <img src="./static/assets/img/#" alt="GameHub Logo" href="index.html">
-    <ul class="page-cart">
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-    </ul>
-  </header>
+  <!-- page__wrapper -->
+  <div class="page__wrapper">
+    <!-- page__header -->
 
-  <!-- Main
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main role="main">
+    <!-- page__navlayout -->
+    <section class="page__navlayout">
+      <a href="#" class="btn login">
+        <img src="/config/style/icons/Icons - Lock.svg" alt="Lock icon">
+        <img src="/config/style/icons/Icons - Person - Person.svg" alt="Profile icon">
+      </a>
 
-    <!-- ------ page-Wrapper ------ -->
-    <div class="page-wrapper">
+      <button class="btn__dropdown" onclick="toggleDropDown()" id="dropdown-nav">
+        <img src="/config/style/icons/Icons - More - Vertical.svg">
+      </button>
 
-      <!-- ------ page-main-header ------ -->
-      <section class="page-main-header" role="main-header">
-        <div class="textbox">
-          <h1>Welcome to GameHub, The universe of games.</h1>
+      <a href="index.html" class="header__logo">
+        <img src="/config/img/logo/rsz_1rsz_1gamehub_logo4.png" class="header-nav-logo" alt="Company-Logo">
+      </a>
 
-          <!-- ------ page-break ------ -->
-          <br>
-          <hr>
-          <br>
+      <button class="btn__dropdown" onclick="toggleDropDown()" id="dropdown-cart">
+        <img src="/config/style/icons/Icons - Shopping - Cart.svg">
+      </button>
 
-          <p>Here you will find a range of pc games.
-            you want a old or new game? A super good deal or a pre-release game?
-            Maybe you want to sell a old game you have dusting in the corner? You came to the right place!
-            <br><br>Thanks for choosing GameHub for your place to get your games or to clear space in your shelf</p>
-        </div>
-        <img src="./static/assets/img/bannerimg/Demanding-PC-Games-Feature.jpg" id="main-header-img"
-          class="main-header-img" width="100%">
-      </section>
-
-      <!-- ------ page-break ------ -->
-      <br>
-
-      <!-- ------ Item-gallery ------ -->
-      <section class="item-gallery" role="gallery">
-        <h2>New Games</h2><img src="/static/assets/icons/green/Green-grid.png" class="icon">
-        <p><small>View all</small></p>
-        <hr size="3" color="#00FF00" width="100%">
-
-        <!-- ------ page-break ------ -->
-        <br>
-        <div class="grid-layout">
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
-            </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
-          </div>
-
+      <!-- Dropdown menu -->
+      <div class="dropdown-list" id="dropdown-nav">
+        <div class="dd-header-logo">
+          <a href="index.html">
+            <img class="dropdown-logo" src="/config/style/icons/GameHub_Logo4.svg">
+          </a>
+          <button class="back-btn" onclick="toggleDropDown()" id="back-btn"><img
+              src="/config/style/icons/Icons - Undo.svg"></button>
         </div>
 
-        <!-- ------ page-break ------ -->
-        <br>
+        <div class="btn-box" type="button">
+          <a href="index.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-2.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Home</a>
+        </div>
 
-        <p>View more</p>
-        <hr size="3" color="#00FF00" width="100%">
-        <br>
+        <div class="btn-box">
+          <a href="/pages/gamelist.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 87.svg"
+              class="dropdown-icons" alt="Dropdown Icons">All Games</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/deals.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 137.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Game deals</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/tags.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 105.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Popular tags</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/chart.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Shopping Chart</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/userpage.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-3.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Profile page</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/lg_rg.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-1.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Login/signup</a>
+        </div>
+
+        <div class="btn-box">
+          <a href="/pages/contact.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 121.svg"
+              class="dropdown-icons" alt="Dropdown Icons">Contact us</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- page__content -->
+    <div class="page__content">
+      <!-- page__content-header -->
+      <section class="page__content-header">
+        <div class="text-container">
+          <h2>Welcome to GameHub, The univers of games.</h2>
+          <p>
+            Here you will find a range of pc games.
+            you want a old or new game? A super good deal or a pre-realese game?
+            Mabye you want to sell a old game you have dusting in the corner? You came to the right place!
+            <br>
+            Thanks for choosing GameHub for your place to get your games or to clear space in your shelf
+          </p>
+        </div>
+        <div class="page__imgbanner">
+          <img src="config/img/game_img/Demanding-PC-Games-Feature.jpg" alt="Game add photo">
+        </div>
+      </section>
+      <!-- page__game-gallery -->
+      <section class="page__game-gallery">
+        <!-- Displaying games -->
+        <div class="gamedisplay-head">
+          <h3 class="gamedisplay-heading">New Games</h3>
+          <div class="cta-btn-more">
+            <a type="button" href="" class="gamedisplay link"><img
+                src="/config/style/icons/green/ic_view_module_-1.svg">&ensp; <small>View More</small></a>
+          </div>
+          <hr size="2" width="100%" color="#00ff00">
+        </div>
+        <!-- Displaying games -->
+        <div class="gamedisplay-grid">
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+          
+        </div>
+        <hr size="2" width="100%" color="#00ff00">
       </section>
 
-      <!-- ------ page-break ------ -->
-      <br>
-
-      <!-- ------ page-banner ------ -->
-      <section class="page-banner" role="banner">
-        <div class="banner-frame">
-          <div class="banner-layout">
-
-            <div class="banner-img">
-              <img src="/static/assets/img/bannerimg/81qeA0ZGF8L.png" class="banner-img">
-            </div>
-
-            <div class="banner-header">
+      <!-- page__banner -->
+      <section class="page__banner">
+        <!-- Page banner -->
+        <div class="page-banner-frame">
+          <div class="page-banner">
+            <header class="page-banner-head">
               <h3>Are you a player?</h3>
-            </div>
+            </header>
+            <img src="/config/img/game_img/81qeA0ZGF8L.png" alt="Banner image" class="page-banner-img">
 
-            <div class="textbox text">
-              <p>Every week GameHub sends out newsletter to everyone that signs up.
-                Here we can interest you with new amazing deals.
-                Showcase games that is putted out for sale by our community members.
-                We will also mention new games that is coming soon to our platform
-                and deals you will not see anywhere else from our sponsors.
-                Unsubscribe from our newsletter anytime you want, but why would you?
-              </p>
-              <br>
-              <p>Stay calm, keep gaming.</p>
+            <article class="page-banner-article">
+              <div>
+                <pre class="page-banner-text">
+                  Every week GameHub sends out newsletter to everyone that signs up.
+                  Here we can interest you with new amazing deals.
+                  Showcase games that is puttet out for sale by our community members. 
+                  We will also mention new games that is comming soon to our platform 
+                  and deals you will not see anywhere else from our sponsors. 
+                  Unsubscribe from our newsletter anytime you want, but why would you?
+    
+                  Stay calm, keep gaming.
+              </pre>
+              </div>
+            </article>
+            <div>
+              <form action="#post" class="page-banner-form-sub">
+                <label for="email" class="page-banner-input-lable">Sign up for our newsletter:</label>
+                <input id="email" type="text" class="page-banner-input" placeholder="E-mail">
+                <a href="#" class="page-banner-btn" type="button">Subscribe</a>
+              </form>
             </div>
-            <form class="banner-form">
-              <label for="email" class="sub-lab"><span class="sub-span">Sign up for our newsletter:</span></label>
-              <input type="email" name="email" class="sub-inp" id="email" required autocomplete="on">
-              <button class="btn2 sub-btn">Subscribe</button>
-            </form>
-
-            <!--<div class="banner-form">
-              <label for="e-mail" class="label">Sign up for our newsletter:</label>
-              <input id="e-mail" type="email" placeholder="E-mail" required class="input">
-              <br>
-              <a href="#" class="btn2">Subscribe</a>
-            </div> -->
           </div>
         </div>
-
       </section>
 
-      <!-- ------ page-break ------ -->
-      <br>
+      <!-- page__game-gallery -->
+      <section class="page__game-gallery">
+        <!-- Displaying games -->
+        <div class="gamedisplay-head">
+          <h3 class="gamedisplay-heading">New Games</h3>
+          <div class="cta-btn-more">
+            <a type="button" href="" class="gamedisplay link"><img
+                src="/config/style/icons/green/ic_view_module_-1.svg">&ensp; <small>View More</small></a>
+          </div>
+          <hr size="2" width="100%" color="#00ff00">
+        </div>
+        <!-- Displaying games -->
+        <div class="gamedisplay-grid">
 
-      <!-- ------ Item-gallery ------ -->
-      <section class="item-gallery" role="gallery">
-        <h2>New Games</h2><img src="/static/assets/icons/green/Green-grid.png" class="icon">
-        <p><small>View all</small></p>
-        <hr size="3" color="#00FF00" width="100%">
-
-        <!-- ------ page-break ------ -->
-        <br>
-        <div class="grid-layout">
-
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
-
-            <!-- ------ page-break ------ -->
-            <br>
-
-            <a href="#" class="btn">Details</a>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
-          <!-- Gallery Card -->
-          <div class="gallery-card">
-            <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
-              <h3>Game Title placeholder</h3>
-              <p>Placeholder game information</p>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
             </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
 
-            <!-- ------ page-break ------ -->
-            <br>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
 
-            <a href="#" class="btn">Details</a>
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
+          </div>
+
+          <div class="gamecard">
+            <div class="gamecard-img-bg">
+              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+            </div>
+            <h3 class="gametitle">Game title</h3>
+            <p class="gamedecript">Game descripton</p>
+            <div class="gamebutton-container">
+              <a href="/pages/gamepage.html" type="button" class="gamebutton">Details</a>
+            </div>
           </div>
 
         </div>
-
-        <!-- ------ page-break ------ -->
-        <br>
-
-        <p>View more</p>
-        <hr size="3" color="#00FF00" width="100%">
-        <br>
       </section>
 
     </div>
-  </main>
 
-  <!-- Footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer role="footer">
-    <ul>
-      <a href="#" class="footer-btn">Home</a>
-      <a href="#" class="footer-btn">About us | Contact</a>
-    </ul>
-    <p>Copyright reserved GameHub 2021</p>
-  </footer>
+    <!-- page__footer -->
+    <section class="page__footer">
+      <div class="footer-btn-sys">
+        <a href="index.html" type="button" class="f-cta-btn">Home</a>
+        <a href="index.html" type="button" class="f-cta-btn">Tags</a>
+        <a href="/pages/contact.html" type="button" class="f-cta-btn">Contact</a>
+        <a href="/pages/chart.html" type="button" class="f-cta-btn">Checkout</a>
+        <div class="copyright-footer">
+          <p>Copyright reserved GameHub 2021</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div>
+  <script type="module" src="./config/javascript/main.js"></script>
 </body>
 
 </html>
