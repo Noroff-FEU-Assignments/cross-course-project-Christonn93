@@ -1,0 +1,1713 @@
+/* ======================
+
+STYLE SHEET FOR GAMEHUB INC. 
+
+Style list:
+
+1. Global style
+    1.1 Base elements
+
+    1.2 Css Variables
+
+    1.3 Sections
+
+2. Typography
+
+3. Components
+    3.1 Page wrappers
+
+    3.2 Text areas
+        3.2.1 Main Box Layout
+        3.2.2 Specific Box Layout
+
+    3.3 Buttons & Links
+        3.3.1 Button element
+        3.3.2 Anchor element
+
+    3.4 Cards
+
+    3.5 Dropdown menu
+
+    3.6 Table
+        3.6.1 Table body
+        3.6.2 Table Header
+        3.6.3 Table row
+        3.6.4 Table data
+
+    3.7 Forms
+        3.7.1 Form field
+        3.7.2 Labels
+        3.7.3 Inputs
+
+    3.8 Span classes
+
+4. Images & Icons
+    4.1 Images
+    4.2 Icons
+
+5. ID
+
+6. Media Queries 
+
+
+   ====================== */
+
+/* ======================
+    1. GLOBAL STYLE
+   ====================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* --- 1.1 Base elements --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--ghub-white);
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    font-style: normal;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-black);
+}
+
+/* ======== Footer section ======== */
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-black);
+}
+
+.page-footer-layout {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 1.25em;
+    background-color: var(--ghub-white);
+}
+
+.footer-btn-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* --- 1.2 CSS VARIABLES --- */
+
+:root {
+
+    /* ==== Font family ==== */
+    --ff-heading: 'Audiowide', Arial, Helvetica, sans-serif;
+    --ff-body: 'Oswald', Arial, Helvetica, sans-serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --line-height: 1.55;
+    /* ==== Font size ==== */
+    --fs-h1: 2em;
+    --fs-h2: 1.5em;
+    --fs-h3: 1.17em;
+    --fs-h4: 1em;
+    --fs-h5: .83em;
+    --fs-h6: .67em;
+    --fs-body-lg: 1.125em;
+    --fs-body-md: 1.120em;
+    --fs-body-sm: 1em;
+    --nav-fs: .8rem;
+    --link-fs: 1.10rem;
+
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+    /* -- Anti Flash White */
+    --ghub-af: #F2F2F2;
+    /* -- Dark Silver -- */
+    --ghub-silver: #726c6c;
+    /* -- Light periwinkle */
+    --ghub-periwinkle: #c5d1d9;
+    /* -- Light absolute Zero */
+    --ghub-AZ: #074dd9;
+
+
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+
+}
+
+/* --- 1.3 Sections --- */
+.page-header {
+    background-color: var(--ghub-black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.page-nav {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.nav-section {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.section-frame {
+    margin: 10px 15px 10px 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ghub-af);
+    border-radius: 0.5em;
+}
+
+.section-frame-remove-bg {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+}
+
+.top-section {
+    padding: 5px;
+}
+
+.game-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 15px 10px 15px;
+    background-color: var(--ghub-af);
+    border-radius: 0.5em;
+}
+
+.game-section-header,
+.game-section-footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--ghub-green);
+    font-family: var(--ff-heading);
+    border-bottom: 2px solid var(--ghub-green);
+}
+
+
+/* ======================
+    2. TYPOGRAPHY
+   ====================== */
+
+h1 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h1);
+    margin: 5px;
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h2);
+    margin: 5px;
+}
+
+h3 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h3);
+    margin: 5px;
+}
+
+h4 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h4);
+    margin: 5px;
+}
+
+h5 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h5);
+    margin: 5px;
+}
+
+h6 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h6);
+    margin: 5px;
+}
+
+p {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-md);
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--ghub-black);
+}
+
+.text-size {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h4);
+}
+
+.text-p {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-sm);
+}
+
+.price-tag {
+    padding-right: 25px;
+    color: var(--ghub-AZ);
+}
+
+/* ======================
+    3. COMPONENTS
+   ====================== */
+
+
+
+/* ----------------------
+    3.1 Page Wrappers
+   ---------------------- */
+
+.page-wrapper-outer {
+    background-color: var(--ghub-white);
+}
+
+.page-wrapper-inner {
+    background-color: var(--ghub-black);
+    margin: 15px;
+    border-radius: 0.5em;
+    min-height: 100vh;
+}
+
+.page-content-frame {
+    padding: 5px;
+}
+
+/* ----------------------
+    3.2 Text areas
+   ---------------------- */
+
+/* --- 3.2.1 Main box layout --- */
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+}
+
+.box>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    flex: 1 1 100%;
+}
+
+.box-content-l,
+.box-content-r {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: stretch;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: stretch;
+}
+
+.box-img {
+    width: 100%;
+}
+
+.box-small {
+    margin: 5px;
+    width: 150px;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.payment-box-frame {
+    border: 1px solid var(--ghub-black);
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 1.25em;
+}
+
+.modal-frame {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 35, 35, 0.521);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-frame:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-box {
+    margin: 75px auto;
+    padding: 20px;
+    background: var(--ghub-white);
+    border: 1px solid var(--ghub-red);
+    border-radius: 1.25em;
+    width: 300px;
+    position: relative;
+}
+
+.modal-box-content {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.modal-logo{
+    margin: 10px;
+}
+
+/* -- Specific box layout -- */
+
+/* Text-box */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+}
+
+.text-box>h1 {
+    font-family: var(--ff-heading);
+    text-align: center;
+}
+
+.text-box>p {
+    padding: 5px;
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-md);
+}
+
+.text-box-2 {
+    display: felx;
+    flex: 1 1 80%;
+}
+
+/* Banner Box */
+.banner-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    margin: 10px 15px 10px 15px;
+    padding: 5px;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+    box-shadow: 0px 5px 20px var(--ghub-red);
+}
+
+.banner-box>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner-box-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box-content {
+    flex: 1 1 100%;
+}
+
+.banner-box-content-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.banner-box-content-l,
+.banner-box-content-r {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.banner-box-content-l {
+    max-width: 250px;
+}
+
+.banner-box-img {
+    width: 100%;
+}
+
+.banner-img {
+    padding: 15px;
+    border-radius: 25px;
+    max-width: 250px;
+}
+
+.banner-form-text-input {
+    background-color: white;
+    border: none;
+    outline: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow3);
+    border-radius: 0.5em;
+    height: 30px;
+    min-width: 200px;
+    padding: 15px;
+
+}
+
+.banner-form-text-input:hover,
+.banner-form-text-input:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    border-radius: 0.5em;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+.banner-box-footer {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* ----------------------
+    3.3 Buttons / Links
+   ---------------------- */
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 0.35em 1.2em;
+    border-radius: 0.25em;
+    border: 0.1em solid black;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    margin: 5px;
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 20px #4F4D4D;
+}
+
+.btn-s {
+    margin: 5px;
+    max-width: 150px;
+}
+
+.btn-m {
+    margin: 5px;
+    width: 50%;
+}
+
+.btn-l {
+    margin: 5px;
+    width: 100%;
+}
+
+.btn-black {
+    background-color: var(--ghub-black);
+    color: var(--ghub-red);
+    font-family: var(--ff-body);
+}
+
+.btn-green {
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-family: var(--ff-body);
+}
+
+/* --- 3.3.1 Button element --- */
+.btn-nav {
+    background-color: var(--ghub-green);
+}
+
+.btn-exit {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: var(--ghub-white);
+}
+
+.login-btn {
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-size: var(--fs-body-md);
+    font-family: var(--ff-body);
+    width: 100%;
+}
+
+.login-btn:hover {
+    color: var(--ghub-red);
+    background-color: var(--ghub-black);
+}
+
+.btn-1 {
+    margin-top: 15px;
+    box-shadow: none;
+    text-align: center;
+    color: var(--ghub-black);
+    background-color: var(--ghub-green);
+}
+
+.btn-1:hover {
+    color: red;
+}
+
+.btn-foot {
+    margin: 0 auto;
+    background-color: var(--ghub-black);
+    color: var(--ghub-green);
+    font-size: var(--nav-fs);
+    font-family: var(--ff-heading);
+}
+
+.banner-btn {
+    padding: 0;
+    background-color: var(--ghub-green);
+}
+
+.form-btn {
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-size: var(--fs-body-sm);
+    font-family: var(--ff-heading);
+    width: 100%;
+}
+
+.form-btn:hover {
+    color: var(--ghub-red);
+    background-color: var(--ghub-black);
+}
+
+.user-tools-btn {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.footer-btn-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* --- 3.3.2 Anchor element --- */
+
+
+/* --- 3.3.3 Links --- */
+.general-link {
+    text-decoration: none;
+    color: var(--ghub-black);
+}
+
+.general-link-green {
+    text-decoration: none;
+    color: var(--ghub-green);
+}
+
+.social-link {
+    display: inline-flex;
+    justify-content: baseline;
+    padding: 5px;
+    position: relative;
+}
+
+.social-link:hover:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    color: var(--ghub-silver);
+    text-shadow: 0 0 3px #ccc;
+}
+
+.banner-link {
+    text-decoration: none;
+    color: var(--ghub-black);
+    border-bottom: 2px solid var(--ghub-black);
+}
+
+.banner-link:hover {
+    color: var(--ghub-black);
+    border-bottom: 2px solid var(--ghub-green);
+}
+
+/* ----------------------
+    3.4 Cards
+   ---------------------- */
+
+
+/* --- 3.4.1 Game Cards --- */
+
+/* Game Card 1 */
+.game-card-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex: 1 1 300px;
+
+}
+
+.card-frame {
+    margin: 5px;
+    background-color: var(--ghub-rhythm);
+    box-shadow: 2px 2px 6px 0px var(--ghub-black);
+}
+
+.card-text-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25em;
+    margin-top: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.game-img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Game Card 2 */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+/* list card */
+.list-card {
+    border: 1px solid var(--ghub-black);
+    height: max-content;
+    margin: 15px;
+    box-shadow: var(--shadow2);
+    border-radius: 0.25em;
+    flex-wrap: wrap;
+}
+
+.list-card-img {
+    height: max-content;
+    background-color: var(--ghub-silver);
+}
+
+.med-img {
+    padding: 5px;
+}
+
+.list-card-content {
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: var(--ghub-periwinkle);
+}
+
+.list-card-header {
+    padding-left: 5px;
+}
+
+.list-card-main {
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-wrap: wrap;
+}
+
+.list-card-footer {
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.list-card-price-tag {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-start;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.list-card-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-end;
+    align-content: baseline;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+/* Game Card 3 */
+.game-showcase-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.game-showcase-img {
+    max-width: 100%;
+}
+
+.card-frame-outer {
+    display: flex;
+    background-color: white;
+    padding: 0 20px 20px;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20%;
+}
+
+/* Game Showcase */
+.game-showcase-frame {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.showcase-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.showcase-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showcase-img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.showcase-shop {
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.showcase-textbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-top: 15px;
+}
+
+.showcase-tb-header {
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: var(--fs-h2);
+    padding: 20px;
+}
+
+.showcase-tb-content {
+    padding: 20px;
+}
+
+.showcase-btn-box {
+    display: flex;
+    margin-top: 50px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.showcase-bottom {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.showcase-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.showcase-li {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-md);
+}
+
+/* ----------------------
+    3.5 Dropdown menu
+   ---------------------- */
+
+/* --- 3.5.1 Dropdown menu Header Checkbox Hack --- */
+#dropdown-menu,
+.menu,
+#dropdown-cart,
+.cart {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#dropdown-menu:checked~.menu,
+#dropdown-cart:checked~.cart {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.menu {
+    position: fixed;
+    top: 150px;
+    left: 1px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid var(--ghub-black);
+    border-radius: 0em 0em 0.5em 0.5em;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-header {
+    display: flex;
+    padding: 5px;
+}
+
+.menu-logo {
+    margin-top: 15px;
+    margin-left: 65px;
+    width: 60px;
+}
+
+.search {
+    display: inline-flex;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.list-item-contact {
+    margin-top: 40px;
+}
+
+.search-text-input {
+    background-color: white;
+    border: none;
+    outline: 1px solid var(--ghub-black);
+    border-radius: 0.5em 0em 0em 0.5em;
+    height: 32px;
+}
+
+.btn-search {
+    border-radius: 0em 0.5em 0.5em 0em;
+    height: 33px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.35em 1.2em;
+    border-radius: 0.25em;
+    border: 0.1em solid var(--ghub-black);
+    cursor: pointer;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    color: var(--ghub-black);
+    background-color: var(--ghub-black);
+}
+
+.menu-item:hover {
+    box-shadow: 0px 5px 20px var(--ghub-black);
+}
+
+.menu-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--ff-heading);
+    color: #00FF00;
+}
+
+.menu-link>.not-active {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.list-item-contact {
+    margin-top: 40px;
+}
+
+.cart {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* --- 3.5.2 Dropdown Checkbox Hack User page tool --- */
+#tool-item,
+.display-tool-card,
+#dropdown-cart,
+.cart {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#tool-item:checked~.display-tool-card,
+#dropdown-cart:checked~.cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.display-tool-card {
+    position: absolute;
+    top: 993px;
+    left: 115px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.tool-header {
+    position: relative;
+}
+
+.message-box {
+    border: 1px solid var(--ghub-silver);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+/* ----------------------
+    3.6 Table
+   ---------------------- */
+.table-frame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: space-between;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow2);
+    border-radius: 0.75em;
+    margin: 5px;
+}
+
+.table-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.table-content-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-img {
+    margin-top: 3px;
+    width: 100px;
+}
+
+.table-content-info {
+    display: inline-flex;
+}
+
+/* ----------------------
+    3.7 Forms
+   ---------------------- */
+
+/* Login & Register */
+.login-form,
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-white);
+}
+
+.underline {
+    border: 0;
+    border-bottom: 1px solid var(--ghub-black);
+    margin-bottom: 5px;
+}
+
+.form {
+    border: 0;
+    background-color: var(--ghub-white);
+}
+
+form>div {
+    margin: 20px;
+}
+
+.form-footer {
+    margin-top: 15px;
+}
+
+.form-input-area {
+    margin: 15px;
+}
+
+.form-input-label {
+    background-color: none;
+}
+
+.form-input-style {
+    border: 1px solid var(--ghub-black);
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.form-input-style:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+.user-form-link {
+    text-decoration: none;
+    border-bottom: 2px solid var(--ghub-red);
+    color: var(--ghub-black);
+}
+
+/* User page */
+.user-page-frame {
+    margin: 5px;
+
+}
+
+.user-profile-tools,
+.user-info {
+    padding: 15px;
+    background-color: var(--ghub-af);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border: 1px solid var(--ghub-black);
+}
+
+.user-profile-img {
+    flex: 1 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 150px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    border: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow2);
+}
+
+.user-info-main {
+    flex: 1 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    padding: 20px;
+}
+
+.user-info-extra {
+    flex: 1 1;
+    flex-basis: 50px;
+    padding: 20px;
+}
+
+.user-underline {
+    border-bottom: 1px solid var(--ghub-black);
+    width: 100%;
+}
+
+.social-links,
+.status-box {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tool-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown */
+#tool-item,
+.display-tool-card,
+#dropdown-cart,
+.cart {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#tool-item:checked~.display-tool-card,
+#dropdown-cart:checked~.cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.display-tool-card {
+    position: absolute;
+    top: 993px;
+    left: 115px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.tool-header {
+    position: relative;
+}
+
+.message-box {
+    border: 1px solid var(--ghub-silver);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+form {
+    border: 0;
+    width: 100%;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+    border: 1px solid var(--ghub-black);
+}
+
+.form-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 100%;
+}
+
+.form-box-left,
+.form-box-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+/* --- 3.7.1 Form field --- */
+.form-input-area {
+    margin: 10px;
+}
+
+.checkbox-area {
+    display: inline-flex;
+}
+
+/* --- 3.7.2 Labels --- */
+.form-label {
+    background-color: none;
+}
+
+.form-label:hover {
+    cursor: pointer;
+}
+
+.adress-label {
+    font-family: var(--ff-body);
+    text-decoration: none;
+    font-size: var(--fs-body-md);
+}
+
+/* --- 3.7.3 Inputs --- */
+.form-text-input {
+    background-color: white;
+    border: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow3);
+    border-radius: 0.5em;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.form-text-input:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+.form-text-area {
+    width: 100%;
+    height: 30px;
+    padding: 12px 20px;
+    border: 1px solid var(--ghub-black);
+    border-radius: 0.5em;
+    resize: vertical;
+}
+
+.form-text-area:focus {
+    border: none;
+    height: 50px;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    padding: 12px 20px;
+}
+
+/* ----------------------
+    3.8 Span Classes
+   ---------------------- */
+
+/* --- 3.8.1 Vertical --- */
+.vertical-line {
+    border-right: 1px solid var(--ghub-black);
+}
+
+.line-margin {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* ======================
+    4. Images & Icons
+   ====================== */
+/* --- 4.1 Images --- */
+.map-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    margin-top: 10px;
+}
+
+.img-lg {
+    width: 100%;
+}
+
+.med-img{
+    width: 150px;
+}
+
+.img-md {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.game-img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-img {
+    max-width: 100%;
+}
+
+.banner-img-desktop {
+    padding: 15px;
+    border-radius: 25px;
+    max-width: 250px;
+}
+
+.banner-img-mobile {
+    padding: 15px;
+    border-radius: 25px;
+    max-width: 250px;
+}
+
+.desktop-logo {
+    margin: 15px 5px 5px;
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+/* --- 4.2 Icons --- */
+.menu-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.banner-icon {
+    width: 15px;
+}
+
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+/* ======================
+    5. ID
+   ====================== */
+#card-1 {
+    background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-1-2 {
+    background-image: url(../assets/img/itemgallery/8mjns6fdhoy31.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+#card-1-3 {
+    background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-2 {
+    background-image: url(../assets/img/itemgallery/minecraft.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-3 {
+    background-image: url(../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-4 {
+    background-image: url(../assets/img/itemgallery/pubg.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-5 {
+    background-image: url(../assets/img/itemgallery/Roblox.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-6 {
+    background-image: url(../assets/img/itemgallery/fortnight.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-7 {
+    background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ======================
+    6. Media Queries 
+   ====================== */
+
+@media only screen and (max-width: 500px) {
+    .list-card {
+        border: 1px solid var(--ghub-black);
+        height: max-content;
+        margin: 15px;
+        box-shadow: var(--shadow3);
+        border-radius: 0.25em;
+        flex-wrap: wrap;
+    }
+
+    .med-img {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .input-banner {
+        margin: 25px;
+    }
+
+    .banner-footer {
+        margin-top: 5px;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+}

@@ -8,7 +8,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>GameHub | Home</title>
-  <meta name="description" content="Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? Maybe you want to sell a old game you have dusting in the corner? You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
+  <meta name="description"
+    content="
+        Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
+        Maybe you want to sell a old game you have dusting in the corner? 
+        You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
   <meta name="keywords" content="Gaming, sale, deals, buy" />
   <meta name="subject" content="your website's subject">
   <meta name="language" content="no">
@@ -56,12 +60,11 @@
     <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header class="page-header">
-      <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
       <div class="page-nav">
 
         <!-- Dropdown menu -->
         <div class="nav-section">
-          <label for="dropdown-menu" class="btn btn-s btn-green">
+          <label for="dropdown-menu" class="btn-b btn-nav">
             <img src="./assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
           </label>
         </div>
@@ -72,10 +75,10 @@
           <!-- Dropdown menu header -->
           <div class="menu-header">
             <a href="./index.html">
-              <img src="./assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
+              <img src="./assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo" class="dropdown-menu-logo">
             </a>
-            <label for="dropdown-menu" class="btn-exit">
-              <img src="./assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
+            <label for="dropdown-menu" class="btn-b btn-exit">
+              <img src="./assets/icons/green/Green-undo.png" alt="Dropdown back button icon" class="icon-1">
             </label>
           </div>
 
@@ -83,23 +86,23 @@
           <ul class="menu-list">
 
             <li class="list-item-search">
-              <div class="search">
-                <input type="search" id="search" class="search-text-input" placeholder="Search">
-                <input type="submit" class="btn btn-black btn-search" value="search">
-              </div>
+              <label for="search">
+                <input type="search" id="search" class="menu-link icon-place-search" placeholder="Search">
+              </label>
+              <button class="menu-link-btn">Search</button>
             </li>
 
             <li class="list-item-home">
               <div class="menu-item">
                 <a href="/index.html" class="menu-link">
-                  <img src="./assets/icons/green/Green-home.png" alt="menu icon" class="menu-icon">Home</a>
+                  <img src="./assets/icons/green/Green-home.png" alt="menu icon" class="menu-icon">&ensp;Home</a>
               </div>
             </li>
 
             <li class="list-item-all-games">
               <div class="menu-item">
                 <a href="./pages/game-list.html" class="menu-link">
-                  <img src="./assets/icons/green/Green-gridicon.png" alt="menu icon" class="menu-icon">All
+                  <img src="./assets/icons/green/Green-gridicon.png" alt="menu icon" class="menu-icon">&ensp;All
                   Games</a>
               </div>
             </li>
@@ -107,29 +110,22 @@
             <li class="list-item-deals">
               <div class="menu-item">
                 <a href="#" class="menu-link not-active">
-                  <img src="./assets/icons/green/Green-percent.png" alt="menu icon" class="menu-icon">Game
+                  <img src="./assets/icons/green/Green-percent.png" alt="menu icon" class="menu-icon">&ensp;Game
                   deals</a>
-              </div>
-            </li>
-
-            <li class="list-item-home">
-              <div class="menu-item">
-                <a href="./pages/user-page.html" class="menu-link">
-                  <img src="./assets/icons/green/Green-personperson.png" alt="menu icon" class="menu-icon">User Page</a>
               </div>
             </li>
 
             <li class="list-item-checkout">
               <div class="menu-item">
                 <a href="./pages/check-out.html" class="menu-link">
-                  <img src="./assets/icons/green/Green-setting.png" alt="menu icon" class="menu-icon">Checkout</a>
+                  <img src="./assets/icons/green/Green-setting.png" alt="menu icon" class="menu-icon">&ensp;Checkout</a>
               </div>
             </li>
 
             <li class="list-item-contact">
               <div class="menu-item">
                 <a href="./pages/contact.html" class="menu-link">
-                  <img src="./assets/icons/green/Green-semail.png" alt="menu icon" class="menu-icon">Contact</a>
+                  <img src="./assets/icons/green/Green-semail.png" alt="menu icon" class="menu-icon">&ensp;Contact</a>
               </div>
             </li>
 
@@ -137,7 +133,7 @@
         </section>
 
         <!-- Logo -->
-        <div class="nav-section nav-logo">
+        <div class="nav-section">
           <a href="./index.html" class="desktop-logo">
             <img src="./assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
           </a>
@@ -148,9 +144,9 @@
 
         <!-- Dropdown cart -->
         <div class="nav-section">
-          <a href="../pages/check-out.html" class="btn btn-s btn-green">
-            <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
-          </a>
+          <label for="dropdown-cart" class="btn-b btn-nav">
+            <img src="./assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
+          </label>
 
           <!-- Dropdown menu display -->
           <input type="checkbox" id="dropdown-cart">
@@ -188,8 +184,9 @@
         </div>
       </div>
     </header>
-
-
+    <div class="login">
+      <a href="./pages/user-setup.html" class="btn-a login-btn">Log in</a>
+    </div>
 
     <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -225,9 +222,8 @@
           <!-- Game Card Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
           <div class="game-section-header">
-            <h2>New Games</h2>
-            <a href="./pages/game-list.html" class="general-link-green"><img
-                src="./assets/icons/green/Green-gridicon.png" alt="Grid-icon" class="icon">View All</a>
+            <h4>New Games</h4>
+            <img src="./assets/icons/green/Green-gridicon.png" alt="Grid-icon" class="icon-1">&ensp;<p>View All</p>
           </div>
 
           <!-- Game Card Section Start
@@ -241,14 +237,13 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="./assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg" class="game-img"
-                    alt="Game image">
+                  <span class="game-img" role="img" aria-label="[Game img]"></span>
+                  <div class="game-img" id="card-1"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>GTA 6</h3>
-                  <p>Grand Theft Auto, er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>GTA 6</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -259,13 +254,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Assassins-Creed-Games.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-2"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Assassin's Creed</h3>
-                  <p>Assassin's Creed er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>Minecraft</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -276,14 +270,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg" class="game-img"
-                    alt="Game image">
+                  <div class="game-img" id="card-3"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Need For Speed</h3>
-                  <p>Need For Speed er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>Need For Speed</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -294,13 +286,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/pubg.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-4"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>PUBG</h3>
+                  <h4>PUBG</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -311,13 +302,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Roblox.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-5"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Roblox</h3>
+                  <h4>Roblox</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -328,13 +318,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/fortnight.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-6"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Fortnight</h3>
+                  <h4>Fortnight</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -345,13 +334,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/capsule_616x353.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-7"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Police simulator</h3>
+                  <h4>Police simulator</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -362,13 +350,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/flightsim.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-8"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Flight simulator</h3>
+                  <h4>Flight simulator</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -382,7 +369,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
           <div class="game-section-footer">
-            <a href="./pages/game-list.html" class="general-link-green">View All</a>
+            <p>View All</p>
           </div>
 
         </section>
@@ -391,42 +378,57 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
         <section class="content-section-2">
-          <div class="banner-box">
-            <div class="banner-box-header">
-              <h4>Are you a player?</h4>
+          <div class="banner-frame-desktop">
+            <div class="banner-img">
+              <img src="./assets/img/bannerimg/81qeA0ZGF8L.png" alt="banner img" class="banner-img-desktop">
             </div>
-            <!-- Banner Box content -->
-            <div class="banner-box-content">
-              <div class="banner-box-content-top">
-                <div class="banner-box-content-l">
-                  <div class="banner-box-img">
-                    <img src="./assets/img/bannerimg/81qeA0ZGF8L.png" alt="banner img" class="banner-img">
-                  </div>
-                </div>
-                <div class="banner-box-content-r">
-                  <p>Every week GameHub sends out newsletter to everyone that signs up.
-                    Here we can interest you with new amazing deals.
-                    Showcase games that is putted out for sale by our community members.
-                    We will also mention new games that is coming soon to our platform
-                    and deals you will not see anywhere else from our sponsors.
-                    Unsubscribe from our newsletter anytime you want, but why would you?
-                  </p>
-                  <p>
-                    Stay calm, keep gaming.
-                  </p>
-                  <!-- Banner Box footer -->
-                  <div class="banner-box-footer">
-                    <p>Sign up for our newsletter:</p>
-                    <label class="banner-form-label" for="email">
-                      <input type="text" class="banner-form-text-input" placeholder="Enter Your email" id="email"
-                        required>
-                    </label>
-                    <button class="btn btn-green btn-s">Send
-                      <img src="./assets/icons/black/black-PaperPlane.png" alt="Newsletter button icon"
-                        class="icon banner-icon">
-                    </button>
-                  </div>
-                </div>
+            <div class="banner-text-area-desktop">
+              <h4>Are you a player?</h4>
+              <p>
+                Every week GameHub sends out newsletter to everyone that signs up.
+                Here we can interest you with new amazing deals.
+                Showcase games that is puttet out for sale by our community members.
+                We will also mention new games that is comming soon to our platform
+                and deals you will not see anywhere else from our sponsors.
+                Unsubscribe from our newsletter anytime you want, but why would you?
+              </p>
+              <p>
+                Stay calm, keep gaming.
+              </p>
+              <span class="banner-spacing"></span>
+              <label for="sub-email" class="sub-email">Sign up for our newsletter:
+                <input type="text" name="sub-email" class="sub-email" placeholder="Enter Your email" id="sub-email">
+              </label>
+              <button class="btn-b banner-btn">Send
+                <img src="./assets/icons/black/black-PaperPlane.png" alt="Newsletter button icon"
+                  class="icon banner-icon">
+              </button>
+            </div>
+          </div>
+          <!-- Banner mobile-->
+          <div class="banner-frame-mobile">
+            <div class="banner-img">
+              <img src="./assets/img/bannerimg/81qeA0ZGF8L.png" alt="banner img" class="banner-img-mobile">
+            </div>
+
+            <!-- Mobile text-area -->
+            <div class="banner-text-area-mobile">
+              <h4>Are you a player?</h4>
+              <p>
+                If you are, sign up and get all the latest news every week
+              </p>
+              <p>
+                Stay calm, keep gaming.
+              </p>
+              <div class="banner-footer">
+                <label for="sub-email-2" class="sub-email">Sign up for our newsletter:
+                  <input type="text" name="sub-email-2" class="input-banner" placeholder="Enter Your email"
+                    id="sub-email-2">
+                </label>
+                <button class="btn-b banner-btn" id="sub-email-btn">Send
+                  <img src="./assets/icons/black/black-PaperPlane.png" alt="Newsletter button icon"
+                    class="icon banner-icon">
+                </button>
               </div>
             </div>
           </div>
@@ -440,9 +442,8 @@
           <!-- Game Card Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
           <div class="game-section-header">
-            <h2>New Games</h2>
-            <a href="./pages/game-list.html" class="general-link-green"><img
-                src="./assets/icons/green/Green-gridicon.png" alt="Grid-icon" class="icon">View All</a>
+            <h4>New Games</h4>
+            <img src="./assets/icons/green/Green-gridicon.png" alt="Grid-icon" class="icon-1">&ensp;<p>View All</p>
           </div>
 
           <!-- Game Card Section Start
@@ -456,15 +457,13 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="./assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg" class="game-img"
-                    alt="Game image">
+                  <span class="game-img" role="img" aria-label="[Game img]"></span>
+                  <div class="game-img" id="card-9"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>GTA 6</h3>
-                  <p>Grand Theft Auto, or commonly called GTA, is one of the most successful video game series in the
-                    entire history of the game. </p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>GTA 6</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -475,14 +474,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Assassins-Creed-Games.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-10"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Assassin's Creed</h3>
-                  <p>Assassin's Creed is a video game series by Ubisoft in the genres action-adventure games, stealth
-                    games and historical fiction.</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>Minecraft</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -493,16 +490,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg" class="game-img"
-                    alt="Game image">
+                  <div class="game-img" id="card-11"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Need For Speed</h3>
-                  <p>Hit the gas and tear up the roads in this legendary action-driving series. Push your supercar to
-                    its limits and leave the competition in your rearview or shake off a full-scale police pursuit –
-                    it’s all just a key-turn away.</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <h4>Need For Speed</h4>
+                  <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -513,13 +506,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/pubg.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-12"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>PUBG</h3>
+                  <h4>PUBG</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -530,13 +522,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/Roblox.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-13"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Roblox</h3>
+                  <h4>Roblox</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -547,13 +538,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/fortnight.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-14"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Fortnight</h3>
+                  <h4>Fortnight</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -564,13 +554,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/capsule_616x353.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-15"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Police simulator</h3>
+                  <h4>Police simulator</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -581,13 +570,12 @@
             <div class="game-card-1">
               <div class="card-frame">
                 <div class="game-img-area">
-                  <img src="../assets/img/itemgallery/flightsim.jpg" class="game-img" alt="Game image">
+                  <div class="game-img" id="card-16"></div>
                 </div>
                 <div class="card-text-box">
-                  <h3>Flight simulator</h3>
+                  <h4>Flight simulator</h4>
                   <p>Fortnite er et videospill med handling lagt til en åpen verden</p>
-                  <p></p>
-                  <a href="./pages/game-page.html" class="btn btn-green">View more</a>
+                  <a href="./pages/game-page.html" class="btn-a btn-1">View more</a>
                 </div>
               </div>
             </div>
@@ -601,7 +589,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
           <div class="game-section-footer">
-            <a href="./pages/game-list.html" class="general-link-green">View All</a>
+            <p>View All</p>
           </div>
 
         </section>
@@ -614,9 +602,9 @@
     <footer class="page-footer">
       <div class="page-footer-layout">
         <div class="footer-btn-layout">
-          <a href="../index.html" class="btn btn-foot">Home</a>
-          <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
-          <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
+          <a href="../index.html" class="btn-a btn-foot">Home</a>
+          <a href="../pages/check-out.html" class="btn-a btn-foot">Checkout</a>
+          <a href="../pages/contact.html" class="btn-a btn-foot">Contact</a>
         </div>
         <div class="text-box-foot">
           <p>Copyright reserved GameHub 2021</p>
