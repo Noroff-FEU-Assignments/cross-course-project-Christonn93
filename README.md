@@ -1,2 +1,2 @@
-# cross-course-project-Christonn93
-cross-course-project-Christonn93 created by GitHub Classroom
+# GameHub
+Part of the school work at Noroff. 

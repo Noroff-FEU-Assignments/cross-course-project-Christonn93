@@ -3,196 +3,410 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ere you will find a range of pc games.
-  you want a old or new game? A super good deal or a pre-realese game?
-  Mabye you want to sell a old game you have dusting in the corner? You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
-  <meta name="keywords" content="Gaming, sale, deals, buy" />
-  <meta name="subject" content="your website's subject">
-  <meta name="language" content="no">
-  <meta name="designer" content="Christopher Tønnesland">
-  <meta name="copyright" content="GameHub">
-  <meta name="reply-to" content="christopher.tonnesland@gmail.com">
-  <meta name="owner" content="Christopher Tønnesland">
-  <meta name="distribution" content="Global">
-  <meta name="rating" content="General">
-  <meta http-equiv="Cache-Control" content="cache">
-  <link href="../config/style/mainstyle.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
-  <title>GameHub</title>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GameHub | Contact</title>
+    <meta name="description"content="Contact us when ever you need some assistens" />
+    <meta name="subject" content="your website's subject">
+    <meta name="language" content="no">
+    <meta name="designer" content="Christopher Tønnesland">
+    <meta name="copyright" content="GameHub">
+    <meta name="reply-to" content="christopher.tonnesland@gmail.com">
+    <meta name="owner" content="Christopher Tønnesland">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
 
-  <script>
-    window.addEventListener('DOMContentLoaded', setup)
+    <!-- Mobile Specific Meta
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    function setup() {
-      document.querySelector('button#dropdown').addEventListener('click', toggleDropDown)
-      document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
-      let isDropDownOpen = false;
-      let isDropDownClosed = false;
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" type="text/css">
 
-      function toggleDropDown() {
-        isDropDownOpen = !isDropDownOpen;
-        document.body.classList.toggle('dropdown-open', isDropDownOpen);
-      }
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
 
-      function closeDropDown() {
-        isDropDownClosed = !isDropDownClosed;
-        document.body.classList.toggle('dropdown-open', isDropDownClosed);
-      }
-    }
-  </script>
+    <!-- FrameWork Css 
+  <link rel="stylesheet" href="./config/css/normalize.css">
+  <link rel="stylesheet" href="./config/css/skeleton.css">
+  ----------------------------------------------------- -->
+
+    <!-- Favicon/icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+    <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </head>
 
-<body>
-  <div id="page" class="page-wrapper">
-    <section class="header-nav">
-      <div class="nav-btn-left">
-        <button class="lg-cta-bt">
-          <img src="/config/style/icons/Icons - Lock.svg" alt="Lock icon">
-          <img src="/config/style/icons/Icons - Person - Person.svg" alt="Profile icon">
-        </button>
-        <div class="dropdownmenu">
-          <button class="dropdown-btn left" onclick="toggleDropDown()" id="dropdown"><img
-              src="/config/style/icons/Icons - More - Vertical.svg"></button>
-        </div>
-      </div>
-      <!-- Dropdown menu -->
-      <div class="dropdown-list" id="dropdown-nav">
-        <div class="dd-header-logo">
-          <a href="../index.html">
-          <img class="dropdown-logo" src="/config/style/icons/GameHub_Logo4.svg">
-        </a>
-          <button class="back-btn" onclick="toggleDropDown()" id="back-btn"><img
-              src="/config/style/icons/Icons - Undo.svg"></button>
-        </div>
-        <div class="btn-box">
-          <a href="./index.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-2.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Home</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/gamelist.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 87.svg"
-              class="dropdown-icons" alt="Dropdown Icons">All Games</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/deals.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 137.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Game deals</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/tags.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 105.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Popular tags</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/chart.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color.svg" class="dropdown-icons"
-              alt="Dropdown Icons">Shopping Chart</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/userpage.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-3.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Profile page</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/lg_rg.html" class="dd-menu-btn"><img src="/config/style/icons/green/Color-1.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Login/signup</a>
-        </div>
-        <div class="btn-box">
-          <a href="./pages/contact.html" class="dd-menu-btn"><img src="/config/style/icons/green/Group 121.svg"
-              class="dropdown-icons" alt="Dropdown Icons">Contact us</a>
-        </div>
-      </div>
-      <div class="comp-logo">
-        <a href="../index.html"><img src="/config/img/logo/GameHub_Logo4.12.jpg" class="header-nav-logo " alt="Company-Logo"></a>
-      </div>
-      <div class="nav-btn-right">
-        <button class="dropdown-btn right" id="dropdown-cart"><img
-            src="/config/style/icons/Icons - Shopping - Cart.svg"></button>
-      </div>
-    </section>
-    <hr>
-    <div class="page-bacground-color">
-      <main class="page-content" id="page-content">
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <header class="page-description">
-          <div class="text-container">
-            <h2 class="heading">Welcome to GameHub, The univers of games.</h2>
-            <p class="info-text">
-              Here you will find a range of pc games.
-              you want a old or new game? A super good deal or a pre-realese game?
-              Mabye you want to sell a old game you have dusting in the corner? You came to the right place!
-            </p>
-            <p class="info-text">
-              Thanks for choosing GameHub for your place to get your games or to clear space in your shelf
-            </p>
-          </div>
-          <div>
-            <img class="full-img" src="config/img/game_img/Demanding-PC-Games-Feature.jpg" alt="Game add photo">
-          </div>
+<body>
+    <div class="page-wrapper-outer">
+        <!-- Header section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header class="page-header">
+            <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
+            <div class="page-nav">
+
+                <!-- Dropdown menu -->
+                <div class="nav-section">
+                    <label for="dropdown-menu" class="btn btn-s btn-green">
+                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+                    </label>
+                </div>
+                <!-- Dropdown menu display -->
+                <input type="checkbox" id="dropdown-menu">
+                <section class="menu">
+
+                    <!-- Dropdown menu header -->
+                    <div class="menu-header">
+                        <a href="../index.html">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
+                        </a>
+                        <label for="dropdown-menu" class="btn-exit">
+                            <img src="../assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
+                        </label>
+                    </div>
+
+                    <!-- Dropdown menu items -->
+                    <ul class="menu-list">
+
+                        <li class="list-item-search">
+                            <div class="search">
+                                <input type="search" id="search" class="search-text-input" placeholder="Search">
+                                <input type="submit" class="btn btn-black btn-search" value="search">
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../index.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-home.png" alt="menu icon"
+                                        class="menu-icon">Home</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-all-games">
+                            <div class="menu-item">
+                                <a href="../pages/game-list.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
+                                        class="menu-icon">All
+                                    Games</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-deals">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link not-active">
+                                    <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
+                                        class="menu-icon">Game
+                                    deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../pages/user-page.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-personperson.png" alt="menu icon"
+                                        class="menu-icon">User Page</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-checkout">
+                            <div class="menu-item">
+                                <a href="../pages/check-out.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
+                                        class="menu-icon">Checkout</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-contact">
+                            <div class="menu-item">
+                                <a href="../pages/contact.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
+                                        class="menu-icon">Contact</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- Logo -->
+                <div class="nav-section nav-logo">
+                    <a href="../index.html" class="desktop-logo">
+                        <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+                    </a>
+                    <a href="../index.html" class="mobile-logo">
+                        <img src="../assets/logo/rsz_1rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+                    </a>
+                </div>
+
+                <!-- Dropdown cart -->
+                <div class="nav-section">
+                    <a href="../pages/check-out.html" class="btn btn-s btn-green">
+                        <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
+                    </a>
+
+                    <!-- Dropdown menu display -->
+                    <input type="checkbox" id="dropdown-cart">
+                    <section class="cart">
+
+                        <!-- Dropdown menu header -->
+                        <div class="menu-header">
+                            <label for="dropdown-cart" class="btn-b btn-exit">
+                                <img src="../assets/icons/black/Black-closesquare.png" alt="Dropdown back button icon"
+                                    class="icon-1">
+                            </label>
+                        </div>
+
+                        <!-- Dropdown menu items -->
+                        <table class="chart-table">
+                            <thead>
+                                <tr>
+                                    <th>Game</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Game title</td>
+                                    <td>399,-</td>
+                                    <td>
+                                        <img src="../assets/icons/black/Black-plussquare.png" alt="icon add"
+                                            class="table-icon">
+                                        <img src="../assets/icons/black/Black-square.png" alt="icon amount"
+                                            class="table-icon">
+                                        <img src="../assets/icons/black/" alt="icon remove" class="table-icon">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
         </header>
 
-        <section class="gamedisplay">
-          <div class="gamedisplay-head">
-            <h3 class="gamedisplay-heading">New Games</h3>
-            <a class="gamedisplay-link">View More</a>
-            <hr size="2" width="100%" color="#00ff00">
-          </div>
-        </section>
 
-        <section class="gamedisplay-grid">
-          <div class="gamecard">
-            <div class="gamecard-img-bg">
-              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+        <!-- Main section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <main class="page-wrapper-inner">
+            <div class="page-content-frame">
+
+                <!-- top-section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+                <section class="section-frame">
+                    <div class="box">
+                        <div class="box-header">
+                            <h1>Who are we?</h1>
+                        </div>
+                        <div class="box-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus asperiores
+                                consectetur nemo autem commodi voluptatem consequuntur modi distinctio qui libero?
+                                Maxime minima soluta natus maiores, dolorum obcaecati labore voluptates veritatis!
+                            </p>
+                        </div>
+
+                        <div class="box-footer">
+                            <div class="box-header">
+                                <h2>Our Social network & community links</h2>
+                            </div>
+                            <div class="social-links">
+                                <span class="vertical-line">
+                                    <a href="#" class="general-link social-link" target="_blank" data-value="Github">
+                                        <img src="../assets/icons/black/Black-github.png" alt="Social icon Github"
+                                            class="icon social-icon">
+                                    </a>
+                                </span>
+
+                                <span class="vertical-line">
+                                    <a href="#" class="general-link social-link" target="_blank" data-value="Facebook">
+                                        <img src="../assets/icons/black/Black-socialfacebook.png"
+                                            alt="Social icon Facebook" class="icon social-icon">
+                                    </a>
+                                </span>
+
+                                <span class="vertical-line">
+                                    <a href="#" class="general-link social-link" target="_blank" data-value="Linkedin">
+                                        <img src="../assets/icons/black/Black-sociallinkedin.png"
+                                            alt="Social icon Linkedin" class="icon social-icon">
+                                    </a>
+                                </span>
+
+                                <a href="#" class="general-link social-link" target="_blank" data-value="Twitter">
+                                    <img src="../assets/icons/black/Black-socialtwitter.png" alt="Social icon Twitter"
+                                        class="icon social-icon">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content Section 1 - Game Card's
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+                <!-- Content Section 2
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+                <section class="section-frame">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Contact us</h2>
+                        </div>
+                        <!-- Box content -->
+                        <div class="box-content">
+                            <div class="box-content-top">
+                                <p>
+                                    Are you having any problems with your account, a game or just want to get in touch?
+                                    The fastest way to get in touch with us is to fill out the request form under and
+                                    send
+                                    it, we will get back to you within 12 hours, that is a promise.</p>
+                                <p>
+                                    Don't want to follow the flow and send a request form? We can also be reached on
+                                    email,
+                                    waiting time is a bit longer.</p>
+                                <p>
+                                    Ask anything you want, we are here to help you.
+                                </p>
+                            </div>
+                            <div class="box-content-l box-left">
+                                <div class="adress-heading">
+                                    <h3>GameHub Inc.</h3>
+                                </div>
+                                <address>
+                                    <label class="adress-label">Address:
+                                        <a
+                                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.343084855085!2d10.724523716388155!3d59.909853271382104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1636618195331!5m2!1sno!2sno">Oslo
+                                            veien 1, 0001 Oslo</a>
+                                    </label>
+                                    <label class="adress-label">Email:
+                                        <a href="mailto:costumerservice@gamehub.com">costumerservice@gamehub.com</a>
+                                    </label>
+
+                                </address>
+                            </div>
+
+                            <div class="box-content-r box-right">
+                                <div class="box-img">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.343084855085!2d10.724523716388155!3d59.909853271382104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1636618195331!5m2!1sno!2sno"
+                                        loading="lazy" class="map-img"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Box footer -->
+                        <div class="box-footer">
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Content Section 3
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+                <section class="section-frame">
+                    <form>
+                        <div class="form-header">
+                            <h2>Request Form</h2>
+                        </div>
+                        <div class="form-box">
+                            <div class="form-box-left">
+                                <div class="form-input-area">
+                                    <span class="form-label-text text-size">
+                                        Full Name
+                                    </span>
+                                    <label class="form-label" for="name">
+                                        <input type="text" id="name" class="form-text-input" placeholder="Full Name"
+                                            required>
+                                    </label>
+                                </div>
+
+                                <div class="form-input-area">
+                                    <span class="form-label-text text-size">Phone Number</span>
+                                    <label class="form-label" for="phone-num">
+                                        <input type="tel" id="phone-num" class="form-text-input"
+                                            placeholder="Phone Number" required>
+                                    </label>
+                                </div>
+
+                                <div class="form-input-area">
+                                    <span class="form-label-text text-size">Email</span>
+                                    <label class="form-label" for="email">
+                                        <input type="email" id="email" class="form-text-input" placeholder="Email"
+                                            required>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-box-right">
+                                <div class="form-input-area">
+                                    <span class="form-label-text text-size">Your Request/Question</span>
+                                    <label class="form-label" for="text-area">
+                                        <textarea name="text-area" id="text-area" class="form-text-area"
+                                            placeholder="Your request/Question" required></textarea>
+                                    </label>
+                                </div>
+                                <div class="form-input-area checkbox-area">
+                                    <label class="form-label checkbox-area " for="comfirm">
+                                        <input type="checkbox" id="comfirm" class="form-checkbox-input checkbox-area"
+                                            required>
+                                        Please read & agree to <a href="#">this </a>before sending
+                                    </label>
+                                </div>
+                                <div class="form-input-area">
+                                    <label class="form-label" for="submit-button">
+                                        <input type="submit" class="btn btn-green btn-l login-btn" value="Send Request"
+                                            id="submit-button">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
             </div>
-            <h3 class="gametitle">Game title</h3>
-            <p class="gamedecript">Game descripton</p>
-            <button class="gamebutton"><a href="./gamepage.html">Details</a></button>
-          </div>
-          <div class="gamecard">
-            <div class="gamecard-img-bg">
-              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
+        </main>
+
+        <!-- Footer section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <footer class="page-footer">
+            <div class="page-footer-layout">
+                <div class="footer-btn-layout">
+                    <a href="../index.html" class="btn btn-foot">Home</a>
+                    <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
+                    <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
+                </div>
+                <div class="text-box-foot">
+                    <p>Copyright reserved GameHub 2021</p>
+                </div>
             </div>
-            <h3 class="gametitle">Game title</h3>
-            <p class="gamedecript">Game descripton</p>
-            <button class="gamebutton"><a href="./gamepage.html">Details</a></button>
-          </div>
-          <div class="gamecard">
-            <div class="gamecard-img-bg">
-              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
-            </div>
-            <h3 class="gametitle">Game title</h3>
-            <p class="gamedecript">Game descripton</p>
-            <button class="gamebutton"><a href="./gamepage.html">Details</a></button>
-          </div>
-          <div class="gamecard">
-            <div class="gamecard-img-bg">
-              <img class="gamecard-img" src="/config/img/game_img/EuroTruckBanner.jpg">
-            </div>
-            <h3 class="gametitle">Game title</h3>
-            <p class="gamedecript">Game descripton</p>
-            <button class="gamebutton"><a href="./gamepage.html">Details</a></button>
-          </div>
-        </section>
-        <div class="gamedisplay-head">
-          <h3 class="gamedisplay-heading">New Games</h3>
-          <hr size="2" width="100%" color="#00ff00">
-        </div>
-      </main>
+        </footer>
     </div>
-    <hr>
-    <footer class="page-footer" id="page-footer">
-      <div class="footer-btn-sys">
-        <button class="f-cta-btn"><a href="./index.html">Home</a></button>
-        <button class="f-cta-btn"><a href="#">Tags</a></button>
-        <button class="f-cta-btn"><a href="./pages/contact.html">Contact</a></button>
-        <button class="f-cta-btn"><a href="./pages/chart.html">Checkout</a></button>
-        <div class="copyright-footer">
-          <p>Copyright reserved GameHub 2021</p>
-        </div>
-      </div>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/main.js"></script>
 
-    </footer>
-  </div>
-
-  <script type="module" src="./config/javascript/main.js"></script>
 </body>
 
 </html>
