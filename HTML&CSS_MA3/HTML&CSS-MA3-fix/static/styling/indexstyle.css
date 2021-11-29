@@ -1,0 +1,620 @@
+/* ## ==== IMPORTS ==== ## */
+
+/* -- Typography  -- */
+@import url(typography.css);
+
+
+/* ===========================================================
+
+
+
+
+
+
+
+============================================================ */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-resizer {
+    display: none;
+}
+
+
+/* ## ==== CSS VARIABLES ==== ## */
+:root {
+
+    /* ==== Font family ==== */
+    --ff-heading: 'Audiowide', cursive;
+    --ff-body: 'Oswald', sans-serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --line-height: 1.55
+        /* ==== Font size ==== */
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.75rem;
+    --fs-h4: 1.75rem;
+    --fs-body-lg: 1.125rem;
+    --fs-body-md: 1.120rem;
+    --fs-body-sm: 0.1rem;
+    --nav-fs: .8rem;
+    --link-fs: 1.10rem;
+
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+
+    /* ==== Other variables ==== */
+
+    /* -- General -- */
+    --transition: all 0.2s;
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+
+    --padding: 0.35em 1.2em;
+    --border: 0.1em solid var(--ghub-black);
+    --border-r: 0.20em;
+    --minh: 100px;
+    --maxh: 100%;
+    --minw: 100px;
+    --maxw: 100%;
+    --flex: calc(100% / 6);
+
+    /* -- Button -- */
+    --btn-border: 0.1em solid var(--ghub-black);
+    --btn-padd: 0.35em 1.2em;
+    --btn-marg: 0 0.3em 0.3em 0;
+    --btn-bordrad: 0.20em;
+    --btn-ff: var(--ff-heading);
+    --btn-fs: var(--link-fs);
+
+    /* -- Gallery Card -- */
+    --gc-mih: fit-content;
+    --gc-mxh: 400px;
+    --gc-miw: fit-content;
+    --gc-mxw: 145px;
+
+    /* -- Input field's -- */
+    --input-border: 5px solid var(--ghub-black);
+    --input-border-r: 0px 30px 0px 30px;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+
+
+
+}
+
+/* ## ==== Media Queries Root ==== ## */
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) {
+    :root {
+        /* ==== Font family ==== */
+        --ff-heading: 'Audiowide', cursive;
+        --ff-body: 'Oswald', sans-serif;
+        --fw-heading: 700;
+        --fw-body: 300;
+        --line-height: 1.55
+            /* ==== Font size ==== */
+            --fs-h1: 2rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.75rem;
+        --fs-h4: 0.75rem;
+        --fs-body-lg: 1.125rem;
+        --fs-body-md: 1.120rem;
+        --fs-body-sm: 1.150rem;
+        --nav-fs: .8rem;
+        --link-fs: 1.10rem;
+
+        /* ==== colour variables ==== */
+
+        /* -- Smoky Black -- */
+        --ghub-black: #0D0D0D;
+        /* -- Anti-Flash White -- */
+        --ghub-white: #F2F2F2;
+        /* -- Electric Green1 -- */
+        --ghub-green: #00FF00;
+        /* -- Rhythm -- */
+        --ghub-rhythm: #7A778C;
+
+        /* ==== Other variables ==== */
+
+        /* -- General -- */
+        --transition: all 0.2s;
+        --shadow: 2px 5px 20px var(--ghub-black);
+        --shadow2: 0px 2px 16px 0px var(--ghub-black);
+        --padding: 0.35em 1.2em;
+        --border: 0.1em solid var(--ghub-black);
+        --border-r: 0.20em;
+        --minh: 100px;
+        /* min-h */
+        --maxh: 100%;
+        --minw: 100px;
+        --maxw: 100%;
+        --flex: calc(100% / 6);
+
+        /* -- Button -- */
+        --btn-border: 0.1em solid var(--ghub-black);
+        --btn-padd: 0.35em 1.2em;
+        --btn-marg: 0 0.3em 0.3em 0;
+        --btn-bordrad: 0.20em;
+        --btn-ff: var(--ff-heading);
+        --btn-fs: var(--link-fs);
+
+        /* -- Gallery Card -- */
+        --gc-mih: fit-content;
+        --gc-mxh: 400px;
+        --gc-miw: fit-content;
+        --gc-mxw: 145px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 480px) {
+    :root {
+        /* ==== Font family ==== */
+        --ff-heading: 'Audiowide', cursive;
+        --ff-body: 'Oswald', sans-serif;
+        --fw-heading: 700;
+        --fw-body: 300;
+        --line-height: 1.55
+            /* ==== Font size ==== */
+            --fs-h1: 2rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.75rem;
+        --fs-h4: 0.75rem;
+        --fs-body-lg: 1.125rem;
+        --fs-body-md: 1.120rem;
+        --fs-body-sm: 1.150rem;
+        --nav-fs: .8rem;
+        --link-fs: 1.10rem;
+
+        /* ==== Other variables ==== */
+
+        /* -- General -- */
+        --transition: all 0.2s;
+        --shadow: 2px 5px 20px var(--ghub-black);
+        --shadow2: 0px 2px 16px 0px var(--ghub-black);
+        --padding: 0.35em 1.2em;
+        --border: 0.1em solid var(--ghub-black);
+        --border-r: 0.20em;
+        --minh: 100px;
+        --maxh: 100%;
+        --minw: 100px;
+        --maxw: 100%;
+        --flex: calc(100% / 6);
+
+        /* -- Button -- */
+        --btn-border: 0.1em solid var(--ghub-black);
+        --btn-padd: 0.35em 1.2em;
+        --btn-marg: 0 0.3em 0.3em 0;
+        --btn-bordrad: 0.20em;
+        --btn-ff: var(--ff-heading);
+        --btn-fs: var(--link-fs);
+
+        /* -- Gallery Card -- */
+        --gc-mih: fit-content;
+        --gc-mxh: 400px;
+        --gc-miw: fit-content;
+        --gc-mxw: 145px;
+    }
+}
+
+
+/* ## ==== PAGE STYLING ==== ## */
+
+/* ==== Fonts ==== */
+h1 {
+    font-size: (--fs-h1);
+    font-family: var(--ff-heading);
+    color: var(--ghub-black);
+}
+
+h2 {
+    font-size: (--fs-h2);
+    font-family: var(--ff-heading);
+    color: var(--ghub-white);
+}
+
+h3 {
+    font-size: (--fs-h3);
+    font-family: var(--ff-heading);
+    color: var(--ghub-black);
+}
+
+h4 {
+    font-size: (--fs-h4);
+    font-family: var(--ff-heading);
+    color: var(--ghub-white);
+}
+
+p {
+    font-size: (var(--fs-body-md));
+    font-family: var(--ff-body);
+    color: var(--ghub-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--ghub-white);
+    font-family: var(--ff-body);
+}
+
+/* ==== Assets/Components/Generic style ====  */
+.btn {
+    padding: var(--btn-padd);
+    border: var(--btn-border);
+    margin: var(--btn-marg);
+    border-radius: var(--btn-bordrad);
+    transition: var(--transition);
+    color: var(--ghub-black);
+    background-color: var(--ghub-green);
+    box-shadow: var(--shadow2);
+    font-family: var(--ff-body);
+
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+}
+
+.btn2 {
+    padding: var(--btn-padd);
+    border: var(--btn-border);
+    margin: var(--btn-marg);
+    border-radius: var(--btn-bordrad);
+    transition: var(--transition);
+    color: var(--ghub-green);
+    background-color: var(--ghub-black);
+    box-shadow: var(--shadow2);
+    font-family: var(--ff-body);
+
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+}
+
+.card {
+    display: block;
+    padding: var(--pd);
+    border: var(--bx-rad);
+    margin: var(--bx-mg);
+    border-radius: var(--br-r);
+    box-sizing: var(--bs);
+    box-shadow: var(--bx-shadow);
+}
+
+.icon {
+    max-width: 1rem;
+}
+
+input::placeholder {
+    color: var(--ghub-black);
+    font-family: var(--ff-body);
+}
+
+img {
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    /* min-width: var(--minw);
+    max-width: var(--maxw);
+
+    min-height: var(--minh);
+    max-height: var(--maxh); */
+}
+
+/* ==== Body style ==== */
+body {
+    display: block;
+    background-color: var(--ghub-white);
+}
+
+/* ==== Header style ==== */
+header {
+    background-color: var(--ghub-black);
+}
+
+.page-nav {
+    display: none;
+}
+
+.nav-btn {
+    display: block;
+}
+
+.page-cart {
+    display: none;
+}
+
+.added-item {
+    display: block;
+}
+
+/* ==== Main style ==== */
+main {
+    display: block;
+}
+
+.page-wrapper {
+    background-color: var(--ghub-black);
+}
+
+.page-main-header {
+    display: block;
+    background-color: var(--ghub-black);
+    text-align: center;
+}
+
+.textbox {
+    background-color: var(--ghub-white);
+    padding: 1.125em;
+    margin: 10px;
+}
+
+.main-header-img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* ==== Item Gallery ==== */
+.item-gallery {
+    display: block;
+    margin: 10px;
+}
+
+.item-gallery>h2 {
+    color: var(--ghub-green);
+}
+
+.item-gallery>p {
+    color: var(--ghub-green);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+    background-color: var(--ghub-white);
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) {
+    .grid-layout {
+        grid-template-columns: repeat(2, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 480px) {
+    .grid-layout {
+        grid-template-columns: repeat(3, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+.gallery-card {
+    min-width: var(--gc-miw);
+    max-width: var(--gc-mxw);
+    min-height: var(--gc-mih);
+    max-height: var(--gc-mxh);
+    border: var(--border);
+    border-radius: var(--border-r);
+
+    text-align: center;
+}
+
+.gallery-card>.textbox {
+    background-color: var(--ghub-rhythm);
+    margin: 0;
+}
+
+.gallery-card>img {
+    box-shadow: var(--shadow2);
+}
+
+/* ==== Page Banner ==== */
+.page-banner {
+    display: block;
+    margin: 10px;
+}
+
+.banner-frame {
+    border: var(--border);
+    background-color: var(--ghub-white);
+    padding: var(--padding);
+    box-shadow: var(--shadow3);
+
+    display: block;
+    border-radius: 25px;
+    margin: 50px;
+}
+
+.banner-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.banner-header{
+    grid-area: 1/2/2/3;
+}
+
+.banner-img {
+    grid-area: 2/1/3/2;
+    max-width: 150px;
+    margin-top: 50%;
+}
+
+.text{
+    grid-area: 2/2/3/3;
+}
+
+.banner-form{
+  grid-area: 3/1/4/3;
+}
+
+.sub-lab{
+    display: block;
+}
+
+.sub-inp{
+    display: block;
+}
+
+.sub-span{
+    display: block;
+}
+
+.sub-btn{
+    display: block;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) {
+    .page-banner {
+        display: block;
+        margin: 5px;
+    }
+    
+    .banner-frame {
+        border: var(--border);
+        background-color: var(--ghub-white);
+        padding: var(--padding);
+        box-shadow: var(--shadow3);
+    
+        display: block;
+        border-radius: 25px;
+        margin: 10px;
+    }
+    
+    .banner-layout {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .banner-header{
+        grid-area: 1/2/2/3;
+    }
+    
+    .banner-img {
+        grid-area: 2/1/3/2;
+        max-width: 150px;
+        margin-top: 20%;
+    }
+    
+    .text{
+        grid-area: 2/2/3/3;
+        font-size: 10px;
+    }
+    
+    .banner-form{
+      grid-area: 3/1/4/3;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 480px) {
+    .page-banner {
+        display: block;
+        margin: 5px;
+    }
+    
+    .banner-frame {
+        border: var(--border);
+        background-color: var(--ghub-white);
+        padding: var(--padding);
+        box-shadow: var(--shadow3);
+    
+        display: block;
+        border-radius: 25px;
+        margin: 10px;
+    }
+    
+    .banner-layout {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .banner-header{
+        grid-area: 1/2/2/3;
+    }
+    
+    .banner-img {
+        grid-area: 2/1/3/2;
+        max-width: 150px;
+        margin-top: 20%;
+    }
+    
+    .text{
+        grid-area: 2/2/3/3;
+        font-size: 10px;
+    }
+    
+    .banner-form{
+      grid-area: 3/1/4/3;
+    }
+}
+
+
+/* ==== Footer style ==== */
+footer {
+    display: block;
+    background-color: var(--ghub-black);
+}
+
+.footer-btn {
+    display: block;
+}
+

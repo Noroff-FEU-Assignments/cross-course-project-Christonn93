@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <filter id="Ellipse_2" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-dropdown-cart-noframe" transform="translate(9 9)">
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#Ellipse_2)">
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="16" cy="16" r="16" transform="translate(9 9)" fill="#0df205"/>
+    </g>
+    <path id="Color" d="M15.5,18A1.5,1.5,0,1,1,17,16.5,1.5,1.5,0,0,1,15.5,18Zm-10,0A1.5,1.5,0,1,1,7,16.5,1.5,1.5,0,0,1,5.5,18ZM15,13H6a1,1,0,0,1-.966-.736L2.236,2H1A1,1,0,1,1,1,0H3a1,1,0,0,1,.966.737L4.582,3h12.8a2,2,0,0,1,1.789,2.894l-3.276,6.553A1,1,0,0,1,15,13ZM5.127,5l1.637,6h7.618l3-6H5.127Z" transform="translate(6 7)" fill="#0d0d0d"/>
+  </g>
+</svg>

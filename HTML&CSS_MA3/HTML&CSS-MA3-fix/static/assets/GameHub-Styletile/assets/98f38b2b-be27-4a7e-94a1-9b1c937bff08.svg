@@ -1,0 +1,4 @@
+<svg id="typography-small-header" xmlns="http://www.w3.org/2000/svg" width="333" height="52" viewBox="0 0 333 52">
+  <text id="This_is_an_example_of_a_header" data-name="This is an example of a header" transform="translate(0 27)" fill="#707070" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">This is an example of a header</tspan></text>
+  <text id="Font_name_and_size:_Audiowide_Heading_25px" data-name="Font name and size: Audiowide Heading 25px" transform="translate(1 49)" fill="#1d2540" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Font name and size: Audiowide Heading 25px</tspan></text>
+</svg>

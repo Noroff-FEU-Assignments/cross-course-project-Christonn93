@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="65" viewBox="0 0 132 65">
+  <defs>
+    <filter id="Rectangle" x="9" y="10" width="114" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-2" x="0" y="0" width="132" height="65" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-3" x="7.5" y="10.5" width="117" height="50" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Btn" transform="translate(15 14)">
+    <g id="Container">
+      <g id="Shadow" style="mix-blend-mode: multiply;isolation: isolate">
+        <g transform="matrix(1, 0, 0, 1, -15, -14)" filter="url(#Rectangle)">
+          <rect id="Rectangle-4" data-name="Rectangle" width="102" height="35" rx="4" transform="translate(15 14)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -15, -14)" filter="url(#Rectangle-2)">
+          <rect id="Rectangle-5" data-name="Rectangle" width="102" height="35" rx="4" transform="translate(15 14)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -15, -14)" filter="url(#Rectangle-3)">
+          <rect id="Rectangle-6" data-name="Rectangle" width="102" height="35" rx="4" transform="translate(15 14)" fill="#fff"/>
+        </g>
+      </g>
+      <rect id="_Color" data-name="↳ 🎨 Color" width="102" height="35" rx="4" fill="#0d0d0d"/>
+      <g id="_States" data-name="↳ 💡States" transform="translate(-29 -71)">
+        <rect id="States_Light_Primary_Container_100_Overlay" data-name="States/Light 🌕/Primary Container 100%/Overlay" width="102" height="35" rx="4" transform="translate(29 71)" fill="rgba(255,255,255,0.04)"/>
+      </g>
+    </g>
+    <text id="_Label" data-name="↳ ✏️ Label" transform="translate(16 23)" fill="#0df205" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.089em"><tspan x="0" y="0">HOVERED</tspan></text>
+  </g>
+</svg>

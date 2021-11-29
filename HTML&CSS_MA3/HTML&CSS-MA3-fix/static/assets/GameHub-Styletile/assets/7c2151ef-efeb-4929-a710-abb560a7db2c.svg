@@ -1,0 +1,10 @@
+<svg id="Icons_Arrow_Arrowhead_Right" data-name="Icons / Arrow / Arrowhead / Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M7.36,13.768a1,1,0,0,1-.128-1.408l4.476-5.371L7.393,1.627A1,1,0,0,1,8.951.374l4.828,6a1,1,0,0,1-.011,1.267l-5,6a1,1,0,0,1-1.409.128Zm-7,0a1,1,0,0,1-.128-1.408L4.707,6.989.392,1.627A1,1,0,0,1,1.951.374l4.828,6A1,1,0,0,1,6.768,7.64l-5,6a1,1,0,0,1-1.409.128Z" transform="translate(5 5)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_15" data-name="Group 15">
+    <path id="Color-2" data-name="Color" d="M7.36,13.768a1,1,0,0,1-.128-1.408l4.476-5.371L7.393,1.627A1,1,0,0,1,8.951.374l4.828,6a1,1,0,0,1-.011,1.267l-5,6a1,1,0,0,1-1.409.128Zm-7,0a1,1,0,0,1-.128-1.408L4.707,6.989.392,1.627A1,1,0,0,1,1.951.374l4.828,6A1,1,0,0,1,6.768,7.64l-5,6a1,1,0,0,1-1.409.128Z" transform="translate(5 5)"/>
+  </g>
+</svg>

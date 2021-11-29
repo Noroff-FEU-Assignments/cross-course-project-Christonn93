@@ -1,0 +1,8 @@
+<svg id="btn3" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35">
+  <g id="Rectangle_1184" data-name="Rectangle 1184" fill="#0d0d0d" stroke="#707070" stroke-width="0.1">
+    <rect width="102" height="35" rx="3" stroke="none"/>
+    <rect x="0.05" y="0.05" width="101.9" height="34.9" rx="2.95" fill="none"/>
+  </g>
+  <text id="Home" transform="translate(36.572 23.258)" fill="lime" stroke="#f21b1b" stroke-width="0.2" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Home</tspan></text>
+  <path id="ic_home_24px" d="M7.474,14.632V10.527h2.737v4.105h3.421V9.158h2.053L8.842,3,2,9.158H4.053v5.474Z" transform="translate(17.591 8.684)" fill="lime" stroke="#f21b1b" stroke-width="0.2"/>
+</svg>

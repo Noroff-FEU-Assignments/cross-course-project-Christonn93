@@ -1,0 +1,10 @@
+<svg id="Icons_Checkmark_Circle" data-name="Icons / Checkmark / Circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2ZM8.939,14H8.932a1,1,0,0,1-.788-.383L5.712,10.509A1,1,0,1,1,7.287,9.277l1.634,2.086L12.7,6.394A1,1,0,1,1,14.3,7.606l-4.569,6A1,1,0,0,1,8.939,14Z" transform="translate(2 2)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_99" data-name="Group 99">
+    <path id="Color-2" data-name="Color" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2ZM8.939,14H8.932a1,1,0,0,1-.788-.383L5.712,10.509A1,1,0,1,1,7.287,9.277l1.634,2.086L12.7,6.394A1,1,0,1,1,14.3,7.606l-4.569,6A1,1,0,0,1,8.939,14Z" transform="translate(2 2)"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Icons_Corner_Right_Down" data-name="Icons / Corner / Right Down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M13.781,9.375a1,1,0,0,0-1.4-.156L9,11.919V3A3,3,0,0,0,6,0H1A1,1,0,0,0,1,2H6A1,1,0,0,1,7,3v8.919l-3.375-2.7A1,1,0,1,0,2.376,10.78l5,4a1,1,0,0,0,1.249,0l5-4a1,1,0,0,0,.156-1.4" transform="translate(5 5.001)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_164" data-name="Group 164">
+    <path id="Color-2" data-name="Color" d="M13.781,9.375a1,1,0,0,0-1.4-.156L9,11.919V3A3,3,0,0,0,6,0H1A1,1,0,0,0,1,2H6A1,1,0,0,1,7,3v8.919l-3.375-2.7A1,1,0,1,0,2.376,10.78l5,4a1,1,0,0,0,1.249,0l5-4a1,1,0,0,0,.156-1.4" transform="translate(5 5.001)"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Icons_Arrow_Diagonal_Left_Down" data-name="Icons / Arrow / Diagonal / Left Down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M11.707.293a1,1,0,0,0-1.414,0L2,8.586V3A1,1,0,1,0,0,3v8a1,1,0,0,0,1,1H9a1,1,0,0,0,0-2H3.414l8.293-8.293a1,1,0,0,0,0-1.414" transform="translate(6 6)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_160" data-name="Group 160">
+    <path id="Color-2" data-name="Color" d="M11.707.293a1,1,0,0,0-1.414,0L2,8.586V3A1,1,0,1,0,0,3v8a1,1,0,0,0,1,1H9a1,1,0,0,0,0-2H3.414l8.293-8.293a1,1,0,0,0,0-1.414" transform="translate(6 6)"/>
+  </g>
+</svg>

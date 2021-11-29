@@ -1,0 +1,10 @@
+<svg id="Icons_Pie_Chart" data-name="Icons / Pie Chart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M10,20A10,10,0,0,1,6.667.571a1,1,0,1,1,.666,1.884A8,8,0,1,0,17.545,12.667a1,1,0,0,1,1.885.666A10.018,10.018,0,0,1,10,20Zm9-10H11a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1,9.01,9.01,0,0,1,9,9A1,1,0,0,1,19,10ZM12,2.071V8h5.929A7.034,7.034,0,0,0,12,2.071Z" transform="translate(2 2)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_64" data-name="Group 64">
+    <path id="Color-2" data-name="Color" d="M10,20A10,10,0,0,1,6.667.571a1,1,0,1,1,.666,1.884A8,8,0,1,0,17.545,12.667a1,1,0,0,1,1.885.666A10.018,10.018,0,0,1,10,20Zm9-10H11a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1,9.01,9.01,0,0,1,9,9A1,1,0,0,1,19,10ZM12,2.071V8h5.929A7.034,7.034,0,0,0,12,2.071Z" transform="translate(2 2)"/>
+  </g>
+</svg>

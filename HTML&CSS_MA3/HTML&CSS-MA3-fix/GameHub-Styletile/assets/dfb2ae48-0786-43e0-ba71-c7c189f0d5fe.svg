@@ -1,0 +1,10 @@
+<svg id="Icons_Expand" data-name="Icons / Expand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color" d="M6,16,1.024,16a1,1,0,0,1-1-1L0,10A1,1,0,0,1,1,9H1a1,1,0,0,1,1,.995l.013,2.578,3.28-3.28a1,1,0,1,1,1.414,1.414L3.415,14H6a1,1,0,1,1,0,2Zm9-9a1,1,0,0,1-1-1l0-2.585-3.291,3.29A1,1,0,1,1,9.293,5.293l3.28-3.28L10,2a1,1,0,0,1,0-2h0l5,.025a1,1,0,0,1,1,1L16,6a1,1,0,0,1-1,1Z" transform="translate(4 4)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_150" data-name="Group 150">
+    <path id="Color-2" data-name="Color" d="M6,16,1.024,16a1,1,0,0,1-1-1L0,10A1,1,0,0,1,1,9H1a1,1,0,0,1,1,.995l.013,2.578,3.28-3.28a1,1,0,1,1,1.414,1.414L3.415,14H6a1,1,0,1,1,0,2Zm9-9a1,1,0,0,1-1-1l0-2.585-3.291,3.29A1,1,0,1,1,9.293,5.293l3.28-3.28L10,2a1,1,0,0,1,0-2h0l5,.025a1,1,0,0,1,1,1L16,6a1,1,0,0,1-1,1Z" transform="translate(4 4)"/>
+  </g>
+</svg>
