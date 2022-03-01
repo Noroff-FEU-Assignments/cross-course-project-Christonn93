@@ -1,0 +1,240 @@
+/* ======================
+Style list:
+
+1. Global style
+    1.1 Importing stylesheets
+    1.2 Base elements
+    1.3 Css Variables
+
+2. Typography
+
+3. Components
+   
+4. 
+
+5. 
+
+6. Media Queries 
+   ====================== */
+
+/* ======================
+    1. GLOBAL STYLE
+   ====================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+    padding: 15px;
+    
+    margin-top: 10px;
+}
+
+.display__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+}
+
+/* ======================
+    2. TYPOGRAPHY
+   ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'); /* --ff-one */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* --ff-two */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* --ff-tree */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* --ff-four */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* --ff-five */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap'); /* --ff-six */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); /* --ff-seven */
+
+
+/* ======================
+    3. MESSAGES
+   ====================== */
+.alert {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    border: .1em solid #0099cc;
+    background-color: hsla(195, 100%, 40%, 0.350);
+
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.warning {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    border: .1em solid #ff8800;
+    background-color: hsla(32, 100%, 50%, 0.350);
+
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    border: .1em solid #cc0000;
+    background-color: hsla(0, 100%, 40%, 0.350);
+
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    border: .1em solid #007e33;
+    background-color: hsla(144, 100%, 25%, 0.350);
+
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.alert,
+.success,
+.error,
+.warning {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 19px;
+}
+/* ======================
+    4. Assets
+   ====================== */
+
+/* ==== colour variables ==== */
+.card__standard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+
+    max-width: 350px;
+    min-height: 350px;
+
+    border: .075rem solid black;
+    border-radius: .5em;
+    box-shadow: 0px 5px 16px 5px rgba(61, 61, 61, 0.247);
+}
+
+.card__header,
+.card__textarea {
+    padding: 0 5px;
+}
+
+/* ==== Buttons ==== */
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 19px;
+    
+    padding: .5em;
+    margin: 5px;
+
+    border-radius: 1em;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 16px 5px rgba(61, 61, 61, 0.247);
+    cursor: pointer;
+}
+
+.btn__primary {
+    border: .1em solid #0099cc;
+    background-color: hsla(195, 100%, 40%, 0.350);
+}
+.btn__warning {
+    border: .1em solid #ff8800;
+    background-color: hsla(32, 100%, 50%, 0.350);
+}
+
+.btn__info {
+    border: .1em solid #007e33;
+    background-color: hsla(144, 100%, 25%, 0.350);
+}
+
+/* ==== Image ==== */
+.ratio-box {
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (9/16));
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+
+/* ==== Lists ==== */
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+
+    margin: 10px 0;
+    padding: 15px;
+
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 19px;
+
+    border: .075rem solid black;
+    border-radius: .5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    padding: 0 25px;
+}
+
+ol > li,
+ul > li {
+    margin: 10px 0;
+}
+
+
+
+/* ======================
+    5. 
+   ====================== */
+
+
+/* ======================
+    6. Media Queries 
+   ====================== */
+
+@media only screen and (max-width: 500px) {
+    
+}
