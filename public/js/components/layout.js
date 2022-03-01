@@ -3,8 +3,10 @@ export function headerLayout(){
     const div = document.createElement("div");
     headerElement.append(div);
 
-    div.innerHTML += `<div class="company__logo">
-                                <label>Company name</label>
+    div.innerHTML += `<div class="company-logo">
+                                <div class="ratio-box">
+                                <img src="public/assets/logo/GameHub_Logo4.png" class="image"/>
+                                </div>
                             </div>`
 }
 
@@ -15,6 +17,7 @@ export function navigationLayout(){
 
     navigation.innerHTML += `<nav class="navigation" role="navigation">
                                 <a href="/root/index.html" class="nav__link">Home</a>
+                                <a href="/root/index.html" class="nav__link">Our Games</a>
                                 <a href="/root/public/pages/about.html" class="nav__link">About</a>
                                 <a href="/root/public/pages/contact.html" class="nav__link">Contact</a>
                             </nav>`
