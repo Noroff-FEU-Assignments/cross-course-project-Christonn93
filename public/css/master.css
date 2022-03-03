@@ -36,14 +36,43 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    gap: 5px;
     padding: 0;
     margin: 0;
+    background-color: #F2F2F2;
 }
 
 header {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 350px 1fr;
+    background-color: #0D0D0D;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.main-container {
+    background-color: #0D0D0D;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    padding: 15px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 
     padding: 0;
     padding: .5em;
@@ -53,30 +82,72 @@ header {
     font-size: 30px;
 }
 
-.navigation {
-    display: flex;
+.footer-div-1 {
+    grid-column: 3 / 9;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    gap: 5px;
+
+    background-color: #F2F2F2;
+    font-size: 16px;
+
+    border-radius: 2em;
+    padding: 10px;
+}
+
+.footer-nav {
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
+    gap: 15px;
+}
+
+.page-title {
+    color: white;
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: 40px 100px;
+    padding: 15px;
+}
+
+.nav-div-1 {
+    justify-self: end;
+    align-self: center;
+}
+
+.nav-div-2 {
+    justify-self: end;
+    align-self: end;
 }
 
 .nav-link {
-    color: white;
-    margin-inline-start: .25em;
-    margin-inline-end: .25em;
+    display: inline-flex;
+    font-size: 19px;
+    text-decoration: none;
+    color: #00FF00;
+
+    border-radius: 2em;
+    border: .05em solid #f21b1b;
+    padding: .6em;
+    margin: 0 5px;
+
+    box-shadow: 0px 5px 16px 5px rgba(242, 27, 27, 0.452);
+    transform: translateZ(0);
 }
 
-.header-div-1 {
-    grid-column: 1 / 4;
+.nav-link:hover {
+    box-shadow: 0px 5px 16px 5px rgba(250, 250, 250, 0.452);
 }
 
-.header-div-2 {
-    align-self: end;
-    grid-column: 6 / 10;
-}
-
-.header-div-3 {
-    grid-column: 10;
+.nav-link>.fa-house,
+.nav-link>.fa-gamepad,
+.nav-link>.fa-house-user {
+    margin-right: 15px;
 }
 
 .icon-container {
@@ -84,27 +155,12 @@ header {
     text-align: center;
     max-width: fit-content;
     padding: 10px;
-    border: .05em solid #F21B1B;;
+    border: .05em solid #F21B1B;
     border-radius: 50%;
 }
 
-.header-div-3 >.icon-container > i {
+.header-div-3>.icon-container>i {
     color: #00FF00;
-} 
-
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: center;
-    gap: 15px;
-
-    padding: 0;
-    padding: .5em;
-
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 20px;
 }
 
 /* ======================
@@ -115,7 +171,21 @@ footer {
 /* ======================
     3. MESSAGES
    ====================== */
-.alert {
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 19px;
+
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.primary {
     border: .1em solid #0099cc;
     background-color: hsla(195, 100%, 40%, 0.350);
 }
@@ -135,23 +205,23 @@ footer {
     background-color: hsla(144, 100%, 25%, 0.350);
 }
 
-.info {
+/* ======================
+    4. Assets
+   ====================== */
+
+/* ==== Text-box ==== */
+.text-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    align-content: center;
 
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 19px;
-
-    margin: 10px auto;
+    text-align: center;
+    background-color: #F2F2F2;
+    margin: 15px;
     padding: 15px;
 }
 
-/* ======================
-    4. Assets
-   ====================== */
 
 /* ==== Image ==== */
 .ratio-box {
@@ -169,6 +239,127 @@ footer {
     top: 0;
 }
 
+/* ==== Cards ==== */
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 0.025em;
+
+    max-width: 375px;
+    background-color: #F2F2F2;
+    border: 0.015em solid black;
+    border-radius: 0em 0em 1em 1em;
+    box-shadow: 0 1px 4px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255) inset;
+}
+
+.card-header,
+.card-content,
+.card-footer {
+    padding: 0 15px;
+}
+
+.card-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 2px;
+}
+
+.card-header>p {
+    text-align: end;
+}
+
+
+.card-footer {
+    margin-top: auto;
+    text-align: end;
+    padding: 15px;
+}
+  
+/* ==== Button ==== */
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+    color: #0D0D0D;
+
+    padding: .5em;
+    margin: 5px;
+
+    border-radius: 1em;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 16px 5px rgba(61, 61, 61, 0.247);
+    cursor: pointer;
+    text-decoration: underline;
+    color: #cc0000;
+}
+
+.btn-nav {
+    background-color: #00FF00;
+    border: .2rem solid #cc0000;
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px 5px hsla(0, 100%, 40%, 0.314);
+}
+
+.cta {
+    display: inline-block;
+    padding: 15px;
+
+    background-color: #0d0d0d;
+    border: .05em solid #f21b1b;
+    border-radius: 2em;
+    
+    box-shadow: 0px 5px 16px 5px rgba(242, 27, 27, 0.452);
+    text-decoration: none;
+    color: #00ff00;
+    transform: translateZ(0);
+
+}
+
+.nav-link:hover,
+.cta:hover {
+    -webkit-animation-name: pulse-shrink;
+    animation-name: pulse-shrink;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+
+.cta >i {
+    margin-left: 5px;
+}
+
+/* Pulse Shrink */
+
+@-webkit-keyframes pulse-shrink {
+    to {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes pulse-shrink {
+    to {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
 /* ======================
     5. 
    ====================== */
@@ -177,4 +368,9 @@ footer {
     6. Media Queries 
    ====================== */
 
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}

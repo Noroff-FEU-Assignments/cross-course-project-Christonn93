@@ -1,39 +1,29 @@
-export function headerLayout(){
-    const headerElement = document.querySelector("header");
-    const div = document.createElement("div");
-    headerElement.append(div);
+export function headerLayout() {
+  const headerElement = document.querySelector("header");
 
-    div.innerHTML += `<div class="company-logo">
-                                <div class="ratio-box">
-                                <img src="public/assets/logo/GameHub_Logo4.png" class="image"/>
-                                </div>
-                            </div>`
+  headerElement.innerHTML += `<div class="ratio-box">
+    <img src="/public/assets/logo/GameHub_Logo4.png" class="image"/>
+    </div>
+  <nav class="navigation" role="navigation">
+    <div class="nav-div-1">
+      <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="nav-div-2">
+    <a href="/index.html" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="/public/pages/list_details.html" class="nav-link"><i class="fa-solid fa-gamepad"></i>Our Games</a>
+    <a href="/public/pages/contact.html" class="nav-link"><i class="fa-solid fa-house-user"></i>Login / Sign up</a>
+  </div>
+</nav>`;
 }
 
-export function navigationLayout(){
-    const headerElement = document.querySelector("header");
-    const navigation = document.createElement("div");
-    headerElement.append(navigation);
+export function mainLayout(page) {
+  const image = "https://via.placeholder.com/500x500?text=Image+not+found";
 
-    navigation.innerHTML += `<nav class="navigation" role="navigation">
-                                <a href="/root/index.html" class="nav__link">Home</a>
-                                <a href="/root/index.html" class="nav__link">Our Games</a>
-                                <a href="/root/public/pages/about.html" class="nav__link">About</a>
-                                <a href="/root/public/pages/contact.html" class="nav__link">Contact</a>
-                            </nav>`
+  const mainElement = document.querySelector("main");
+  const innerDiv = document.createElement("div");
+  mainElement.append(innerDiv);
 
-
-}
-
-export function mainLayout(page){
-
-    const image = "https://via.placeholder.com/500x500?text=Image+not+found";
-
-    const mainElement = document.querySelector("main");
-    const innerDiv = document.createElement("div");
-    mainElement.append(innerDiv);
-
-    innerDiv.innerHTML += `<div class="container">
+  innerDiv.innerHTML += `<div class="container">
                                 <h2>Buttons</h2>
                                 <div class="display__container">
                                 <button class="btn btn__primary">Primary</button>
@@ -91,23 +81,41 @@ export function mainLayout(page){
                       <p>This is an article</p>
                       </article> 
                   </div>
-                </div>`
+                </div>`;
 }
 
-export function formLayout(){
-    
+export function formLayout() {}
+
+export function sidebar() {}
+
+export function gameDisplay() {}
+
+export function textBox() {
+  const textBox = document.querySelector(".text-box");
+  textBox.innerHTML = `<div class="text-box">
+  <div class="header">
+    <h1>Welcome to GameHub, The universe of games.</h1>
+  </div>
+  <div>
+    <p>
+      Here you will find a range of pc games.
+      you want a old or new game? A super good deal or a pre-release game?
+      Maybe you want to sell a old game you have dusting in the corner? You came to the right place!</p>
+      <p>
+        Thanks for choosing GameHub for your place to get your games or to clear space in your shelf
+      </p>
+    </div>
+</div>`;
 }
 
-export function sidebar(){
-    
-}
+export function footerLayout() {
+  const footerElement = document.querySelector("footer");
 
-export function footerLayout(){
-    const footerElement = document.querySelector("footer");
-    const footerDiv = document.createElement("div");
-    footerElement.append(footerDiv);
-
-    footerDiv.innerHTML += `<div class="footer__layout">
+  footerElement.innerHTML += `<div class="footer-div-1">
+                                <div class="footer-nav">
+                                <a href="/index.html" class="cta">Home</a>
+                                <a href="/public/pages/contact.html" class="cta">Contact</a>
+                                </div>
                                 <label>Copyright Christopher Tønnesland 2022</label>
-                            </div>`
+                            </div>`;
 }
