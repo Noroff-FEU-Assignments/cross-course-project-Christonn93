@@ -1,7 +1,5 @@
 // Setting up the html
-const infoContainer = document.querySelector(".info");
-const newDiv = document.createElement("div");
-infoContainer.append(newDiv);
+
 
 // Setting the innerHTML of the message
 const error = "Oh no. Something really bad went wrong here.... Try again later";

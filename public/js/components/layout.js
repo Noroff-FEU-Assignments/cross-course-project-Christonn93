@@ -1,9 +1,11 @@
 export function headerLayout() {
   const headerElement = document.querySelector("header");
 
-  headerElement.innerHTML += `<div class="ratio-box">
-    <img src="/public/assets/logo/GameHub_Logo4.png" class="image"/>
-    </div>
+  headerElement.innerHTML += `<a href="/index.html">
+                                <div class="ratio-box">
+                                  <img src="/public/assets/logo/GameHub_Logo4.png" class="image"/>
+                                </div>
+                              </a>
   <nav class="navigation" role="navigation">
     <div class="nav-div-1">
       <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>

@@ -28,9 +28,12 @@ Style list:
 @import url('./layout_css/loader.css');
 
 /* --- 1.2 Base elements --- */
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
 
 body {
     display: grid;
@@ -49,25 +52,13 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1;
     background-color: #F2F2F2;
-    width: 100%;
+    padding: 15px;
 }
 
 .main-container {
     background-color: #0D0D0D;
-    margin: 0 auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-
-    padding: 15px;
+    padding: 25px;
 }
 
 footer {
@@ -240,43 +231,164 @@ footer {
 }
 
 /* ==== Cards ==== */
-.card {
+.display-banner,
+.display-games {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    gap: 0.025em;
+    width: 100%;
+    padding: 5px;
+}  
 
-    max-width: 375px;
-    background-color: #F2F2F2;
-    border: 0.015em solid black;
-    border-radius: 0em 0em 1em 1em;
-    box-shadow: 0 1px 4px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255) inset;
+.display-games  h2 {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    color: #F2F2F2;
 }
 
-.card-header,
-.card-content,
-.card-footer {
-    padding: 0 15px;
+.display-games > .cta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 25px;
 }
 
-.card-header {
+.game-gallery {
     display: grid;
-    grid-template-columns: 1fr auto;
-    column-gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    align-content: space-between;
+    justify-content: center;
 }
 
-.card-header>p {
-    text-align: end;
-}
+/* This card layout is made following a tutorial from Kevin Powell 
+https://www.youtube.com/watch?v=5DEq5cWNYt8
+ */
+ 
+.card {
+    padding: 10rem 0 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
 
-
-.card-footer {
-    margin-top: auto;
-    text-align: end;
-    padding: 15px;
-}
+    transition: transform 500ms ease;
+    opacity: 75%;
+    filter: drop-shadow(0px 0px 6px #FF0101);
+  }
   
+  .card:hover,
+  .card:focus:within {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(20 0% 50% / 0.3) 20%,
+      hsl(0 0% 0% / 1)
+    );
+  }
+  
+  .card-title {
+    color: white;
+    position: relative;
+    /* max-width: 100%; */
+    width: max-content;
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--padding) * -1);
+    bottom: -5px;
+    height: 3px;
+    width: calc(100% + var(--padding));
+    background: #007e33;
+  
+    transition: transform 500ms ease;
+    transform-origin: left;
+  }
+  
+  .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+    transform: scaleX(1);
+  }
+  
+  .card-body {
+    color: rgb(255 255 255 / 0.85);
+  }
+  
+  @media (hover) {
+    .card-content {
+      transform: translateY(50%);
+      transition: transform 500ms ease;
+    }
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+      transform: translateY(10%);
+      transition-delay: 500ms;
+    }
+  
+    .card:focus-within .card-content {
+      transition-duration: 0ms;
+    }
+  
+    .card-content > *:not(.card-title) {
+      opacity: 0;
+      transition: opacity 600ms ease;
+    }
+  
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title) {
+      opacity: 1;
+      transition-delay: 1000ms;
+  
+      transition-duration: 0ms;
+    }
+    .card-title::after {
+      transform: scaleX(0);
+    }
+  }
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    padding: 0.5em 1.25em;
+    border-radius: 0.25rem;
+  }
+  
+  .btn:hover,
+  .btn:focus,
+  .btn:focus-within {
+    color: black;
+    background-color: white;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after{
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+      transition-delay: 0ms !important;
+    }
+  }
+  
+
 /* ==== Button ==== */
 .btn {
     display: flex;
@@ -311,18 +423,21 @@ footer {
 }
 
 .cta {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     padding: 15px;
 
     background-color: #0d0d0d;
     border: .05em solid #f21b1b;
     border-radius: 2em;
-    
-    box-shadow: 0px 5px 16px 5px rgba(242, 27, 27, 0.452);
+
     text-decoration: none;
     color: #00ff00;
     transform: translateZ(0);
+}
 
+.cta:hover {
+    box-shadow: 0px 5px 16px 5px rgba(242, 27, 27, 0.452);
 }
 
 .nav-link:hover,
@@ -368,9 +483,10 @@ footer {
     6. Media Queries 
    ====================== */
 
-@media only screen and (max-width: 1000px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-
+@media only screen and (max-width: 1500px) {
+    .game-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 25px;
     }
+    
 }
