@@ -6,13 +6,23 @@ import { displayMessage } from "./components/messages.js";
 
 displayMessage();
 
+const platformArray = await apiFetch("shooter", 5);
+platformArray.map((games) => {
+ const platforms = games.platforms;
+ platforms.map((platformName) => {
+  const name = platformName.name;
+  return;
+ });
+ return;
+});
+
 const headerElement = document.querySelector("header");
-const logo = document.querySelector("#logo")
+const logo = document.querySelector("#logo");
 logo.innerHTML = `<a href="/index.html">
 <div class="ratio-box">
   <img src="/public/assets/logo/GameHub_Logo4.png" class="image"/>
 </div>
-</a>`
+</a>`;
 
 const nav = document.querySelector("#navigation");
 nav.innerHTML = `<nav class="navigation" role="navigation">
@@ -24,10 +34,9 @@ nav.innerHTML = `<nav class="navigation" role="navigation">
 <a href="/public/pages/list_details.html" class="nav-link"><i class="fa-solid fa-gamepad"></i>Our Games</a>
 <a href="/public/pages/contact.html" class="nav-link"><i class="fa-solid fa-house-user"></i>Login / Sign up</a>
 </div>
-</nav>`
+</nav>`;
 
 const gameGallery = document.querySelector(".display-games");
-
 
 // Game mapping Shooter
 const shooter = await apiFetch("shooter", 1);

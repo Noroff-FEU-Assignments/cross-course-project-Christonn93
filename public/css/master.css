@@ -31,7 +31,7 @@ Style list:
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -239,16 +239,16 @@ footer {
     flex: 1;
     width: 100%;
     padding: 5px;
-}  
+}
 
-.display-games  h2 {
+.display-games h2 {
     display: inline-flex;
     justify-content: center;
     width: 100%;
     color: #F2F2F2;
 }
 
-.display-games > .cta {
+.display-games>.cta {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -271,7 +271,7 @@ footer {
 /* This card layout is made following a tutorial from Kevin Powell 
 https://www.youtube.com/watch?v=5DEq5cWNYt8
  */
- 
+
 .card {
     padding: 10rem 0 0;
     border-radius: 0.5rem;
@@ -281,31 +281,29 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     transition: transform 500ms ease;
     opacity: 75%;
     filter: drop-shadow(0px 0px 6px #FF0101);
-  }
-  
-  .card:hover,
-  .card:focus:within {
+}
+
+.card:hover,
+.card:focus:within {
     transform: scale(1.05);
-  }
-  
-  .card-content {
+}
+
+.card-content {
     --padding: 1.5rem;
     padding: var(--padding);
-    background: linear-gradient(
-      hsl(0 0% 0% / 0),
-      hsl(20 0% 50% / 0.3) 20%,
-      hsl(0 0% 0% / 1)
-    );
-  }
-  
-  .card-title {
+    background: linear-gradient(hsl(0 0% 0% / 0),
+            hsl(20 0% 50% / 0.3) 20%,
+            hsl(0 0% 0% / 1));
+}
+
+.card-title {
     color: white;
     position: relative;
     /* max-width: 100%; */
     width: max-content;
-  }
-  
-  .card-title::after {
+}
+
+.card-title::after {
     content: "";
     position: absolute;
     left: calc(var(--padding) * -1);
@@ -313,53 +311,55 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     height: 3px;
     width: calc(100% + var(--padding));
     background: #007e33;
-  
+
     transition: transform 500ms ease;
     transform-origin: left;
-  }
-  
-  .card:hover .card-title::after,
-  .card:focus-within .card-title::after {
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
     transform: scaleX(1);
-  }
-  
-  .card-body {
+}
+
+.card-body {
     color: rgb(255 255 255 / 0.85);
-  }
-  
-  @media (hover) {
+}
+
+@media (hover) {
     .card-content {
-      transform: translateY(50%);
-      transition: transform 500ms ease;
+        transform: translateY(50%);
+        transition: transform 500ms ease;
     }
+
     .card:hover .card-content,
     .card:focus-within .card-content {
-      transform: translateY(10%);
-      transition-delay: 500ms;
+        transform: translateY(10%);
+        transition-delay: 500ms;
     }
-  
+
     .card:focus-within .card-content {
-      transition-duration: 0ms;
+        transition-duration: 0ms;
     }
-  
-    .card-content > *:not(.card-title) {
-      opacity: 0;
-      transition: opacity 600ms ease;
+
+    .card-content>*:not(.card-title) {
+        opacity: 0;
+        transition: opacity 600ms ease;
     }
-  
-    .card:hover .card-content > *:not(.card-title),
-    .card:focus-within .card-content > *:not(.card-title) {
-      opacity: 1;
-      transition-delay: 1000ms;
-  
-      transition-duration: 0ms;
+
+    .card:hover .card-content>*:not(.card-title),
+    .card:focus-within .card-content>*:not(.card-title) {
+        opacity: 1;
+        transition-delay: 1000ms;
+
+        transition-duration: 0ms;
     }
+
     .card-title::after {
-      transform: scaleX(0);
+        transform: scaleX(0);
     }
-  }
-  
-  .btn {
+}
+
+.btn {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -367,27 +367,28 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     background-color: black;
     padding: 0.5em 1.25em;
     border-radius: 0.25rem;
-  }
-  
-  .btn:hover,
-  .btn:focus,
-  .btn:focus-within {
+}
+
+.btn:hover,
+.btn:focus,
+.btn:focus-within {
     color: black;
     background-color: white;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
+}
+
+@media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
-    *::after{
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-      transition-delay: 0ms !important;
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
     }
-  }
-  
+}
+
 
 /* ==== Button ==== */
 .btn {
@@ -452,9 +453,9 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-  }
+}
 
-.cta >i {
+.cta>i {
     margin-left: 5px;
 }
 
@@ -462,18 +463,18 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
 @-webkit-keyframes pulse-shrink {
     to {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  
-  @keyframes pulse-shrink {
+}
+
+@keyframes pulse-shrink {
     to {
-      -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
+}
 
 /* ======================
     5. 
@@ -488,5 +489,25 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
         grid-template-columns: repeat(3, 1fr);
         margin: 25px;
     }
-    
+
+}
+
+@media only screen and (max-width: 400px) {
+    .game-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
 }
