@@ -6,20 +6,33 @@
     <title>GameHub Home</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./public/css/master.css" />
+    <link rel="stylesheet" href="/public/css/master.css" />
     
      <!-- Hotjar Tracking Code for https://cross-course-christonn93.netlify.app -->
-     <script src="./public/js/components/hotjar.js"></script>
+     <script src="/public/js/components/hotjar.js"></script>
+     <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div id="logo" class="company-logo"></div>
+      <nav id="navigation" class="navigation" role="navigation"></nav>
+     </header>
     <main>
-      <div class="info"></div>
-      <div class="main-container">
-      </div>
+      <div class="container">
+        <h2 class="game-title"></h2>
+        <div id="main_image"></div>
+        <div class="container row" id="screenshots"></div>
+        <div class="container" id="details"></div>
+        <div class="container row">
+          <div class="container" id="requirements"></div>
+          <div class="container" id="dev-info"></div>
+        </div>
+        <div class="container other-games" id="othergames"></div>
       </div>
     </main>
-    <footer></footer>
-    <script src="./public/js/index.js" type="module"></script>
+    <footer>
+      <div id="footer_div" class="display"></div>
+     </footer>
+    <script src="/public/js/pages/gamedetails.js" type="module"></script>
   </body>
 </html>

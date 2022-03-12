@@ -1,10 +1,18 @@
+const api_baseURL = `https://api.rawg.io/api/`;
+const api_key = `71922929f4584b77bfd91f78383f6d12`;
+const cors_url = `https://noroffcors.herokuapp.com/`;
+
+const games = "games/";
+const page_size = 5;
+
+const api = api_baseURL + games + `?key=${api_key}`;
+console.log(api);
+
 export async function apiFetch(genre, page) {
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
- const apiKey = `f6dd075d81db416fbb289fc9d3726038`;
- const page_size = 5;
- const order = "released";
- const apiHost = `https://api.rawg.io/api/games?key=${apiKey}&page_size=${page_size}&genres=${genre}&page=${page}&ordering=${order}`;
+ const apiKey = `71922929f4584b77bfd91f78383f6d12`;
+ const apiHost = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-added` + `&key=${apiKey}` + `&page_size=${page_size}` + `&genres=${genre}` + `&page=${page}`;
 
  // The fetch
  const apiConn = corsHost + apiHost;
@@ -19,3 +27,51 @@ export async function apiFetch(genre, page) {
   throw new Error(response.statusText);
  }
 }
+
+export async function detailsFetch(id, gameId) {
+ // Api info
+ const corsHost = "https://noroffcors.herokuapp.com/";
+ const apiKey = `71922929f4584b77bfd91f78383f6d12`;
+ const apiHost = `https://api.rawg.io/api/games/${id}?${gameId}&key=${apiKey}`;
+ console.log(apiHost);
+
+ // The fetch
+ const apiConn = corsHost + apiHost;
+ const response = await fetch(apiConn);
+ const json = await response.json();
+
+ if (response.ok) {
+  return json;
+ } else {
+  // Request succeeded but you didn't get your data
+  throw new Error(response.statusText);
+ }
+}
+
+export async function getScreenshots(id) {
+ // Api info
+ const corsHost = "https://noroffcors.herokuapp.com/";
+ const apiKey = `71922929f4584b77bfd91f78383f6d12`;
+ const apiHost = `https://api.rawg.io/api/games/${id}/screenshots?&key=${apiKey}`;
+ console.log(apiHost);
+
+ // The fetch
+ const apiConn = corsHost + apiHost;
+ const response = await fetch(apiConn);
+ const json = await response.json();
+ const data = json.results;
+
+ if (response.ok) {
+  return data;
+ } else {
+  // Request succeeded but you didn't get your data
+  throw new Error(response.statusText);
+ }
+}
+
+async function getGame(id) {
+    const details = await detailsFetch()
+    const screenshots = await getScreenshots()
+ 
+    return [details, screenshots]
+ }

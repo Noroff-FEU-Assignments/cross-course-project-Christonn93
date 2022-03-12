@@ -1,0 +1,505 @@
+{
+    "id": "",
+    "slug": "",
+    "name": "",
+    "name_original": "",
+    "description": "",
+    "metacritic": 79,
+    "metacritic_platforms": [
+        {
+            "metascore": 80,
+            "url": "https://www.metacritic.com/game/pc/detroit-become-human",
+            "platform": {
+                "platform": 4,
+                "name": "PC",
+                "slug": "pc"
+            }
+        },
+        {
+            "metascore": 78,
+            "url": "https://www.metacritic.com/game/playstation-4/detroit-become-human",
+            "platform": {
+                "platform": 18,
+                "name": "PlayStation 4",
+                "slug": "playstation4"
+            }
+        }
+    ],
+    "released": "",
+    "tba": false,
+    "updated": "",
+    "background_image": "",
+    "background_image_additional": "",
+    "website": "",
+    "rating": 4.28,
+    "rating_top": 4,
+    "ratings": [
+        {
+            "id": 4,
+            "title": "recommended",
+            "count": 1088,
+            "percent": 44.55
+        },
+        {
+            "id": 5,
+            "title": "exceptional",
+            "count": 1072,
+            "percent": 43.9
+        },
+        {
+            "id": 3,
+            "title": "meh",
+            "count": 228,
+            "percent": 9.34
+        },
+        {
+            "id": 1,
+            "title": "skip",
+            "count": 54,
+            "percent": 2.21
+        }
+    ],
+    "reactions": {
+        "1": 17,
+        "2": 3,
+        "3": 11,
+        "4": 2,
+        "5": 4,
+        "6": 4,
+        "7": 6,
+        "8": 1,
+        "9": 8,
+        "10": 11,
+        "11": 10,
+        "12": 6,
+        "15": 1,
+        "20": 1
+    },
+    "added": 7487,
+    "added_by_status": {
+        "yet": 468,
+        "owned": 3814,
+        "beaten": 2153,
+        "toplay": 746,
+        "dropped": 146,
+        "playing": 160
+    },
+    "playtime": 8,
+    "screenshots_count": 18,
+    "movies_count": 0,
+    "creators_count": 5,
+    "achievements_count": 15,
+    "parent_achievements_count": 2,
+    "reddit_url": "https://www.reddit.com/r/DetroitBecomeHuman/",
+    "reddit_name": "Quantic Dream's Detroit: Become Human",
+    "reddit_description": "This is a subreddit dedicated to Quantic Dream's 2018 game Detroit: Become Human.",
+    "reddit_logo": "",
+    "reddit_count": 9351,
+    "twitch_count": 102,
+    "youtube_count": 1000000,
+    "reviews_text_count": 48,
+    "ratings_count": 2394,
+    "suggestions_count": 477,
+    "alternative_names": [],
+    "metacritic_url": "https://www.metacritic.com/game/playstation-4/detroit-become-human",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 0,
+    "user_game": null,
+    "reviews_count": 2442,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+        {
+            "platform": {
+                "id": 1,
+                "name": "PC",
+                "slug": "pc"
+            }
+        },
+        {
+            "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+            }
+        }
+    ],
+    "platforms": [
+        {
+            "platform": {
+                "id": 4,
+                "name": "PC",
+                "slug": "pc",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 419995,
+                "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+            },
+            "released_at": "2018-05-25",
+            "requirements": {
+                "minimum": "Minimum:\nRequires a 64-bit processor and operating system\nOS: Windows 10 (64 bit)\nProcessor: Intel Core i5-2300 @ 2.8 GHz or AMD Ryzen 3 1200 @ 3.1GHz or AMD FX-8350 @ 4.2GHz\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 780 or AMD HD 7950 with 3GB VRAM minimum (Support of Vulkan 1.1 required)\nStorage: 55 GB available space",
+                "recommended": "Recommended:\nRequires a 64-bit processor and operating system\nOS: Windows 10 (64 bit)\nProcessor: Intel Core i5-6600 @ 3.3 GHz or AMD Ryzen 3 1300 X @ 3.4 GHz\nMemory: 12 GB RAM\nGraphics: Nvidia GeForce GTX 1060 or AMD Radeon RX 580 with 4GB VRAM minimum (Support of Vulkan 1.1 required)\nStorage: 55 GB available space"
+            }
+        },
+        {
+            "platform": {
+                "id": 18,
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 6262,
+                "image_background": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg"
+            },
+            "released_at": "2018-05-25",
+            "requirements": {}
+        }
+    ],
+    "stores": [
+        {
+            "id": 438987,
+            "url": "",
+            "store": {
+                "id": 1,
+                "name": "Steam",
+                "slug": "steam",
+                "domain": "store.steampowered.com",
+                "games_count": 60630,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+            }
+        },
+        {
+            "id": 34966,
+            "url": "",
+            "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 7734,
+                "image_background": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg"
+            }
+        },
+        {
+            "id": 303962,
+            "url": "",
+            "store": {
+                "id": 11,
+                "name": "Epic Games",
+                "slug": "epic-games",
+                "domain": "epicgames.com",
+                "games_count": 805,
+                "image_background": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg"
+            }
+        }
+    ],
+    "developers": [
+        {
+            "id": 13214,
+            "name": "Quantic Dream",
+            "slug": "quantic-dream",
+            "games_count": 9,
+            "image_background": "https://media.rawg.io/media/screenshots/08a/08a83a4645f1f98e2205490416674cda.jpg"
+        }
+    ],
+    "genres": [
+        {
+            "id": 4,
+            "name": "Action",
+            "slug": "action",
+            "games_count": 143313,
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Adventure",
+            "slug": "adventure",
+            "games_count": 107544,
+            "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+        }
+    ],
+    "tags": [
+        {
+            "id": 31,
+            "name": "Singleplayer",
+            "slug": "singleplayer",
+            "language": "eng",
+            "games_count": 153647,
+            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+        },
+        {
+            "id": 40847,
+            "name": "Steam Achievements",
+            "slug": "steam-achievements",
+            "language": "eng",
+            "games_count": 25031,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Atmospheric",
+            "slug": "atmospheric",
+            "language": "eng",
+            "games_count": 19963,
+            "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg"
+        },
+        {
+            "id": 40849,
+            "name": "Steam Cloud",
+            "slug": "steam-cloud",
+            "language": "eng",
+            "games_count": 11377,
+            "image_background": "https://media.rawg.io/media/games/951/951572a3dd1e42544bd39a5d5b42d234.jpg"
+        },
+        {
+            "id": 40836,
+            "name": "Full controller support",
+            "slug": "full-controller-support",
+            "language": "eng",
+            "games_count": 11582,
+            "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg"
+        },
+        {
+            "id": 42,
+            "name": "Great Soundtrack",
+            "slug": "great-soundtrack",
+            "language": "eng",
+            "games_count": 3191,
+            "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+        },
+        {
+            "id": 118,
+            "name": "Story Rich",
+            "slug": "story-rich",
+            "language": "eng",
+            "games_count": 13546,
+            "image_background": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg"
+        },
+        {
+            "id": 149,
+            "name": "Third Person",
+            "slug": "third-person",
+            "language": "eng",
+            "games_count": 6386,
+            "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+        },
+        {
+            "id": 32,
+            "name": "Sci-fi",
+            "slug": "sci-fi",
+            "language": "eng",
+            "games_count": 13347,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+        },
+        {
+            "id": 189,
+            "name": "Female Protagonist",
+            "slug": "female-protagonist",
+            "language": "eng",
+            "games_count": 7678,
+            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Exploration",
+            "slug": "exploration",
+            "language": "eng",
+            "games_count": 14250,
+            "image_background": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg"
+        },
+        {
+            "id": 34,
+            "name": "Violent",
+            "slug": "violent",
+            "language": "eng",
+            "games_count": 5068,
+            "image_background": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+        },
+        {
+            "id": 69,
+            "name": "Action-Adventure",
+            "slug": "action-adventure",
+            "language": "eng",
+            "games_count": 10233,
+            "image_background": "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg"
+        },
+        {
+            "id": 37796,
+            "name": "exclusive",
+            "slug": "exclusive",
+            "language": "eng",
+            "games_count": 4514,
+            "image_background": "https://media.rawg.io/media/games/806/8060a7663364ac23e15480728938d6f3.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Replay Value",
+            "slug": "replay-value",
+            "language": "eng",
+            "games_count": 1047,
+            "image_background": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg"
+        },
+        {
+            "id": 145,
+            "name": "Choices Matter",
+            "slug": "choices-matter",
+            "language": "eng",
+            "games_count": 1994,
+            "image_background": "https://media.rawg.io/media/games/07a/07a74470a2618fd71945db0619602baf.jpg"
+        },
+        {
+            "id": 167,
+            "name": "Futuristic",
+            "slug": "futuristic",
+            "language": "eng",
+            "games_count": 3112,
+            "image_background": "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg"
+        },
+        {
+            "id": 110,
+            "name": "Cinematic",
+            "slug": "cinematic",
+            "language": "eng",
+            "games_count": 797,
+            "image_background": "https://media.rawg.io/media/games/7a2/7a2500ee8b2c0e1ff268bb4479463dea.jpg"
+        },
+        {
+            "id": 226,
+            "name": "Cyberpunk",
+            "slug": "cyberpunk",
+            "language": "eng",
+            "games_count": 3147,
+            "image_background": "https://media.rawg.io/media/screenshots/7f8/7f8b58994fc420fefaa5fb9992335a11.jpg"
+        },
+        {
+            "id": 478,
+            "name": "3rd-Person Perspective",
+            "slug": "3rd-person-perspective",
+            "language": "eng",
+            "games_count": 86,
+            "image_background": "https://media.rawg.io/media/games/053/053fc543bf488349610f1ae2d0c1b51b.jpg"
+        },
+        {
+            "id": 218,
+            "name": "Multiple Endings",
+            "slug": "multiple-endings",
+            "language": "eng",
+            "games_count": 4728,
+            "image_background": "https://media.rawg.io/media/games/dbe/dbeeb30e02b59f55c4d8cf4f103a83b9.jpg"
+        },
+        {
+            "id": 197,
+            "name": "Robots",
+            "slug": "robots",
+            "language": "eng",
+            "games_count": 6377,
+            "image_background": "https://media.rawg.io/media/games/948/948fe7f00b6cba8472f5ecd07a455077.jpg"
+        },
+        {
+            "id": 142,
+            "name": "Detective",
+            "slug": "detective",
+            "language": "eng",
+            "games_count": 1944,
+            "image_background": "https://media.rawg.io/media/screenshots/fd4/fd4da6198e718001cd922f13b2e4d5bf.jpeg"
+        },
+        {
+            "id": 209,
+            "name": "Drama",
+            "slug": "drama",
+            "language": "eng",
+            "games_count": 1663,
+            "image_background": "https://media.rawg.io/media/games/e35/e355efef97722d50bec3482a2263b962.jpg"
+        },
+        {
+            "id": 78,
+            "name": "America",
+            "slug": "america",
+            "language": "eng",
+            "games_count": 295,
+            "image_background": "https://media.rawg.io/media/screenshots/794/7943eb38a763c014c84ddae7378b865c.jpg"
+        },
+        {
+            "id": 200,
+            "name": "Narration",
+            "slug": "narration",
+            "language": "eng",
+            "games_count": 955,
+            "image_background": "https://media.rawg.io/media/games/694/694ba14510656e8787536349220cb168.jpg"
+        },
+        {
+            "id": 577,
+            "name": "Beautiful",
+            "slug": "beautiful",
+            "language": "eng",
+            "games_count": 1727,
+            "image_background": "https://media.rawg.io/media/games/22a/22a3b2ddb5b344b1081cc28768f8ac84.jpg"
+        },
+        {
+            "id": 572,
+            "name": "Emotional",
+            "slug": "emotional",
+            "language": "eng",
+            "games_count": 962,
+            "image_background": "https://media.rawg.io/media/games/e0f/e0f8d58079f6a0c6afb25d91422a98fc.jpg"
+        },
+        {
+            "id": 309,
+            "name": "Dynamic Narration",
+            "slug": "dynamic-narration",
+            "language": "eng",
+            "games_count": 165,
+            "image_background": "https://media.rawg.io/media/games/4a1/4a1ee7cf3792722dcd11638e542405c3.jpg"
+        },
+        {
+            "id": 19728,
+            "name": "european",
+            "slug": "european",
+            "language": "eng",
+            "games_count": 12,
+            "image_background": "https://media.rawg.io/media/screenshots/d14/d148f8ffc332b1d0f70be9bad91c2171.jpg"
+        },
+        {
+            "id": 43374,
+            "name": "Remote Play on TV",
+            "slug": "remote-play-on-tv",
+            "language": "eng",
+            "games_count": 213,
+            "image_background": "https://media.rawg.io/media/screenshots/e12/e1255bab51a84896dbcffbb267a2cbf7.jpg"
+        },
+        {
+            "id": 2071,
+            "name": "futurism",
+            "slug": "futurism",
+            "language": "eng",
+            "games_count": 3,
+            "image_background": "https://media.rawg.io/media/games/47c/47c4398d9f910210ecb2114f1f82a2bf.jpg"
+        }
+    ],
+    "publishers": [
+        {
+            "id": 10212,
+            "name": "Sony Computer Entertainment",
+            "slug": "sony-computer-entertainment",
+            "games_count": 493,
+            "image_background": "https://media.rawg.io/media/games/f2e/f2e6dcf9c27d99ba2551f1094ad41756.jpg"
+        },
+        {
+            "id": 10302,
+            "name": "Quantic Dream",
+            "slug": "quantic-dream",
+            "games_count": 5,
+            "image_background": "https://media.rawg.io/media/games/6a7/6a78ff1d0b8c1e454886a64fe521eeee.jpeg"
+        }
+    ],
+    "esrb_rating": {
+        "id": 4,
+        "name": "Mature",
+        "slug": "mature"
+    },
+    "clip": null,
+    "description_raw": ""
+}
