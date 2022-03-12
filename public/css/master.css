@@ -602,7 +602,6 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     flex-wrap: wrap;
     gap: 15px;
     flex: 1;
-    border: 0.1rem solid black;
     width: 100%;
 }
 
@@ -623,5 +622,9 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     flex-wrap: wrap;
     gap: 15px;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style: none;
 }

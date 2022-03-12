@@ -49,7 +49,7 @@ action.forEach((game) => {
  <div class="card-content">
   <h2 class="card-title">${game.name}</h2>
   <p class="card-body">${game.updated}</p>
-  <a href="./public/pages/game_details.html?${game.id}" class="cta">See more info</a>
+  <a href="./public/pages/game_details.html?id=${game.id}" class="cta">See more info</a>
  </div>
  </div>`;
 });

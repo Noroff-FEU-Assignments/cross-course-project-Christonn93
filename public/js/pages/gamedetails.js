@@ -44,3 +44,9 @@ function htmlElements(tagName = "div", classNames = [], children = []) {
 
 const description = document.getElementById("details")
 description.innerHTML = `<p>${details.description_raw}</p>`
+
+const dev = document.getElementById("dev-info");
+dev.innerHTML = `<ul>
+<li>Developed by: ${details.developers[0].name}</li>
+<li>Published by: ${details.publishers[0].name}</li>
+</ul>`
