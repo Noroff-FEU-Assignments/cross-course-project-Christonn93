@@ -10,12 +10,12 @@ logo.innerHTML = `<a href="/index.html">
 const nav = document.querySelector("#navigation");
 nav.innerHTML = `<nav class="navigation" role="navigation">
 <div class="nav-div-1">
-  <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+  <a href=""  class="cta"><i class="fa-solid fa-cart-shopping"></i></a>
 </div>
 <div class="nav-div-2">
-<a href="/index.html" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
-<a href="/public/pages/list_details.html" class="nav-link"><i class="fa-solid fa-gamepad"></i>Our Games</a>
-<a href="/public/pages/contact.html" class="nav-link"><i class="fa-solid fa-house-user"></i>Login / Sign up</a>
+<a href="/index.html"  class="cta"><i class="fa-solid fa-house"></i>Home</a>
+<a href="/public/pages/list_details.html"  class="cta"><i class="fa-solid fa-gamepad"></i>Our Games</a>
+<a href="/public/pages/contact.html"  class="cta"><i class="fa-solid fa-house-user"></i>Login / Sign up</a>
 </div>
 </nav>`;
 
