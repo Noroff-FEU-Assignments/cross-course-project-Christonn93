@@ -137,7 +137,7 @@ export async function createGameGallery() {
 
 export function pageLoader() {
  // Setting up the html
- const infoContainer = document.querySelector("#section_1");
+ const infoContainer = document.querySelector(".main-container");
  const newDiv = document.createElement("div");
  infoContainer.append(newDiv);
  newDiv.innerHTML = `
