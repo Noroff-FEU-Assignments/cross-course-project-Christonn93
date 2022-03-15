@@ -17,3 +17,5 @@
 8. [Link](https://htmlcolorcodes.com/color-picker/)
 
 9. [Link](https://rawg.io/apidocs)
+
+10. [The navigation](https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535)

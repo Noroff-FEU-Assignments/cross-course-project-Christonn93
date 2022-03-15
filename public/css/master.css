@@ -24,7 +24,6 @@ Style list:
    ====================== */
 
 /* --- 1.1 Importing stylesheets --- */
-@import url('./layout_css/navigation.css');
 @import url('./layout_css/loader.css');
 
 /* --- 1.2 Base elements --- */
@@ -79,14 +78,69 @@ body {
 /* ==== Header ==== */
 
 header {
-    display: grid;
-    grid-template-columns: 350px 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
     background-color: var(--smokey);
+}
+
+/* ==== Navigation mobile ==== */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* ==== Menu mobile ==== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.nav-li,
+.nav-top,
+.toggle {
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.toggle {order: 1;}
+.nav-top {
+    display: none;
+    order: 2;
+}
+
+.nav-li {
+    display: none;
+    order: 3;
+}
+
+.active .nav-li,
+.active .nav-top {
+    display: block;
 }
 
 /* ==== Main ==== */
 
 main {
+    max-width: 100%;
     background-color: var(--anti-flash);
 }
 
@@ -98,58 +152,26 @@ main {
 /* ==== Footer ==== */
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    padding: var(--padding);
-    background-color: var(--smokey);
-
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 30px;
-}
-
-.footer-div-1 {
-    grid-column: 3 / 9;
-
-    display: grid;
-    grid-template-rows: 1fr auto;
-    justify-items: center;
-    gap: 5px;
-
-    background-color: var(--anti-flash);
-    font-size: 16px;
-
-    border-radius: 2rem;
-    padding: var(--padding);
-}
-
-.footer-nav {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    gap: 15px;
+    justify-content: center;
+
+    background-color: var(--smokey);
 }
 
-.page-title {
+footer > div  {
+    max-width: 550px;
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
     color: var(--anti-flash);
 }
 
-/* ==== Navigation ==== */
-
-.navigation {
-    display: grid;
-    grid-template-rows: 40px 100px;
-    padding: calc(var(--padding) - 1rem);
-}
-
-.nav-div-1 {
-    justify-self: end;
-    align-self: center;
-}
-
-.nav-div-2 {
-    justify-self: end;
-    align-self: end;
+footer > div > ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 /* ======================
@@ -198,11 +220,6 @@ footer {
     4. Assets
    ====================== */
 
-
-   ul {
-    list-style: none;
-}
-
 /* ==== Text-box ==== */
 .text-box {
     display: flex;
@@ -210,10 +227,15 @@ footer {
     flex-wrap: wrap;
     flex: 1;
 
-    text-align: center;
     background-color: var(--anti-flash);
     margin: 15px;
     padding: 15px;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.text-box > p {
+    margin: 0;
 }
 
 /* ==== Banner ==== */
@@ -318,23 +340,16 @@ footer {
     color: var(--anti-flash);
 }
 
-.display-container>.cta {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
-
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-top: 25px;
-}
-
 .game-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 100%;
     margin: 15px;
+}
+
+.game-gallery > .cta {
+    flex: 1 0 100%;
 }
 
 /* ==== Image ==== */
@@ -360,7 +375,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
  */
 
 .card {
-    flex: 1 1 calc(350px / 4);
+    flex: 1 1 calc(100% * ( 9/16 ) / 4);
     padding: 10rem 0 0;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -450,6 +465,27 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     margin-right: 15px;
 }
 
+.disabled {
+    --color: hsla(0, 0%, 50%, 0.295);
+    background-color: var(--color);
+    border: inset .05rem solid var(--color);
+    color: white;
+}
+
+.disabled:hover {
+    box-shadow: none;
+    -webkit-animation-name: none;
+    animation-name: none;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
 /* ======================
     5. 
    ====================== */
@@ -458,33 +494,73 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     6. Media Queries 
    ====================== */
 
-@media only screen and (max-width: 1500px) {
-    .game-gallery {
-        grid-template-columns: repeat(3, 1fr);
-        margin: 25px;
+/* Mobile view */
+@media screen and (max-width: 400px) {
+    .banner {
+        min-width: auto;
+        max-width: 100%;
     }
+
+    .card {
+        flex: 1 1 calc(100% * ( 9/16 ));
+    }
+
 
 }
 
-@media only screen and (max-width: 400px) {
-    .game-gallery {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 5px;
+
+/* Tablet view */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
     }
 
-    header {
-        display: grid;
-        grid-template-columns: 100px 1fr;
+    .logo {
+        width: 350px;
     }
 
-    .navigation {
+    .nav-li,
+    .nav-top {
+        display: none; 
+        order: 1;
+        position: relative;
+        width: auto;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+}
+
+/* Desktop view */
+@media all and (min-width: 960px) {
+    .menu {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex: 1;
+        justify-content: space-between;
+        align-content: flex-end;
     }
 
+    .logo {
+        width: 350px;
+    }
+
+    .nav-li,
+    .nav-top {
+        display: flex; 
+        order: 1;
+        position: relative;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
 }
+
 
 
 @media (hover) {

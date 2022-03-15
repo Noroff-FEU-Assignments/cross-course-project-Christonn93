@@ -3,10 +3,9 @@ import {  getScreenshots } from "../api/api.js"
 
 // Importing components for the page
 import { displayMessage } from "../components/messages.js";
-import { createLayout } from "../components/pageLayout.js";
-import { banner as banner } from "../json/banner.js"
-
-createLayout();
+import { createHeader, createFooter, } from "../components/pageLayout.js";
+createHeader();
+createFooter();
 displayMessage();
 
 // Getting the page HTML

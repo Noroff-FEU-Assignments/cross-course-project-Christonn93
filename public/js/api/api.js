@@ -6,19 +6,19 @@ const games = "games/";
 const page_size = 5;
 
 const api = api_baseURL + games + `?key=${api_key}`;
-console.log(api);
 
 export async function apiFetch(genre, page) {
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
  const apiKey = `71922929f4584b77bfd91f78383f6d12`;
- const apiHost = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-added` + `&key=${apiKey}` + `&page_size=${page_size}` + `&genres=${genre}` + `&page=${page}`;
+ const apiHost = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-added&key=${apiKey}&page_size=${page_size}&genres=${genre}&page=${page}`;
 
  // The fetch
  const apiConn = corsHost + apiHost;
  const response = await fetch(apiConn);
  const json = await response.json();
  const data = json.results;
+ console.log(data)
 
  if (response.ok) {
   return data;
@@ -27,6 +27,29 @@ export async function apiFetch(genre, page) {
   throw new Error(response.statusText);
  }
 }
+
+export async function gameGenreFetch(genre){
+ // Api info
+ const corsHost = "https://noroffcors.herokuapp.com/";
+ const apiKey = `71922929f4584b77bfd91f78383f6d12`;
+ const apiHost = `https://api.rawg.io/api/games?genres=${genre}&dates=2019-01-01,2019-12-31&ordering=-added&key=${apiKey}`;
+ console.log(apiHost);
+
+ // The fetch
+ const apiConn = corsHost + apiHost;
+ const response = await fetch(apiConn);
+ const json = await response.json();
+ const data = json.results;
+console.log(data)
+
+ if (response.ok) {
+  return data;
+ } else {
+  // Request succeeded but you didn't get your data
+  throw new Error(response.statusText);
+ }
+}
+
 
 export async function detailsFetch(id, gameId) {
  // Api info
@@ -39,6 +62,7 @@ export async function detailsFetch(id, gameId) {
  const apiConn = corsHost + apiHost;
  const response = await fetch(apiConn);
  const json = await response.json();
+ console.log(json)
 
  if (response.ok) {
   return json;
@@ -60,6 +84,7 @@ export async function getScreenshots(id) {
  const response = await fetch(apiConn);
  const json = await response.json();
  const data = json.results;
+ console.log(data)
 
  if (response.ok) {
   return data;
