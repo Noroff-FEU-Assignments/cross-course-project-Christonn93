@@ -177,7 +177,23 @@ footer > div > ul {
 /* ======================
     2. TYPOGRAPHY
    ====================== */
+   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
 
+   h1 {
+    font-size: 36px;
+    font-family: 'Abril Fatface', cursive;
+   }
+
+   h2 {
+    font-size: 26px;
+    font-family: 'Play', sans-serif;
+   }
+
+   p, a, li, label {
+    font-family: 'Montserrat', sans-serif;
+   }
 
 /* ======================
     3. MESSAGES
@@ -221,13 +237,19 @@ footer > div > ul {
    ====================== */
 
 /* ==== Text-box ==== */
+#section_1 {
+    margin: 0 auto;
+}
+
 .text-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
+    max-width: max-content;
 
     background-color: var(--anti-flash);
+    opacity: 0.7;
     margin: 15px;
     padding: 15px;
     border-radius: 1.5rem;
@@ -365,7 +387,11 @@ footer > div > ul {
 }
 
 .game-gallery > .cta {
-    flex: 1 0 100%;
+    flex: 1 1 max-content;
+    align-self: flex-end;
+    margin: 0 auto;
+
+    
 }
 
 /* ==== Image ==== */
@@ -451,6 +477,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     display: inline-flex;
     justify-content: center;
     padding: 15px;
+    width: max-content;
 
     background-color: #0d0d0d;
     border: .05rem solid var(--red);
@@ -526,7 +553,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
 
 /* Tablet view */
-@media all and (min-width: 425px) and (max-width: 960px) {
+@media all and (min-width: 425px) and (max-width: 860px) {
     .menu {
         justify-content: center;
     }
@@ -560,7 +587,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 }
 
 /* Desktop view */
-@media all and (min-width: 960px) {
+@media all and (min-width: 860px) {
     .menu {
         display: flex;
         flex-direction: row;
@@ -587,7 +614,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
     
     .card {
-        flex: 1 1 calc(350px / 4);
+        flex: 1 1 300px;
     }
 }
 
