@@ -117,16 +117,17 @@ genre.forEach((gameGenre) => {
 
 // Game Gallery display
 export async function createGameGallery() {
- const adventure = await apiFetch("adventure", 5);
+ const casual = await apiFetch("casual", 1);
  const shooter = await apiFetch("shooter", 1);
  const action = await apiFetch("action", 10);
  const simulation = await apiFetch("simulation", 15);
+ const family = await apiFetch("family", 19)
 
  // Game mapping Shooter
- querySelectorFactory("#game_section_1", shooter, "Shooter");
+ querySelectorFactory("#game_section_1", family, "Family");
 
  // Game mapping adventure
- querySelectorFactory("#game_section_2", adventure, "Adventure");
+ querySelectorFactory("#game_section_2", casual, "casual");
 
  // Game mapping action
  querySelectorFactory("#game_section_3", action, "Action");
