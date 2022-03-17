@@ -19,8 +19,7 @@ export function createHeader() {
     <ul class="menu">
     <li class="nav-li"><a href="/index.html"  class="cta"><i class="fa-solid fa-house"></i>Home</a></li>
     <li class="nav-li"><a href="#"  class="cta disabled"><i class="fa-solid fa-gamepad"></i>Our Games</a></li>
-    <li class="nav-top"><a href="#"  class="cta disabled"><i class="fa-solid fa-house-user"></i>Sign up</a></li>
-    <li class="nav-top"><a href="#"  class="cta disabled"><i class="fa-solid fa-house-user"></i>Log in</a></li>
+    <li class="nav-top"><a href="#"  class="cta disabled"><i class="fa-solid fa-house-user"></i>Log in / Sign up</a></li>
     <li class="toggle"><a href="#" class="cta"><i class="fas fa-bars"></i></a></li>
     <li class="nav-li" id="chart"><a href="/public/pages/checkout.html"  class="cta"><i class="fa-solid fa-cart-shopping"></i></a></li>
   </ul>
@@ -33,8 +32,9 @@ export function createIndexInfo() {
  const section_1 = document.querySelector("#section_1");
  section_1.innerHTML = `<div class="text-box">
                              <h1>Welcome to GameHub, The universe of games.</h1>
-                                 <p> Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game?</p> 
-                                 <p>Maybe you want to sell a old game you have dusting in the corner? You came to the right place! Thanks for choosing GameHub for your place to get your games or to clear space in your shelf</p>
+                                 <p>You want a old or new game? A super good deal or a pre-release game?</p> 
+                                 <p>Maybe you want to sell a old game you have dusting in the corner? You came to the right place!</p>
+                                 <p> Thanks for choosing GameHub for your place to get your games or to clear space in your shelf</p>
                          </div>`;
 }
 
@@ -55,6 +55,7 @@ export function createFooter() {
 export function CreateBanner() {
  const banner1 = document.querySelector("#banner");
  const banner2 = document.querySelector("#banner_2");
+ const banner3 = document.querySelector("#banner_3");
 
  banner1.innerHTML = `<div class="banner-header">
                         <h3>Banner header</h3>
@@ -73,6 +74,15 @@ export function CreateBanner() {
                         <p>Banner content</p>
                         <a href="" class="cta">Link</a>
                       </div>`;
+
+banner3.innerHTML = `<div class="banner-header">
+<h3>Banner header</h3>
+</div>
+<div class="banner-body">
+<img src="https://free-images.com/tn/8f1a/lake_mirror_reflection_yosemite.jpg" />
+<p>Banner content</p>
+<a href="" class="cta">Link</a>
+</div>`;
 }
 
 // Section factory
@@ -117,23 +127,37 @@ genre.forEach((gameGenre) => {
 
 // Game Gallery display
 export async function createGameGallery() {
- const casual = await apiFetch("casual", 1);
- const shooter = await apiFetch("shooter", 1);
- const action = await apiFetch("action", 10);
- const simulation = await apiFetch("simulation", 15);
- const family = await apiFetch("family", 19)
+  const action = await apiFetch("action", 1, "Action");
+  const indie = await apiFetch("indie", 1, "Indie");
+  const rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
+  const strategy = await apiFetch("strategy", 1, "Strategy");
+  const adventure = await apiFetch("adventure", 1, "Adventure");
+  const shooter = await apiFetch("shooter", 1, "Shooter");
+  const casual = await apiFetch("casual", 1, "Casual");
+  const simulation = await apiFetch("simulation", 1, "Simulation");
+  const puzzle = await apiFetch("puzzle", 1, "Puzzle");
+  const arcade = await apiFetch("arcade", 1, "Arcade");
+  const platformer = await apiFetch("platformer", 1, "Platformer");
+  const racing = await apiFetch("racing", 1, "Racing");
+  const massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
+  const sports = await apiFetch("sports", 1, "Sports");
+  const fighting = await apiFetch("fighting", 1, "Fighting");
+  const family = await apiFetch("family", 1, "Family");
+  const boardGames = await apiFetch("board_games", 1, "Board Games");
+  const educational = await apiFetch("educational", 1, "Educational");
+  const card = await apiFetch("card", 1, "Card");
 
  // Game mapping Shooter
- querySelectorFactory("#game_section_1", family, "Family");
+ querySelectorFactory("#game_section_1", shooter, "Shooter");
 
- // Game mapping adventure
- querySelectorFactory("#game_section_2", casual, "casual");
+ // Game mapping racing
+ querySelectorFactory("#game_section_2", racing, "Racing");
 
  // Game mapping action
  querySelectorFactory("#game_section_3", action, "Action");
 
   // Game mapping Simulation
- querySelectorFactory("#game_section_", simulation, "Simulation");
+ querySelectorFactory("#game_section_4", simulation, "Simulation");
 }
 
 export function pageLoader() {

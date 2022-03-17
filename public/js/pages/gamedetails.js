@@ -4,9 +4,12 @@ import {  getScreenshots } from "../api/api.js"
 // Importing components for the page
 import { displayMessage } from "../components/messages.js";
 import { createHeader, createFooter, } from "../components/pageLayout.js";
+import { imageResizeUp, imageResizeDown } from "../components/imageResize.js";
 createHeader();
 createFooter();
 displayMessage();
+const imgResizeUp = await imageResizeUp();
+const imgResizeDown = await imageResizeDown();
 
 // Getting the page HTML
 const main = document.querySelector("main");
@@ -34,14 +37,17 @@ function htmlElements(tagName = "div", classNames = [], children = []) {
   title.innerText = `${details.name}`
   
   const main_image = document.getElementById("main_image");
-  main_image.innerHTML = `<img src="${details.background_image}" alt="Main game image" class="main-image"/>`
+  main_image.innerHTML = `<img src="${details.background_image}"  alt="Main image of the game" class="main-image"/>`
   for(let i = 0; i <screenShots.length; i++){
     const image = screenShots[i].image
     const screenShots_img = document.getElementById("screenshots");
-  screenShots_img.innerHTML += `<img src="${image}" alt="" class="small-image"/>`
+  screenShots_img.innerHTML += `<img src="${image}" alt="Game screenshots" onMouseOver="${imgResizeUp}" onMouseOut="${imgResizeDown}" class="small-image"/>`
 }
 
 const description = document.getElementById("details")
+const descriptionHeader = document.createElement("h3");
+descriptionHeader.innerText = "Game description";
+description.append(descriptionHeader);
 description.innerHTML = `<p>${details.description_raw}</p>`
 
 const dev = document.getElementById("dev-info");

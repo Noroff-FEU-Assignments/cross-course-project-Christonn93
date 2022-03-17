@@ -253,11 +253,19 @@ footer > div > ul {
     margin: 15px;
     padding: 15px;
     border-radius: 1.5rem;
+}
+
+.text-box > h1 {
     text-align: center;
 }
 
 .text-box > p {
-    margin: 0;
+    margin: .25rem;
+    text-align: center;
+}
+
+.text-box-image {
+    width: 250px;
 }
 
 #tempinfo {
@@ -340,18 +348,33 @@ footer > div > ul {
     flex: 1;
     width: calc(100% - 150px);
     margin: 0 auto;
+    padding: 15px;
+    background-color: var(--smokey);
+    color: var(--anti-flash);
 }
 
 .container>h2 {
     text-align: center;
+    color: var(--anti-flash);
 }
 
 .main-image {
-    max-width: 100%;
+    min-width: 100%;
+    max-width: 950px;
+
+    border: 1px solid var(--red);
+    filter: drop-shadow(0px 0px 2px var(--red));
 }
 
 .small-image {
-    max-width: 250px;
+    max-width: 350px;
+
+    border: 1px solid var(--red);
+    filter: drop-shadow(0px 0px 2px var(--red));
+}
+
+#details {
+    max-width: 650px;
 }
 
 .row {
@@ -359,7 +382,7 @@ footer > div > ul {
     flex-wrap: wrap;
     gap: 15px;
     flex: 1;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .display-container {
@@ -384,14 +407,32 @@ footer > div > ul {
     gap: 30px;
     max-width: 100%;
     margin: 15px;
+    padding: 50px;
+    position: relative;
 }
 
 .game-gallery > .cta {
-    flex: 1 1 max-content;
     align-self: flex-end;
-    margin: 0 auto;
+    margin-left: auto;    
+}
 
-    
+.game-gallery::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--padding) * -1);
+    height: 3px;
+    width: calc(100% + var(--padding));
+    background: var(--green2);
+}
+
+.game-gallery::after {
+    content: '';
+    position: absolute;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    height: 3px;
+    width: calc(100% + var(--padding));
+    background: var(--green2);
 }
 
 /* ==== Image ==== */
@@ -408,6 +449,11 @@ footer > div > ul {
     object-fit: cover;
     position: absolute;
     top: 0;
+}
+
+#main_image,
+#screenshots {
+    margin: 0 auto;
 }
 
 /* ==== Cards ==== */
@@ -446,8 +492,11 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 .card-title {
     color: var(--anti-flash);
     position: relative;
-    /* max-width: 100%; */
-    width: max-content;
+    max-width: 100%;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-title::after {
@@ -682,4 +731,41 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
         -ms-transform: scale(0.9);
         transform: scale(0.9);
     }
+}
+
+
+.slide-out {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    max-width: fit-content;
+
+    padding: 15px;
+    margin-left: 0;
+    background-color: var(--anti-flash);
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+    border: 1px solid var(--red);
+    filter: drop-shadow(0px 0px 2px var(--red));
+}
+
+.slide-out > a {
+    margin-left: auto;
+}
+
+.search {
+    display: inline-flex;
+    flex-direction: column;
+    gap: .2rem;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+}
+
+.search-label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-input {
+    font-family: 'Montserrat', sans-serif;
 }

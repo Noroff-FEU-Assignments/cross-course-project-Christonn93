@@ -7,7 +7,9 @@ const page_size = 5;
 
 const api = api_baseURL + games + `?key=${api_key}`;
 
-export async function apiFetch(genre, page) {
+
+// Main fetch for the index page
+export async function apiFetch(genre, page, title) {
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
  const apiKey = `71922929f4584b77bfd91f78383f6d12`;
@@ -28,6 +30,7 @@ export async function apiFetch(genre, page) {
  }
 }
 
+// Fetching for Genre sorting
 export async function gameGenreFetch(genre){
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
@@ -50,7 +53,7 @@ console.log(data)
  }
 }
 
-
+// Fetching for details page
 export async function detailsFetch(id, gameId) {
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
