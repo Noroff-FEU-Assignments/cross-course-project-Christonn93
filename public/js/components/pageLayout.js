@@ -45,7 +45,7 @@ export function createFooter() {
  footerElement.innerHTML += `<div>
                               <ul>
                                 <li><a href="/index.html" class="cta">Home</a></li>
-                                <li><a href="/public/pages/contact.html" class="cta">Contact</a></li>
+                                <li><a href="/public/pages/contact.html" class="cta  disabled">Contact</a></li>
                               </ul>                              
                               <label><i class="fa-solid fa-copyright"></i> Copyright Christopher Tønnesland 2022</label>
                             </div>`;
@@ -93,6 +93,13 @@ function contentFactory(tagName = 'div', classNames = [], children = []) {
   return tag
 }
 
+// Creating random price and condition
+const priceArray = [250, 350, 65, 1500, 899, 599, 459, 35, 29.99]
+const conditionArray = ["New", "Used", "Original box"]
+
+const randomPrice = priceArray[Math.floor(Math.random() * priceArray.length)]
+const randomCondition = conditionArray[Math.floor(Math.random() * conditionArray.length)]
+
 
 // QuerySelector Factory
 function querySelectorFactory(tagName, genre, title) {
@@ -109,16 +116,19 @@ function querySelectorFactory(tagName, genre, title) {
     background-repeat: no-repeat;">
     <div class="card-content">
     <h2 class="card-title">${game.name}</h2>
-    <p class="card-body">${game.updated}</p>
+    <p class="card-body">Condition: ${randomCondition}</p>
+    <p class="card-body">Price: ${randomPrice}</p>
     <a href="./public/pages/game_details.html?id=${game.id}" class="cta">See more info</a>
     </div>
     </div>`
   });
+
   const onlyNames = []
-genre.forEach((gameGenre) => {
+  genre.forEach((gameGenre) => {
   const genre = gameGenre.genres[0].name
   onlyNames.push(genre);
 })
+
   viewMore.href = `/public/pages/list_details.html?genres=${onlyNames}`
   container.append(viewMore);
   return container
@@ -128,24 +138,24 @@ genre.forEach((gameGenre) => {
 // Game Gallery display
 export async function createGameGallery() {
   const action = await apiFetch("action", 1, "Action");
-  const indie = await apiFetch("indie", 1, "Indie");
-  const rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
-  const strategy = await apiFetch("strategy", 1, "Strategy");
-  const adventure = await apiFetch("adventure", 1, "Adventure");
+  // const indie = await apiFetch("indie", 1, "Indie");
+  // const rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
+  // const strategy = await apiFetch("strategy", 1, "Strategy");
+  // const adventure = await apiFetch("adventure", 1, "Adventure");
   const shooter = await apiFetch("shooter", 1, "Shooter");
-  const casual = await apiFetch("casual", 1, "Casual");
+  // const casual = await apiFetch("casual", 1, "Casual");
   const simulation = await apiFetch("simulation", 1, "Simulation");
-  const puzzle = await apiFetch("puzzle", 1, "Puzzle");
-  const arcade = await apiFetch("arcade", 1, "Arcade");
-  const platformer = await apiFetch("platformer", 1, "Platformer");
+  // const puzzle = await apiFetch("puzzle", 1, "Puzzle");
+  // const arcade = await apiFetch("arcade", 1, "Arcade");
+  // const platformer = await apiFetch("platformer", 1, "Platformer");
   const racing = await apiFetch("racing", 1, "Racing");
-  const massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
-  const sports = await apiFetch("sports", 1, "Sports");
-  const fighting = await apiFetch("fighting", 1, "Fighting");
-  const family = await apiFetch("family", 1, "Family");
-  const boardGames = await apiFetch("board_games", 1, "Board Games");
-  const educational = await apiFetch("educational", 1, "Educational");
-  const card = await apiFetch("card", 1, "Card");
+  // const massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
+  // const sports = await apiFetch("sports", 1, "Sports");
+  // const fighting = await apiFetch("fighting", 1, "Fighting");
+  // const family = await apiFetch("family", 1, "Family");
+  // const boardGames = await apiFetch("board_games", 1, "Board Games");
+  // const educational = await apiFetch("educational", 1, "Educational");
+  // const card = await apiFetch("card", 1, "Card");
 
  // Game mapping Shooter
  querySelectorFactory("#game_section_1", shooter, "Shooter");

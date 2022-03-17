@@ -9,7 +9,6 @@ CreateBanner();
 createGameGallery();
 createFooter();
 
-
 // Navigation function for mobile and tablet view
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");

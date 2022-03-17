@@ -20,7 +20,6 @@ export async function apiFetch(genre, page, title) {
  const response = await fetch(apiConn);
  const json = await response.json();
  const data = json.results;
- console.log(data)
 
  if (response.ok) {
   return data;

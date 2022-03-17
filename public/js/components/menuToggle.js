@@ -1,13 +1,9 @@
-import { createHeader, createFooter } from "../components/pageLayout.js";
-createHeader();
-createFooter();
-
 // Navigation function for mobile and tablet view
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
  
 /* Toggle mobile menu */
-function toggleMenu() {
+export function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
          
