@@ -19,3 +19,7 @@
 9. [Link](https://rawg.io/apidocs)
 
 10. [The navigation](https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535)
+
+11. [Modal](https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500)
+
+12. 

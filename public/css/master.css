@@ -94,6 +94,7 @@ header {
     gap: 15px;
 
     justify-content: space-between;
+    position: relative;
 }
 
 .logo {
@@ -139,6 +140,20 @@ ul {
 .active .nav-top {
     display: block;
 }
+
+/* .active .nav-li,
+.active .nav-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: fixed;
+    top: 150px;
+    width: 250px;
+    height: 250px;
+
+    z-index: 1;
+} */
 
 /* ==== Main ==== */
 
@@ -300,7 +315,7 @@ label {
     margin: 0 auto;
 
     background-color: var(--anti-flash);
-    
+
     border: 1px solid var(--red);
     border-radius: 1.25rem;
     filter: drop-shadow(0px 0px 4px var(--red));
@@ -353,6 +368,7 @@ label {
     gap: 15px;
     flex: 1;
     width: calc(100% - 150px);
+    min-height: 100%;
     margin: 0 auto;
     padding: 15px;
     background-color: var(--smokey);
@@ -442,6 +458,150 @@ label {
     background: var(--green2);
 }
 
+/* ==== Log in / sign up styling ==== */
+.usersetup {
+    align-items: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    background-color: var(--anti-flash);
+    color: var(--smokey);
+
+    border: 1px solid var(--red);
+    border-radius: 2rem;
+    filter: drop-shadow(0px 0px 2px var(--red));
+}
+
+.box .tabs {
+    margin-top: var(--margin);
+    margin: 0 auto;
+}
+
+.box > h1 {
+    text-align: center;
+}
+
+.box > div {
+    text-align: center;
+    padding: var(--padding);
+}
+
+.tabs {
+    display: inline-flex;
+    gap: 15px;
+    width: fit-content;
+    transform: translateY(5px);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-body {
+    position: relative;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: var(--anti-flash);
+    border: 1px solid var(--red);
+    border-radius: 2rem;
+    filter: drop-shadow(0px 0px 2px var(--red));
+    overflow: hidden;
+    
+    margin: 0 25px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+}
+
+.modal-header>h2 {
+    margin-left: 15px;
+    color: white;
+}
+
+.modal-header>.esc {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: var(--smokey);
+}
+
+.form-container>h3 {
+    color: var(--smokey);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form > label {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.form > label > input {
+    padding: 10px;
+
+    border-radius: .75rem;
+    border: 1px solid var(--red);
+}
+
+input[type="checkbox"] {
+    padding: 0;
+    align-content: flex-start;
+}
+
+/* --- Data Animation--- */
+[data-animation="slideInOutTop"] .modal-body {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in;
+}
+
+[data-animation="slideInOutTop"] .visible .modal-body {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.2s;
+}
+
 /* ==== Image ==== */
 .ratio-box {
     width: 100%;
@@ -456,6 +616,15 @@ label {
     object-fit: cover;
     position: absolute;
     top: 0;
+}
+
+.details-image{
+    border-radius: 50%;
+    max-width: 250px;
+    aspect-ratio: 1;
+    padding: 0;
+    margin: 0 auto;
+    opacity: .8;
 }
 
 #main_image,
@@ -478,7 +647,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
     transition: transform 500ms ease;
     opacity: 75%;
-    
+
     border: 1px solid var(--red);
     filter: drop-shadow(0px 0px 4px var(--red));
 }
@@ -503,7 +672,6 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     color: var(--anti-flash);
     position: relative;
     max-width: 100%;
-
 }
 
 .card-title::after {
@@ -598,6 +766,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
 /* Mobile view */
 @media screen and (min-width: 250px) and (max-width: 425px) {
+    
     .banner {
         min-width: auto;
         max-width: 100%;
@@ -655,10 +824,10 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
 
 }
 
-
 /* Tablet view */
 @media all and (min-width: 425px) and (max-width: 860px) {
     .menu {
+        padding-right: 25px;
         justify-content: center;
     }
 
@@ -669,15 +838,14 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     .nav-li,
     .nav-top {
         display: none;
-        order: 1;
-        position: relative;
+        order: 2;
         width: auto;
     }
 
     .toggle {
         flex: 1;
         text-align: right;
-        order: 2;
+        order: 1;
     }
 
     .card {
@@ -727,8 +895,7 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
     .nav-li,
     .nav-top {
         display: flex;
-        order: 1;
-        position: relative;
+        order: 2;
         width: auto;
     }
 
@@ -736,14 +903,11 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
         display: none;
     }
 
-
     .card {
         flex: 1 1 300px;
     }
 
 }
-
-
 
 @media (hover) {
     .card-content {
@@ -808,7 +972,6 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
         transform: scale(0.9);
     }
 }
-
 
 .slide-out {
     display: flex;

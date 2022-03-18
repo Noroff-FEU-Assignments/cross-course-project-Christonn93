@@ -22,7 +22,7 @@ function toggleMenu() {
         menu.classList.add("active");
          
         // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = `<i class="fas fa-times"></i>`;
+        toggle.querySelector("a").innerHTML = `<i class="fa-solid fa-circle-xmark"></i>`;
     }
 }
  
