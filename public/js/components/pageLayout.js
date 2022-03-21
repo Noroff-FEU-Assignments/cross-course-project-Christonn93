@@ -1,29 +1,28 @@
 // Importing base script for api
-import { apiFetch } from "../api/api.js";
+import { apiFetch, gameGenreFetch } from "../api/api.js";
 
-// storage for later 
+// Importing banner jason
+import { banner } from "../json/banner.js"
 
-{/* <li class="nav-li"><a href="/public/pages/list_details.html"  class="cta disabled"><i class="fa-solid fa-gamepad"></i>Our Games</a></li> */}
-{/* <li class="nav-top"><a href="/public/pages/userSetup.html"  class="cta disabled"><i class="fa-solid fa-house-user"></i>Sign up</a></li> */}
-{/* <li class="nav-top"><a href="/public/pages/login.html"  class="cta disabled"><i class="fa-solid fa-house-user"></i>Log in</a></li> */}
+/* =================== THIS IS FOR PAGE LOADER =================== */ 
 
-
-// Page header
+// Page header and navigation
 export function createHeader() {
  const headerElement = document.querySelector("header");
  headerElement.innerHTML = `
   <nav class="navigation" id="navigation" role="navigation">
+  <a href="#main" class="skip-nav">Skip navigation</a>
   <ul class="logo">
     <li id="logo"><a href="/index.html"><div class="ratio-box"><img src="/public/assets/logo/GameHub_Logo4.png" class="image"/></div></a></li>
     </ul>
     <ul class="menu">
     <li class="nav-li"><a href="/index.html"  class="cta"><i class="fa-solid fa-house"></i>Home</a></li>
-    <li class="nav-li"><a href="#"  class="cta disabled"><i class="fa-solid fa-gamepad"></i>Our Games</a></li>
+    <li class="nav-li"><a href="/public/pages/list_details.html"  class="cta"><i class="fa-solid fa-gamepad"></i>Our Games</a></li>
     <li class="nav-top"><a href="/public/pages/userSetup.html" class="cta"><i class="fa-solid fa-house-user"></i>Log in / Sign up</a></li>
     <li class="toggle"><a href="#" class="cta"><i class="fas fa-bars"></i></a></li>
     <li class="nav-li" id="chart"><a href="/public/pages/checkout.html"  class="cta"><i class="fa-solid fa-cart-shopping"></i></a></li>
   </ul>
-  </nav>`;
+  </nav>`;  
 }
 
 // top section Index
@@ -51,6 +50,18 @@ export function createFooter() {
                             </div>`;
 }
 
+
+// Search function 
+export function searchSlideOut(){
+const slideOutDiv = document.querySelector("#slide-out");
+slideOutDiv.classList.add("slide-out");
+slideOutDiv.innerHTML = `<div class="search">
+                          <label name="searchField" class="search-label">Look up any game you want</label>
+                          <input type="text" placeholder="Look up games" name="searchField" class="search-input" />
+                        </div>
+                        <button type="submit" class="cta"><i class="fa-solid fa-magnifying-glass"></i></button>`
+}
+
 // Page banners
 export function CreateBanner() {
  const banner1 = document.querySelector("#banner");
@@ -58,104 +69,120 @@ export function CreateBanner() {
  const banner3 = document.querySelector("#banner_3");
 
  banner1.innerHTML = `<div class="banner-header">
-                        <h3>Banner header</h3>
+                        <h3>${banner.cm_header}</h3>
                       </div>
                       <div class="banner-body">
-                        <img src="https://free-images.com/tn/8f1a/lake_mirror_reflection_yosemite.jpg" />
-                        <p>Banner content</p>
-                        <a href="" class="cta">Link</a>
+                        <img src="${banner.image1}" />
+                        <div class="banner-content">
+                          <p>${banner.cm_banner_content}</p>
+                          <p class="slogan">${banner.cm_slogan}</p>
+                          <a href="${banner.cm_link}" class="cta">Visit our sponsor here</a>
+                        </div>
                       </div>`;
 
  banner2.innerHTML = `<div class="banner-header">
-                        <h3>Banner header</h3>
-                      </div>
-                      <div class="banner-body">
-                        <img src="https://free-images.com/tn/8f1a/lake_mirror_reflection_yosemite.jpg" />
-                        <p>Banner content</p>
-                        <a href="" class="cta">Link</a>
+                       <h3>${banner.razer_header}</h3>
+                       </div>
+                       <div class="banner-body">
+                         <img src="${banner.image2}" />
+                         <div class="banner-content">
+                           <p>${banner.razer_banner_content}</p>
+                           <p class="slogan">${banner.razer_slogan}</p>
+                           <a href="${banner.razer_link}" class="cta">Visit our sponsor here</a>
+                         </div>
                       </div>`;
 
-banner3.innerHTML = `<div class="banner-header">
-<h3>Banner header</h3>
-</div>
-<div class="banner-body">
-<img src="https://free-images.com/tn/8f1a/lake_mirror_reflection_yosemite.jpg" />
-<p>Banner content</p>
-<a href="" class="cta">Link</a>
-</div>`;
+ banner3.innerHTML = `<div class="banner-header">
+                       <h3>${banner.newsletter_header}</h3>
+                       </div>
+                       <div class="banner-body">
+                         <img src="${banner.image3}" />
+                         <div class="banner-content">
+                           <p>${banner.newsletter_content}</p>
+                           <p class="slogan">${banner.gamehub_slogan}</p>
+                         </div>
+                      </div>`;
 }
 
 // Section factory
-function contentFactory(tagName = 'div', classNames = [], children = []) {
-  const tag = document.createElement(tagName);
-  tag.classList.add(...classNames);
-  tag.append(...children);
-  return tag
+function contentFactory(tagName = "div", classNames = [], children = []) {
+ const tag = document.createElement(tagName);
+ tag.classList.add(...classNames);
+ tag.append(...children);
+ return tag;
 }
 
 // Creating random price and condition
-const priceArray = [250, 350, 65, 1500, 899, 599, 459, 35, 29.99]
-const conditionArray = ["New", "Used", "Original box"]
+function getCondition() {
+ const conditionArray = ["New", "Used", "Original box"];
+ const randomCondition = conditionArray[Math.floor(Math.random() * conditionArray.length)];
+ return randomCondition;
+}
 
-const randomPrice = priceArray[Math.floor(Math.random() * priceArray.length)]
-const randomCondition = conditionArray[Math.floor(Math.random() * conditionArray.length)]
-
-
-// QuerySelector Factory
-function querySelectorFactory(tagName, genre, title) {
-  const container = document.querySelector(tagName);
-  const header = document.createElement("h2");
-  header.classList.add("genre-title");
-  header.innerText = title;
-  const viewMore = document.createElement("a");
-  viewMore.innerText = `View more games`;
-  viewMore.classList.add("cta");
-  container.append(header)
-  genre.forEach((game) => {
-    container.innerHTML += `<div class="card" style="background-image: url(${game.background_image}); background-size: cover; 
-    background-repeat: no-repeat;">
-    <div class="card-content">
-    <h2 class="card-title">${game.name}</h2>
-    <p class="card-body">Condition: ${randomCondition}</p>
-    <p class="card-body">Price: ${randomPrice}</p>
-    <a href="./public/pages/game_details.html?id=${game.id}" class="cta">See more info</a>
-    </div>
-    </div>`
-  });
-
-  const onlyNames = []
-  genre.forEach((gameGenre) => {
-  const genre = gameGenre.genres[0].name
-  onlyNames.push(genre);
-})
-
-  viewMore.href = `/public/pages/list_details.html?genres=${onlyNames}`
-  container.append(viewMore);
-  return container
+function getPrice() {
+ const priceArray = [250, 350, 65, 1500, 899, 599, 459, 35, 29.99];
+ const randomPrice = priceArray[Math.floor(Math.random() * priceArray.length)];
+ return randomPrice;
 }
 
 
+/* =================== THIS IS FOR INDEX PAGE =================== */ 
+
+// QuerySelector Factory
+function querySelectorFactory(tagName, genre, title) {
+ const container = document.querySelector(tagName);
+ const header = document.createElement("h2");
+ header.classList.add("genre-title");
+ header.innerText = title;
+ const viewMore = document.createElement("a");
+ viewMore.innerText = `View more games`;
+ viewMore.classList.add("cta");
+ container.append(header);
+
+ genre.forEach((game) => {
+  container.innerHTML += `<div class="card" style="background-image: url(${game.background_image}); background-size: cover; 
+    background-repeat: no-repeat;">
+    <div class="card-content">
+    <h2 class="card-title">${game.name}</h2>
+    <p class="card-body">Condition: ${getCondition()}</p>
+    <p class="card-body">Price: ${getPrice()}</p>
+    <a href="./public/pages/game_details.html?id=${game.id}" class="cta">See more info</a>
+    </div>
+    </div>`;
+ });
+
+ const onlyNames = [];
+ genre.forEach((gameGenre) => {
+  const genre = gameGenre.genres[0].name;
+  onlyNames.push(genre);
+ });
+
+ viewMore.href = `/public/pages/list_details.html?genres=${onlyNames}`;
+ container.append(viewMore);
+ return container;
+}
+
 // Game Gallery display
 export async function createGameGallery() {
-  const action = await apiFetch("action", 1, "Action");
-  // const indie = await apiFetch("indie", 1, "Indie");
-  // const rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
-  // const strategy = await apiFetch("strategy", 1, "Strategy");
-  // const adventure = await apiFetch("adventure", 1, "Adventure");
-  const shooter = await apiFetch("shooter", 1, "Shooter");
-  // const casual = await apiFetch("casual", 1, "Casual");
-  const simulation = await apiFetch("simulation", 1, "Simulation");
-  // const puzzle = await apiFetch("puzzle", 1, "Puzzle");
-  // const arcade = await apiFetch("arcade", 1, "Arcade");
-  // const platformer = await apiFetch("platformer", 1, "Platformer");
-  const racing = await apiFetch("racing", 1, "Racing");
-  // const massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
-  // const sports = await apiFetch("sports", 1, "Sports");
-  // const fighting = await apiFetch("fighting", 1, "Fighting");
-  // const family = await apiFetch("family", 1, "Family");
-  // const boardGames = await apiFetch("board_games", 1, "Board Games");
-  // const educational = await apiFetch("educational", 1, "Educational");
-  // const card = await apiFetch("card", 1, "Card");
+ let action = await apiFetch("action", 1, "Action");
+ let indie = await apiFetch("indie", 1, "Indie");
+ let rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
+ let strategy = await apiFetch("strategy", 1, "Strategy");
+ let adventure = await apiFetch("adventure", 1, "Adventure");
+ let shooter = await apiFetch("shooter", 1, "Shooter");
+ let casual = await apiFetch("casual", 1, "Casual");
+ let simulation = await apiFetch("simulation", 1, "Simulation");
+ let puzzle = await apiFetch("puzzle", 1, "Puzzle");
+ let arcade = await apiFetch("arcade", 1, "Arcade");
+ let platformer = await apiFetch("platformer", 1, "Platformer");
+ let racing = await apiFetch("racing", 1, "Racing");
+ let massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
+ let sports = await apiFetch("sports", 1, "Sports");
+ let fighting = await apiFetch("fighting", 1, "Fighting");
+ let family = await apiFetch("family", 1, "Family");
+ let boardGames = await apiFetch("board_games", 1, "Board Games");
+ let educational = await apiFetch("educational", 1, "Educational");
+ let card = await apiFetch("card", 1, "Card");
 
  // Game mapping Shooter
  querySelectorFactory("#game_section_1", shooter, "Shooter");
@@ -166,16 +193,94 @@ export async function createGameGallery() {
  // Game mapping action
  querySelectorFactory("#game_section_3", action, "Action");
 
-  // Game mapping Simulation
+ // Game mapping Simulation
  querySelectorFactory("#game_section_4", simulation, "Simulation");
 }
 
+/* =================== THIS IS FOR GAME DETAILS LIST =================== */ 
+
+// QuerySelector Factory Two (for list view)
+function querySelectorFactoryTwo(tagName, genre, title) {
+
+  const container = document.querySelector(tagName);
+  const header = document.createElement("h2");
+  header.classList.add("genre-title");
+  header.innerText = title;
+  container.append(header);
+ 
+  genre.forEach((game) => {
+   container.innerHTML += `<div class="card" style="background-image: url(${game.background_image}); background-size: cover; 
+     background-repeat: no-repeat;">
+     <div class="card-content">
+     <h2 class="card-title">${game.name}</h2>
+     <p class="card-body">Condition: ${getCondition()}</p>
+     <p class="card-body">Price: ${getPrice()}</p>
+     <a href="game_details.html?id=${game.id}" class="cta">See more info</a>
+     </div>
+     </div>`;
+  });
+ 
+  const onlyNames = [];
+  genre.forEach((gameGenre) => {
+   const genre = gameGenre.genres[0].name;
+   onlyNames.push(genre);
+  });
+ 
+  return container;
+ }
+
+// Game Gallery display
+export async function createGameGalleryList() {
+ let action = await gameGenreFetch("action", "Action");
+ let indie = await gameGenreFetch("indie", "Action");
+ let rpg = await gameGenreFetch("role_playing_games_rpg", "Action");
+ let strategy = await gameGenreFetch("strategy", "Action");
+ let adventure = await gameGenreFetch("adventure", "Adventure");
+ let shooter = await gameGenreFetch("shooter", "Shooter");
+ let casual = await gameGenreFetch("casual", "Casual");
+ let simulation = await gameGenreFetch("simulation", "Simulation");
+ let puzzle = await gameGenreFetch("puzzle", "Puzzle");
+ let arcade = await gameGenreFetch("arcade", "Arcade");
+ let platformer = await gameGenreFetch("platformer", "Platformer");
+ let racing = await gameGenreFetch("racing", "Racing");
+ let massMulti = await gameGenreFetch("massively_multiplayer", "Massively Multiplayer");
+ let sports = await gameGenreFetch("sports", "Sports");
+ let fighting = await gameGenreFetch("fighting", "Fighting");
+ let family = await gameGenreFetch("family", "Family");
+ let boardGames = await gameGenreFetch("board_games", "Board_games");
+ let educational = await gameGenreFetch("educational", "Educational");
+ let card = await gameGenreFetch("card", "Card");
+
+ // Game mapping Shooter
+ querySelectorFactoryTwo("#game_section_1", shooter, "Shooter");
+
+ // Game mapping racing
+ querySelectorFactoryTwo("#game_section_2", racing, "Racing");
+
+ // Game mapping action
+ querySelectorFactoryTwo("#game_section_3", adventure, "Action");
+
+ // Game mapping Simulation
+ querySelectorFactoryTwo("#game_section_4", simulation, "Simulation");
+
+ // Game mapping Simulation
+ querySelectorFactoryTwo("#game_section_5", strategy, "Strategy");
+
+ // Game mapping Simulation
+ querySelectorFactoryTwo("#game_section_6", family, "Family");
+
+ // Game mapping Simulation
+ querySelectorFactoryTwo("#game_section_7", sports, "Sports");
+
+ // Game mapping Simulation
+ querySelectorFactoryTwo("#game_section_8", educational, "Educational");
+}
+
+// Page loader
 export function pageLoader() {
  // Setting up the html
- const infoContainer = document.querySelector(".main-container");
- const newDiv = document.createElement("div");
- infoContainer.append(newDiv);
- newDiv.innerHTML = `
+ const loading = document.querySelector("");
+ loading.innerHTML = `
   <div class="loading">
   <svg viewBox="-2000 -1000 4000 2000">
   <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>

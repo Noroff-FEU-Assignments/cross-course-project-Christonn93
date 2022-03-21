@@ -31,6 +31,7 @@ Style list:
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -95,6 +96,19 @@ header {
 
     justify-content: space-between;
     position: relative;
+}
+
+.skip-nav {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1.15rem;
+
+    transform: translateY(-120%);
+}
+
+.skip-nav:focus {
+    transform: translateY(0%);
 }
 
 .logo {
@@ -209,6 +223,11 @@ h2 {
     font-family: 'Play', sans-serif;
 }
 
+h3 {
+    font-size: 24px;
+    font-family: 'Play', sans-serif;
+}
+
 p,
 a,
 li,
@@ -312,7 +331,7 @@ label {
     flex-direction: column;
     min-width: 800px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 25px auto;
 
     background-color: var(--anti-flash);
 
@@ -331,10 +350,8 @@ label {
 }
 
 .banner-body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 0 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
     padding: 1.5rem;
 }
 
@@ -342,23 +359,40 @@ label {
     margin-right: auto;
     padding: 0;
     margin: 0;
+    margin-right: 15px;
 
-    border-radius: 1.25rem;
+    border-radius: 1.5rem;
+    max-width: 350px;
+    max-height: 150px;
+    opacity: .8;
 }
 
-.banner-body>p {
+.banner-content {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.banner-content >p {
     padding: 0;
     margin: 0;
     margin-left: 5px;
     margin-right: auto;
 }
 
-.banner-body>a {
-    flex-direction: column;
-    align-self: flex-end;
-    text-align: center;
-    min-width: 100px;
+.slogan {
+    font-size: 24px;
+    font-style: italic;
 }
+
+.slogan::before,
+.slogan::after {
+    font-size: 24px;
+    font-weight: 500;
+    content: '"';
+}
+
 
 /* ==== Container ==== */
 .container {

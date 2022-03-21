@@ -2,7 +2,7 @@
 import { displayMessage } from "./components/messages.js";
 displayMessage();
 
-import { createHeader, createFooter, createIndexInfo, CreateBanner, createGameGallery } from "./components/pageLayout.js";
+import { createHeader, createFooter, createIndexInfo, CreateBanner, createGameGallery, searchSlideOut } from "./components/pageLayout.js";
 createHeader();
 createIndexInfo();
 CreateBanner();

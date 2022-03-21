@@ -31,6 +31,8 @@ function toggleMenu() {
 /* Event Listener */
 toggle.addEventListener("click", toggleMenu, false);
 
+
+// For modal images if i get time
 const imgResizeUp = await imageResizeUp();
 const imgResizeDown = await imageResizeDown();
 
@@ -45,6 +47,7 @@ function htmlElements(tagName = "div", classNames = [], children = []) {
     return tag;
   }
 
+  // The code after her it will display information 
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
   const gameId = params.get("id");

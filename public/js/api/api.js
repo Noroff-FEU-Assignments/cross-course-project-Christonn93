@@ -4,6 +4,7 @@ const cors_url = `https://noroffcors.herokuapp.com/`;
 
 const games = "games/";
 const page_size = 5;
+const largePage_size = 20;
 
 const api = api_baseURL + games + `?key=${api_key}`;
 
@@ -34,15 +35,13 @@ export async function gameGenreFetch(genre){
  // Api info
  const corsHost = "https://noroffcors.herokuapp.com/";
  const apiKey = `71922929f4584b77bfd91f78383f6d12`;
- const apiHost = `https://api.rawg.io/api/games?genres=${genre}&dates=2019-01-01,2019-12-31&ordering=-added&key=${apiKey}`;
- console.log(apiHost);
+ const apiHost = `https://api.rawg.io/api/games?genres=${genre}&dates=2019-01-01,2019-12-31&ordering=-added&key=${apiKey}&page_size=${largePage_size}`;
 
  // The fetch
  const apiConn = corsHost + apiHost;
  const response = await fetch(apiConn);
  const json = await response.json();
  const data = json.results;
-console.log(data)
 
  if (response.ok) {
   return data;
