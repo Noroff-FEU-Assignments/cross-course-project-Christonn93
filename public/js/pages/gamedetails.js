@@ -81,3 +81,19 @@ dev.innerHTML = `<ul>
 <li>Developed by: ${details.developers[0].name}</li>
 <li>Published by: ${details.publishers[0].name}</li>
 </ul>`
+
+const purchase = document.getElementById("purchase");
+const addToChart = document.createElement("a");
+addToChart.innerText = "Add to chart"
+addToChart.classList.add("cta")
+addToChart.id = "addToChart"
+addToChart.href = "#"
+document.addEventListener("click", (e) => {
+  if(!e.target){
+    e.target === document.querySelector("#addToChart")
+    const num = document.getElementById("addedToChart");
+    num.classList.remove("hidden");
+  }
+})
+
+purchase.append(addToChart)

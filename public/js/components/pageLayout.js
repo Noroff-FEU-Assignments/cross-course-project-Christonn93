@@ -20,7 +20,7 @@ export function createHeader() {
     <li class="nav-li"><a href="/public/pages/list_details.html"  class="cta"><i class="fa-solid fa-gamepad"></i>Our Games</a></li>
     <li class="nav-top"><a href="/public/pages/userSetup.html" class="cta"><i class="fa-solid fa-house-user"></i>Log in / Sign up</a></li>
     <li class="toggle"><a href="#" class="cta"><i class="fas fa-bars"></i></a></li>
-    <li class="nav-li" id="chart"><a href="/public/pages/checkout.html"  class="cta"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    <li class="nav-li" id="chart"><a href="/public/pages/checkout.html"  class="cta"><i class="fa-solid fa-cart-shopping"></i></a><i class="fa-solid fa-1 hidden" id="addedToChart"></i></li>
   </ul>
   </nav>`;  
 }

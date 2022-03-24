@@ -1,6 +1,8 @@
-import { createHeader, createFooter } from "../components/pageLayout.js";
+import { createHeader, createFooter} from "../components/pageLayout.js";
+import { selectPayment } from "../components/payment.js";
 createHeader();
 createFooter();
+selectPayment();
 
 // Navigation function for mobile and tablet view
 const toggle = document.querySelector(".toggle");
