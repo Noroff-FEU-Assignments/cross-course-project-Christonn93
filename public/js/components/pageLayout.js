@@ -41,13 +41,11 @@ export function createIndexInfo() {
 export function createFooter() {
  const footerElement = document.querySelector("footer");
 
- footerElement.innerHTML += `<div>
-                              <ul>
+ footerElement.innerHTML += `<ul>
                                 <li><a href="/index.html" class="cta">Home</a></li>
                                 <li><a href="/public/pages/contact.html" class="cta  disabled">Contact</a></li>
                               </ul>                              
-                              <label><i class="fa-solid fa-copyright"></i> Copyright Christopher Tønnesland 2022</label>
-                            </div>`;
+                              <label><i class="fa-solid fa-copyright"></i> Copyright Christopher Tønnesland 2022</label>`;
 }
 
 

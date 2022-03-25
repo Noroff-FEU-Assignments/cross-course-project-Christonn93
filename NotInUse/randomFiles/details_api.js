@@ -1,5 +1,5 @@
 // Importing the error message fot the catch
-import { displayMessage } from "../components/messages.js";
+import { displayMessage } from "../../public/js/components/messages.js";
 import { gameDisplay } from "../components/layout.js";
 
 // Creating a function to call the APi
