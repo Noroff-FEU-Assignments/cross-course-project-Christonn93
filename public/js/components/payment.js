@@ -27,17 +27,18 @@ export function selectPayment() {
    visa.innerHTML = `<form class="payment-form" id="visa-form" action="#" method="post">
    <i class="fa-brands fa-cc-visa"></i>
   <input id="name" type="text" inputmethod="text" placeholder="Cardholder's name" class="payment-input" />
+  <input id="cardNumber" type="text" inputmethod="text" placeholder="Card Number" class="payment-input" />
   <div id="date">
-   <input type="numeric" inputmethod="numeric" placeholder="mm" class="payment-input" />
+   <input type="numeric" inputmethod="numeric" placeholder="mm" class="payment-input" id="mm" />
    <span class="space"> / </span>
-   <input type="numeric" inputmethod="numeric" placeholder="yyyy" class="payment-input" />
+   <input type="numeric" inputmethod="numeric" placeholder="yyyy" class="payment-input" id="yyyy"/>
   </div>
   <input id="cvv" type="text" inputmethod="numeric" placeholder="CVV" class="payment-input" />
-  <button id="button">Pay</button>
- </form>`;
+ </form>
+ <button id="button">Pay</button>`;
 
    mastercard.classList.add("hidden");
-   paypal.classList.add("hidden");
+  //  paypal.classList.add("hidden");
    billing.classList.add("hidden");
   }
 
@@ -46,17 +47,18 @@ export function selectPayment() {
    mastercard.innerHTML = `<form class="payment-form" id="mastercard-form" action="#" method="post">
    <i class="fa-brands fa-cc-mastercard"></i>
    <input id="name" type="text" inputmethod="text" placeholder="Cardholder's name" class="payment-input" />
+   <input id="cardNumber" type="text" inputmethod="text" placeholder="Card Number" class="payment-input" />
    <div id="date">
-   <input type="numeric" inputmethod="numeric" placeholder="mm" class="payment-input" />
+   <input type="numeric" inputmethod="numeric" placeholder="mm" class="payment-input" id="mm" />
    <span class="space"> / </span>
-   <input type="numeric" inputmethod="numeric" placeholder="yyyy" class="payment-input" />
+   <input type="numeric" inputmethod="numeric" placeholder="yyyy" class="payment-input" id="yyyy" />
    </div>
    <input id="cvv" type="text" inputmethod="numeric" placeholder="CVV" class="payment-input" />
-   <button id="button">Pay</button>
-  </form>`;
+  </form>
+  <button id="button">Pay</button>`;
   
    visa.classList.add("hidden");
-   paypal.classList.add("hidden");
+  //  paypal.classList.add("hidden");
    billing.classList.add("hidden");
   }
 
@@ -93,7 +95,7 @@ export function selectPayment() {
 
    visa.classList.add("hidden");
    mastercard.classList.add("hidden");
-   paypal.classList.add("hidden");
+  //  paypal.classList.add("hidden");
   }
  });
 }

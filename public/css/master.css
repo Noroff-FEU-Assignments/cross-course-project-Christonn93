@@ -18,6 +18,7 @@ Style list:
 ====================== */
 
 @import url(./layout_css/checkout.css);
+@import url(./layout_css/contact.css);
 
 
 /* ======================
@@ -389,7 +390,7 @@ label {
     grid-template-rows: repeat(4, auto);
     gap: 15px;
     margin: 0 auto;
-  }
+}
 
 .display-game-details>div {
     display: flex;
@@ -1044,3 +1045,6 @@ https://www.youtube.com/watch?v=5DEq5cWNYt8
         transform: scale(0.9);
     }
 }
+
+
+

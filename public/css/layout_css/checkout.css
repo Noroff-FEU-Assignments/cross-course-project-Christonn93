@@ -125,17 +125,22 @@
 
 .payment-form i {
     font-size: 40px;
-    color: black;
+    color: white;
     margin: 0 auto;
     margin-bottom: 15px;
+}
+
+#bil-form i {
+    color: black;
 }
 
 .payment-form input {
     outline: none;
     border: none;
-    margin-block: 15px;
     border-bottom: 1px solid black;
     font-size: 16px;
+    background-color: transparent;
+    margin-bottom: 5px;
 }
 
 #date>input {
@@ -154,19 +159,30 @@
 #visa-form {
     overflow: hidden;
     background-image: linear-gradient(-45deg, #1a1f71, #f7b600);
+    width: 325px;
+    height: 205px;
 }
 
 #mastercard-form {
     overflow: hidden;
     background-image: linear-gradient(-45deg, #eb001b, #ff5f00, #f79e1b);
+    width: 325px;
+    height: 205px;
 }
 
 #paypal-form {
     overflow: hidden;
     background-image: linear-gradient(-45deg, #253b80, #169bd7, #222d65);
+    width: 325px;
+    height: 205px;
 }
 
 #bil-form {
     overflow: hidden;
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+
+#mm,
+#yyyy {
+    width: 50px;
 }
