@@ -23,6 +23,7 @@ export async function apiFetch(genre, page, title) {
  const data = json.results;
 
  if (response.ok) {
+     console.log(apiHost)
   return data;
  } else {
   // Request succeeded but you didn't get your data
@@ -44,6 +45,7 @@ export async function gameGenreFetch(genre){
  const data = json.results;
 
  if (response.ok) {
+    console.log(apiHost)
   return data;
  } else {
   // Request succeeded but you didn't get your data
