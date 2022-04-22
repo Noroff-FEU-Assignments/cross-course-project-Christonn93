@@ -1,5 +1,5 @@
 // Importing base script for api
-import { apiFetch, gameGenreFetch } from "../api/api.js";
+import { apiFetch } from "../api/cmsapi.js";
 
 // Importing banner jason
 import { banner } from "../json/banner.js"
@@ -128,72 +128,44 @@ function getPrice() {
 
 // QuerySelector Factory
 function querySelectorFactory(tagName, genre, title) {
- const container = document.querySelector(tagName);
- const header = document.createElement("h2");
- header.classList.add("genre-title");
- header.innerText = title;
- const viewMore = document.createElement("a");
- viewMore.innerText = `View more games`;
- viewMore.classList.add("cta");
- container.append(header);
-
- genre.forEach((game) => {
-  container.innerHTML += `<div class="card" style="background-image: url(${game.background_image}); background-size: cover; 
-    background-repeat: no-repeat;">
-    <div class="card-content">
-    <h2 class="card-title">${game.name}</h2>
-    <p class="card-body">Condition: ${getCondition()}</p>
-    <p class="card-body">Price: ${getPrice()}</p>
-    <a href="./public/pages/game_details.html?id=${game.id}" class="cta">See more info</a>
-    </div>
-    </div>`;
- });
-
- const onlyNames = [];
- genre.forEach((gameGenre) => {
-  const genre = gameGenre.genres[0].name;
-  onlyNames.push(genre);
- });
-
- viewMore.href = `/public/pages/list_details.html?genres=${onlyNames}`;
- container.append(viewMore);
- return container;
-}
+  const container = document.querySelector(tagName);
+  const header = document.createElement("h2");
+  header.classList.add("genre-title");
+  header.innerText = title;
+  const viewMore = document.createElement("a");
+  viewMore.innerText = `View more games`;
+  viewMore.classList.add("cta");
+  container.append(header);
+ 
+  genre.forEach((data) => {
+   container.innerHTML += `
+   <div class="card" style="background-image: url(${data.cover_image}); background-size: cover; 
+  background-repeat: no-repeat;">
+  <div class="card-content">
+  <h2 class="card-title">${data.name}</h2>
+  <p class="card-body">${data.price} ,-</p>
+  <a href="./public/pages/game_details.html?id=${data.id}" class="cta">See more info</a>
+  </div>
+  </div>`;
+  });
+ 
+  const onlyNames = [];
+  genre.forEach((gameGenre) => {
+   const genre = gameGenre.genres[0].name;
+   onlyNames.push(genre);
+  });
+ 
+  viewMore.href = `/public/pages/list_details.html?genres=${onlyNames}`;
+  container.append(viewMore);
+  return container;
+ }
 
 // Game Gallery display
 export async function createGameGallery() {
- let action = await apiFetch("action", 1, "Action");
- let indie = await apiFetch("indie", 1, "Indie");
- let rpg = await apiFetch("role_playing_games_rpg", 1, "RPG");
- let strategy = await apiFetch("strategy", 1, "Strategy");
- let adventure = await apiFetch("adventure", 1, "Adventure");
- let shooter = await apiFetch("shooter", 1, "Shooter");
- let casual = await apiFetch("casual", 1, "Casual");
- let simulation = await apiFetch("simulation", 1, "Simulation");
- let puzzle = await apiFetch("puzzle", 1, "Puzzle");
- let arcade = await apiFetch("arcade", 1, "Arcade");
- let platformer = await apiFetch("platformer", 1, "Platformer");
- let racing = await apiFetch("racing", 1, "Racing");
- let massMulti = await apiFetch("massively_multiplayer", 1, "Massively Multiplayer");
- let sports = await apiFetch("sports", 1, "Sports");
- let fighting = await apiFetch("fighting", 1, "Fighting");
- let family = await apiFetch("family", 1, "Family");
- let boardGames = await apiFetch("board_games", 1, "Board Games");
- let educational = await apiFetch("educational", 1, "Educational");
- let card = await apiFetch("card", 1, "Card");
-
- // Game mapping Shooter
- querySelectorFactory("#game_section_1", shooter, "Shooter");
-
- // Game mapping racing
- querySelectorFactory("#game_section_2", racing, "Racing");
-
- // Game mapping action
- querySelectorFactory("#game_section_3", action, "Action");
-
- // Game mapping Simulation
- querySelectorFactory("#game_section_4", simulation, "Simulation");
-}
+  let games = await apiFetch("action", 1, "Action");
+  // Game mapping Shooter
+  querySelectorFactory("#game_section_1", games, "Shooter");
+ }
 
 /* =================== THIS IS FOR GAME DETAILS LIST =================== */ 
 
