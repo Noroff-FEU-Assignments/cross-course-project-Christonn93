@@ -65,6 +65,12 @@ Style list:
     --margin: 2.5rem;
 }
 
+.return-link {
+    text-decoration: none;
+    color: #cc0000;
+    margin-top: 15px;
+}
+
 /* --- HTML elements --- */
 
 body {

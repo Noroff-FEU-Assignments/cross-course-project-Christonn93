@@ -45,7 +45,8 @@ export function createFooter() {
                                 <li><a href="/gamehub-api/index.html" class="cta">Home</a></li>
                                 <li><a href="/gamehub-api/public/pages/contact.html" class="cta">Contact</a></li>
                               </ul>                              
-                              <label><i class="fa-solid fa-copyright"></i> Copyright Christopher Tønnesland 2022</label>`;
+                              <label><i class="fa-solid fa-copyright"></i> Copyright Christopher Tønnesland 2022</label>
+                              `;
 }
 
 
