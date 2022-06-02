@@ -1,6 +1,6 @@
 # Project Exam 1
 
-![image](/gamehub.png)
+![image](/gamhub.png)
 
 A simple overview of the use/purpose of this project.
 
