@@ -6,14 +6,13 @@ A simple overview of the use/purpose of this project.
 
 ## Description
 
-This project is part of my time as a student at Noroff School of Technology and Digital Media to become a front end dev.
-I was tasked to use WP as a headless CMS, and use Netlify as the front-end for the project. I decided to create a blog where i collected some posts regarding conspiracy theories.
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
 - [WordPress REST API](https://developer.wordpress.org/rest-api/)
+- [RAWG API](https://rawg.io/)
 - [Netlify](https://www.netlify.com/)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
@@ -24,18 +23,14 @@ You can list a the tech stack that you've used over here
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+Download .zip or open with github desktop
 ```
 
-2. Install the dependencies:
-
 ```bash
-npm install
+if(download .zip === true){ 
+    then you will need to unzip the download to be able to open the page in the browser.
+};
 ```
 
 ### Running
@@ -58,12 +53,22 @@ This project have been made with some help from my fellow students at Noroff, so
 
 ## Acknowledgments
 
-If it would not be for these people and sources some parts of the project would not be possible to accomplish
+1. [API and Inspiration](https://rawg.io/) 
+2. [cards](https://www.youtube.com/watch?v=5DEq5cWNYt8&feature=youtu.be)
+3. [modal](https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500) 
+4. [formvalidation](https://www.youtube.com/watch?v=CYlNJpltjMM&t=438s)
 
-1. [Page loader is collected from codepen](https://codepen.io/raymondyang/pen/RKQNdr?editors=0100)
-
-2. [For the slider I followed this tutorial, and made some changes to it so it would fit my needs](https://www.youtube.com/watch?v=c5SIG7Ie0dM&t=28876s)
-
-3. [For the image modal on the post detail page i have used this as a reference, made some changes to it](https://codepen.io/r3dg3cko/pen/ZLryQG?editors=1010)
-
-4. [Form validation is created based on the same concept showed on this page](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation)
+1. Kevin Powell's youtube videos help me make my cards to display the games.
+2. JavaScript Academy for helping with form validation
+3. I need to give a huge thanks to my fellow students for helping me figure out
+areas where I struggled with the API calls and js functionality.
+a. Kasper Bø Bjørnø
+b. Eric Pretzinger
+c. Tony Erlandsen
+d. Glen Sørbø
+e. and many more
+4. I would also like to thank MJ for his assistance in understanding more how to
+correctly use functions in JS.
+5. Would also like to thank Oliver for some guidance when it comes to async
+functions.
+6. I would also like to thank Marius Solheim for his assistance in => functions
