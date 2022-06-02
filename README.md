@@ -1,6 +1,6 @@
 # Project Exam 1
 
-![image](/app/assets/index-page.png)
+![image](Screenshot 2022-05-26 at 12-44-41 GameHub Home.png)
 
 A simple overview of the use/purpose of this project.
 
